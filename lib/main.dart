@@ -62,7 +62,7 @@ class MyApp extends StatelessWidget {
                     top: 50,
                     // right: 20,
                     child: SizedBox(
-                      width: 400,
+                      width: 350,
                       child: Text(
                         'Frenchify French Learning App',
                         style: TextStyle(
@@ -77,10 +77,10 @@ class MyApp extends StatelessWidget {
                     top: 200,
                     left: 5,
                     child: SizedBox(
-                      width: 400,
+                      width: 375,
                       child: Text(
                         'Bonjour! Frenchify is the perfect app for anyone looking to learn or improve their French language skills, with its user-friendly interface and innovative features making learning fun and interactive.',
-                        style: TextStyle(color: Colors.white, fontSize: 19),
+                        style: TextStyle(color: Colors.white, fontSize: 17),
                         overflow: TextOverflow.clip,
                         textAlign: TextAlign.justify,
                         textScaleFactor: 1.2,
