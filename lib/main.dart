@@ -1,10 +1,12 @@
 // ignore_for_file: unused_import, prefer_const_constructors, avoid_unnecessary_containers, unnecessary_import
 
 import 'package:flutter/material.dart';
-import 'package:frenchify/Pages/drawer.dart';
+import 'package:frenchify/Pages/settings.dart';
 import 'package:frenchify/Pages/home.dart';
-import 'Pages/about.dart';
-import 'Pages/feedback.dart';
+import 'package:frenchify/Pages/about.dart';
+import 'package:frenchify/Pages/feedback.dart';
+import 'package:frenchify/Pages/personal.dart';
+import 'package:frenchify/Pages/translator.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -16,6 +18,8 @@ void main() {
       '/Settings': (context) => Settings(),
       '/About': (context) => About(),
       '/feedback': (context) => Feedbacks(),
+      '/personal': (context) => Personal(),
+      '/translator': (context) => Translator(),
     },
   ));
 }
@@ -34,16 +38,6 @@ class MyApp extends StatelessWidget {
             child: SafeArea(
                 child: Stack(
               children: [
-                // AspectRatio(
-                //   aspectRatio:
-                //       9 / 14, // Set the aspect ratio to match your image
-                //   child: Image.asset(
-                //     'assets/images/logo.jpg',
-                //     fit: BoxFit
-                //         .cover, // Set the image fit to cover the entire screen
-                //     height: MediaQuery.of(context).size.height * 1,
-                //   ),
-                // ),
                 FractionallySizedBox(
                   widthFactor: 1,
                   heightFactor: MediaQuery.of(context).size.height * 0.5,
@@ -52,25 +46,21 @@ class MyApp extends StatelessWidget {
                     fit: BoxFit.none,
                   ),
                 ),
-                // Image.asset(
-                //   'assets/images/logo.jpg',
-                //   fit: BoxFit.fill,
-                //   height: 659,
-                // ),
                 const Positioned(
                     left: 12,
                     top: 50,
                     // right: 20,
                     child: SizedBox(
-                      width: 350,
+                      width: 400,
                       child: Text(
-                        'Frenchify French Learning App',
+                        'Frenchify French \nLearning App',
                         style: TextStyle(
                             fontSize: 28,
                             fontFamily: 'Helvetica',
                             fontWeight: FontWeight.w600,
                             color: Colors.yellowAccent),
                         overflow: TextOverflow.clip,
+                        textAlign: TextAlign.center,
                       ),
                     )),
                 const Positioned(
@@ -80,7 +70,7 @@ class MyApp extends StatelessWidget {
                       width: 375,
                       child: Text(
                         'Bonjour! Frenchify is the perfect app for anyone looking to learn or improve their French language skills, with its user-friendly interface and innovative features making learning fun and interactive.',
-                        style: TextStyle(color: Colors.white, fontSize: 17),
+                        style: TextStyle(color: Colors.orange, fontSize: 17),
                         overflow: TextOverflow.clip,
                         textAlign: TextAlign.justify,
                         textScaleFactor: 1.2,

@@ -38,6 +38,8 @@ class Feedbacks extends StatelessWidget {
                 TextSpan(
                     text: 'Frenchify@gmail.com',
                     style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 17,
                         color: Color.fromRGBO(100, 149, 237, 1)),
                     recognizer: TapGestureRecognizer()..onTap = () {}),
               ]))
