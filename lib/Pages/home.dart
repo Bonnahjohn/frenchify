@@ -153,21 +153,7 @@ class Drawers extends StatelessWidget {
           ),
           onTap: () => Navigator.pushNamed(context, '/personal'),
         ),
-        /* mmmmmmmmmmmmmmmmmmmmmmmm Dictionary and its navigation mmmmmmmmmmmmmmmmmmmmmm*\ */
-        ListTile(
-          leading: Icon(
-            Icons.library_books_sharp,
-            size: 25,
-          ),
-          title: Text(
-            'Dictionary',
-            style: TextStyle(
-              fontSize: 18,
-              color: Colors.white,
-            ),
-          ),
-          // onTap: () => Navigator.pushNamed(context, '/homePage'),
-        ),
+
         /* mmmmmmmmmmmmmmmmmmmmmmmm home page and its navigation mmmmmmmmmmmmmmmmmmmmmm*\ */
         ListTile(
           leading: Icon(
