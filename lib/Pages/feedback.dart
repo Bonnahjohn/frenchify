@@ -3,6 +3,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:frenchify/main.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Feedbacks extends StatelessWidget {
   const Feedbacks({super.key});
@@ -36,12 +37,24 @@ class Feedbacks extends StatelessWidget {
                   style: TextStyle(color: Colors.black, fontSize: 18),
                 ),
                 TextSpan(
-                    text: 'Frenchify@gmail.com',
+                    text: 'Frenchifyteam@gmail.com',
                     style: const TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 17,
+                        fontSize: 16,
                         color: Color.fromRGBO(100, 149, 237, 1)),
-                    recognizer: TapGestureRecognizer()..onTap = () {}),
+                    recognizer: TapGestureRecognizer()
+                      ..onTap = () async {
+                        // final Uri params = Uri(
+                        //   scheme: 'mailto',
+                        //   path: 'Frenchifyteam@gmail.com',
+                        // );
+                        // String url = params.toString();
+                        // if (await canLaunch(url)) {
+                        //   await launch(url);
+                        // } else {
+                        //   throw 'Could not launch $url';
+                        // }
+                      }),
               ]))
             ],
           ),
