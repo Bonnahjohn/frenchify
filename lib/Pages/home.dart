@@ -19,7 +19,7 @@ class HomePage extends StatelessWidget {
         ],
       ),
       body: Container(
-        padding: EdgeInsets.all(16),
+        padding: EdgeInsets.all(8),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
@@ -33,7 +33,7 @@ class HomePage extends StatelessWidget {
                 flex: 2,
                 child: GridView.count(
                   crossAxisCount: 1,
-                  mainAxisSpacing: 4,
+                  mainAxisSpacing: 10,
                   crossAxisSpacing: 10,
                   children: [
                     Container(
@@ -57,18 +57,43 @@ class HomePage extends StatelessWidget {
                             'Beginner lessons.',
                             style: TextStyle(fontSize: 20),
                             textAlign: TextAlign.center,
-                          )
+                          ),
+                          Text(
+                              "Hello, I've been using Frenchify language app for a few weeks now and I really like the app. The interface is simple and easy to navigate, and the exercises are helpful for improving my French skills. However, I noticed that the app occasionally crashes when I try to access the speaking exercises. It would be great if this issue could be fixed in a future update. Overall, I'm very satisfied with the app and would recommend it to others who are learning French.")
                         ]),
                       ),
                     ),
-                    // Card(
-                    //   elevation: 12,
-                    //   child: Container(
-                    //     width: 100,
-                    //     height: 200,
-                    //     color: Colors.red,
-                    //   ),
-                    // ),
+                    Card(
+                      color: Colors.green,
+                      shadowColor: Colors.red,
+                      elevation: 32,
+                      child: SizedBox(
+                        width: 25,
+                        height: 30,
+                        child: ListView(children: [
+                          Text(
+                            'Advance lessons.',
+                            style: TextStyle(fontSize: 20),
+                            textAlign: TextAlign.center,
+                          ),
+                          ListTile(
+                            leading: Icon(
+                              Icons.diamond,
+                              size: 25,
+                            ),
+                            title: Text(
+                              'Personal study',
+                              style: TextStyle(
+                                fontSize: 18,
+                                color: Colors.white,
+                              ),
+                            ),
+                            onTap: () =>
+                                Navigator.pushNamed(context, '/advanIntro'),
+                          ),
+                        ]),
+                      ),
+                    ),
                   ],
                 ))
           ],

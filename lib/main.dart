@@ -7,6 +7,8 @@ import 'package:frenchify/Pages/about.dart';
 import 'package:frenchify/Pages/feedback.dart';
 import 'package:frenchify/Pages/personal.dart';
 import 'package:frenchify/Pages/translator.dart';
+// mmmmmmmmmmmmmmmmmmmmmmmmmmm advance routing mmmmmmmmmmmmmmmmmmmmmm
+import 'package:frenchify/advan/advanIntro.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -20,6 +22,7 @@ void main() {
       '/feedback': (context) => Feedbacks(),
       '/personal': (context) => Personal(),
       '/translator': (context) => Translator(),
+      '/advanIntro': (context) => AdvanIntro()
     },
   ));
 }
@@ -53,7 +56,7 @@ class MyApp extends StatelessWidget {
                     child: SizedBox(
                       width: 400,
                       child: Text(
-                        'Frenchify French \nLearning App',
+                        'Frenchify French \nLearning Library',
                         style: TextStyle(
                             fontSize: 28,
                             fontFamily: 'Helvetica',
