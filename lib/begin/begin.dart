@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, duplicate_ignore
+
 import 'package:flutter/material.dart';
 
 class Beginner extends StatelessWidget {
@@ -16,13 +18,14 @@ class Beginner extends StatelessWidget {
         padding: EdgeInsets.all(16.0),
         child: SingleChildScrollView(
           child: Column(
-            children: const [
+            children: <Widget>[
               Card(
                 child: ListTile(
                   leading: Icon(Icons.abc_sharp),
                   title: Text('Greetings and Introduction'),
                   subtitle: Text('Salutation et Introduction'),
                   trailing: Icon(Icons.arrow_right),
+                  onTap: () {},
                 ),
               ),
               Card(
@@ -31,15 +34,17 @@ class Beginner extends StatelessWidget {
                   title: Text('Basic phrases'),
                   subtitle: Text(''),
                   trailing: Icon(Icons.arrow_right),
+                  onTap: () {},
                 ),
               ),
               Card(
                 child: ListTile(
-                  leading: Icon(Icons.color_lens),
-                  title: Text('Days of the Week and Month of the year'),
-                  subtitle:
-                      Text("Les jours de la semaine and Les mois de l'annee"),
-                  trailing: Icon(Icons.arrow_right),
+                  leading: const Icon(Icons.color_lens),
+                  title: const Text('Days of the Week and Month of the year'),
+                  subtitle: const Text(
+                      "Les jours de la semaine and Les mois de l'annee"),
+                  trailing: const Icon(Icons.arrow_right),
+                  onTap: () {},
                 ),
               ),
               Card(
@@ -48,6 +53,7 @@ class Beginner extends StatelessWidget {
                   title: Text('Numbers and counting'),
                   subtitle: Text(''),
                   trailing: Icon(Icons.arrow_right),
+                  onTap: () {},
                 ),
               ),
               Card(
@@ -56,14 +62,16 @@ class Beginner extends StatelessWidget {
                   title: Text('Colors and describing things'),
                   subtitle: Text(''),
                   trailing: Icon(Icons.arrow_right),
+                  onTap: () {},
                 ),
               ),
               Card(
                 child: ListTile(
                   leading: Icon(Icons.abc_sharp),
                   title: Text('Family and relationships'),
-                  subtitle: Text(''),
+                  subtitle: Text('La famille et '),
                   trailing: Icon(Icons.arrow_right),
+                  onTap: () {},
                 ),
               ),
               Card(
@@ -72,12 +80,16 @@ class Beginner extends StatelessWidget {
                   title: Text('Time and dates'),
                   subtitle: Text(''),
                   trailing: Icon(Icons.arrow_right),
+                  onTap: () {},
                 ),
               ),
               Card(
                 child: ListTile(
                   leading: Icon(Icons.abc_sharp),
-                  title: Text('Weather and seasons'),
+                  title: Text('Profession'),
+                  subtitle: Text('Les professions'),
+                  trailing: Icon(Icons.arrow_right),
+                  onTap: () {},
                 ),
               ),
               Card(
@@ -86,15 +98,20 @@ class Beginner extends StatelessWidget {
                   title: Text('Public holidays and special days(Festivals)'),
                   subtitle: Text(''),
                   trailing: Icon(Icons.arrow_right),
+                  onTap: () {},
                 ),
               ),
               Card(
+                elevation: 8,
+                shadowColor: Colors.blue,
                 child: ListTile(
-                  leading: Icon(Icons.abc_sharp),
+                  leading: Icon(Icons.south_east_outlined),
                   title: Text('Weather and seasons'),
+                  subtitle: Text(''),
+                  onTap: () {},
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               )
             ],
