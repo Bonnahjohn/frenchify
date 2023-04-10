@@ -7,6 +7,8 @@ import 'package:frenchify/Pages/about.dart';
 import 'package:frenchify/Pages/feedback.dart';
 import 'package:frenchify/Pages/personal.dart';
 import 'package:frenchify/Pages/translator.dart';
+// mmmmmmmmmmmmmmmmmmmmmmmmmmm beginner routing mmmmmmmmmmmmmmmmmmmmmm
+import 'package:frenchify/begin/begin.dart';
 // mmmmmmmmmmmmmmmmmmmmmmmmmmm advance routing mmmmmmmmmmmmmmmmmmmmmm
 import 'package:frenchify/advan/advanIntro.dart';
 
@@ -22,6 +24,7 @@ void main() {
       '/feedback': (context) => Feedbacks(),
       '/personal': (context) => Personal(),
       '/translator': (context) => Translator(),
+      '/Beginner': (context) => Beginner(),
       '/advanIntro': (context) => AdvanIntro()
     },
   ));

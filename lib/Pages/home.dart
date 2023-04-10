@@ -36,16 +36,6 @@ class HomePage extends StatelessWidget {
                   mainAxisSpacing: 10,
                   crossAxisSpacing: 10,
                   children: [
-                    Container(
-                      width: 250,
-                      height: 600,
-                      color: Colors.black,
-                    ),
-                    Container(
-                      width: 250,
-                      height: 300,
-                      color: Colors.black,
-                    ),
                     Card(
                       elevation: 12,
                       child: Container(
@@ -89,7 +79,7 @@ class HomePage extends StatelessWidget {
                               ),
                             ),
                             onTap: () =>
-                                Navigator.pushNamed(context, '/advanIntro'),
+                                Navigator.pushNamed(context, '/Beginner'),
                           ),
                         ]),
                       ),
@@ -110,16 +100,16 @@ class Drawers extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      backgroundColor: Color.fromRGBO(100, 149, 237, 1),
       child: ListView(children: [
         Container(
+          color: Color.fromRGBO(100, 149, 237, 1),
           padding: EdgeInsets.only(top: 10),
           height: 50,
           width: 100,
           child: Text(
             'Frenchify  French  App',
             style: TextStyle(
-                fontSize: 20, color: Colors.white, fontFamily: 'serif'),
+                fontSize: 20, color: Colors.black, fontFamily: 'serif'),
             textAlign: TextAlign.center,
           ),
         ),
@@ -131,10 +121,7 @@ class Drawers extends StatelessWidget {
           ),
           title: Text(
             'Home',
-            style: TextStyle(
-              fontSize: 20,
-              color: Colors.white,
-            ),
+            style: TextStyle(fontSize: 20, color: Colors.black),
           ),
           onTap: () => Navigator.pushNamed(context, '/homePage'),
         ),
@@ -146,10 +133,7 @@ class Drawers extends StatelessWidget {
           ),
           title: Text(
             'Personal study',
-            style: TextStyle(
-              fontSize: 18,
-              color: Colors.white,
-            ),
+            style: TextStyle(fontSize: 18, color: Colors.black),
           ),
           onTap: () => Navigator.pushNamed(context, '/personal'),
         ),
@@ -162,16 +146,11 @@ class Drawers extends StatelessWidget {
           ),
           title: Text(
             'Translator',
-            style: TextStyle(
-              fontSize: 18,
-              color: Colors.white,
-            ),
+            style: TextStyle(fontSize: 18, color: Colors.black),
           ),
           onTap: () => Navigator.pushNamed(context, '/translator'),
         ),
-        Divider(
-          color: Colors.white,
-        ),
+        Divider(color: Colors.black),
         /* mmmmmmmmmmmmmmmmmmmmmmmm Settings and its navigation mmmmmmmmmmmmmmmmmmmmmm*\ */
         ListTile(
           leading: Icon(
@@ -180,10 +159,7 @@ class Drawers extends StatelessWidget {
           ),
           title: Text(
             'Settings',
-            style: TextStyle(
-              fontSize: 18,
-              color: Colors.white,
-            ),
+            style: TextStyle(fontSize: 18, color: Colors.black),
           ),
           trailing: Icon(
             Icons.arrow_right,
@@ -199,10 +175,7 @@ class Drawers extends StatelessWidget {
           ),
           title: Text(
             'About Us',
-            style: TextStyle(
-              fontSize: 18,
-              color: Colors.white,
-            ),
+            style: TextStyle(fontSize: 18, color: Colors.black),
           ),
           trailing: Icon(
             Icons.arrow_right,
@@ -220,7 +193,7 @@ class Drawers extends StatelessWidget {
             'Feedback',
             style: TextStyle(
               fontSize: 18,
-              color: Colors.white,
+              color: Colors.black,
             ),
           ),
           trailing: Icon(
