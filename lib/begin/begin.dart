@@ -20,63 +20,83 @@ class Beginner extends StatelessWidget {
               Card(
                 child: ListTile(
                   leading: Icon(Icons.abc_sharp),
-                  title: Text('data'),
+                  title: Text('Greetings and Introduction'),
+                  subtitle: Text('Salutation et Introduction'),
+                  trailing: Icon(Icons.arrow_right),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: Icon(Icons.numbers),
+                  title: Text('Basic phrases'),
+                  subtitle: Text(''),
+                  trailing: Icon(Icons.arrow_right),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: Icon(Icons.color_lens),
+                  title: Text('Days of the Week and Month of the year'),
+                  subtitle:
+                      Text("Les jours de la semaine and Les mois de l'annee"),
+                  trailing: Icon(Icons.arrow_right),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: Icon(Icons.family_restroom),
+                  title: Text('Numbers and counting'),
+                  subtitle: Text(''),
+                  trailing: Icon(Icons.arrow_right),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: Icon(Icons.timeline),
+                  title: Text('Colors and describing things'),
+                  subtitle: Text(''),
+                  trailing: Icon(Icons.arrow_right),
                 ),
               ),
               Card(
                 child: ListTile(
                   leading: Icon(Icons.abc_sharp),
-                  title: Text('data'),
+                  title: Text('Family and relationships'),
+                  subtitle: Text(''),
+                  trailing: Icon(Icons.arrow_right),
                 ),
               ),
               Card(
                 child: ListTile(
                   leading: Icon(Icons.abc_sharp),
-                  title: Text('data'),
+                  title: Text('Time and dates'),
+                  subtitle: Text(''),
+                  trailing: Icon(Icons.arrow_right),
                 ),
               ),
               Card(
                 child: ListTile(
                   leading: Icon(Icons.abc_sharp),
-                  title: Text('data'),
+                  title: Text('Weather and seasons'),
                 ),
               ),
               Card(
                 child: ListTile(
                   leading: Icon(Icons.abc_sharp),
-                  title: Text('data'),
+                  title: Text('Public holidays and special days(Festivals)'),
+                  subtitle: Text(''),
+                  trailing: Icon(Icons.arrow_right),
                 ),
               ),
               Card(
                 child: ListTile(
                   leading: Icon(Icons.abc_sharp),
-                  title: Text('data'),
+                  title: Text('Weather and seasons'),
                 ),
               ),
-              Card(
-                child: ListTile(
-                  leading: Icon(Icons.abc_sharp),
-                  title: Text('data'),
-                ),
-              ),
-              Card(
-                child: ListTile(
-                  leading: Icon(Icons.abc_sharp),
-                  title: Text('data'),
-                ),
-              ),
-              Card(
-                child: ListTile(
-                  leading: Icon(Icons.abc_sharp),
-                  title: Text('data'),
-                ),
-              ),
-              Card(
-                child: ListTile(
-                  leading: Icon(Icons.abc_sharp),
-                  title: Text('data'),
-                ),
-              ),
+              SizedBox(
+                height: 30,
+              )
             ],
           ),
         ),
