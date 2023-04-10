@@ -42,7 +42,7 @@ class Beginner extends StatelessWidget {
                   leading: const Icon(Icons.color_lens),
                   title: const Text('Days of the Week and Month of the year'),
                   subtitle: const Text(
-                      "Les jours de la semaine and Les mois de l'annee"),
+                      "Les jours de la semaine et Les mois de l'annee"),
                   trailing: const Icon(Icons.arrow_right),
                   onTap: () {},
                 ),
