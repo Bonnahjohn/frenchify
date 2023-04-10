@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:frenchify/main.dart';
 
-class AdvanIntro extends StatelessWidget {
-  const AdvanIntro({super.key});
+class Intermediate extends StatelessWidget {
+  const Intermediate({super.key});
 
   @override
   Widget build(BuildContext context) {
