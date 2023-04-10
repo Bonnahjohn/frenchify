@@ -8,6 +8,45 @@ import 'package:frenchify/advan/advanIntro.dart';
 import 'package:frenchify/main.dart';
 import 'package:frenchify/Pages/translator.dart';
 
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return DefaultTabController(
+      length: 3,
+      child: Scaffold(
+        appBar: AppBar(
+          bottom: TabBar(indicatorColor: Colors.white, tabs: [
+            Tab(
+              child: Text('Beginner'),
+            ),
+            Tab(
+              child: Text('Intermediate '),
+            ),
+            Tab(
+              child: Text('Advance'),
+            ),
+          ]),
+          backgroundColor: Color.fromRGBO(100, 149, 237, 1),
+          title: Text('French Level'),
+          actions: [
+            IconButton(onPressed: () {}, icon: Icon(Icons.search)),
+            IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
+          ],
+        ),
+        body: TabBarView(children: [Beginner(), Intermediate(), AdvanIntro()]),
+        drawer: Drawers(),
+      ),
+    );
+  }
+}
+
 class Drawers extends StatelessWidget {
   const Drawers({super.key});
 
@@ -122,41 +161,3 @@ class Drawers extends StatelessWidget {
 }
 
 //mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm TabBar view of the app
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
-
-  @override
-  State<HomePage> createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return DefaultTabController(
-      length: 3,
-      child: Scaffold(
-        appBar: AppBar(
-          bottom: TabBar(indicatorColor: Colors.white, tabs: [
-            Tab(
-              child: Text('Beginner'),
-            ),
-            Tab(
-              child: Text('Intermediate '),
-            ),
-            Tab(
-              child: Text('Advance'),
-            ),
-          ]),
-          backgroundColor: Color.fromRGBO(100, 149, 237, 1),
-          title: Text('French Level'),
-          actions: [
-            IconButton(onPressed: () {}, icon: Icon(Icons.search)),
-            IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
-          ],
-        ),
-        body: TabBarView(children: [Beginner(), Intermediate(), AdvanIntro()]),
-        drawer: Drawers(),
-      ),
-    );
-  }
-}
