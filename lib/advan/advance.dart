@@ -48,12 +48,14 @@ class AdvanIntro extends StatelessWidget {
                 leading: Icon(Icons.south_east_outlined),
                 title: Text('Letter Writing'),
                 subtitle: Text(''),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/AdvanContent');
+                },
               ),
             ),
             const SizedBox(
               height: 30,
-            )
+            ),
           ],
         ),
       ),

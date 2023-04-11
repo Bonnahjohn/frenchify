@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:frenchify/begin/begin.dart';
 import 'package:frenchify/inter/intermediate.dart';
-import 'package:frenchify/advan/advanIntro.dart';
+import 'package:frenchify/advan/advance.dart';
 
 import 'package:frenchify/main.dart';
 import 'package:frenchify/Pages/translator.dart';
