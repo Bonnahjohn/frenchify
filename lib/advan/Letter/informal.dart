@@ -19,8 +19,7 @@ class Informal extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              RichText(
-                  text: TextSpan(children: const [
+              SelectableText.rich(TextSpan(children: const [
                 TextSpan(
                     text:
                         'As we have a style of writing letter to our loved ones in every language around the world.French peoples also have a way of writing theirs.So in this lesson we are going to look at how we are going to write letters to our mates,family members and our neighbours.In all this type of letter is called ',
@@ -299,71 +298,11 @@ class Informal extends StatelessWidget {
                 width: 600,
                 height: 500,
                 fit: BoxFit.fill,
-              )
+              ),
             ],
           ),
         ),
       )),
-    );
-  }
-}
-
-class MyImage extends StatefulWidget {
-  @override
-  _MyImageState createState() => _MyImageState();
-}
-
-class _MyImageState extends State<MyImage> {
-  bool _isExpanded = false;
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        GestureDetector(
-          onTap: () {
-            setState(() {
-              _isExpanded = true;
-            });
-          },
-          child: Image.asset(
-            'assets/images/logo.jpg',
-            width: 800,
-            height: 500,
-          ),
-        ),
-        SizedBox(height: 16),
-        Visibility(
-          visible: _isExpanded,
-          child: Stack(
-            children: [
-              Image.asset(
-                'assets/images/logo.jpg',
-                width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height,
-                fit: BoxFit.cover,
-              ),
-              Positioned(
-                top: 40,
-                left: 16,
-                child: GestureDetector(
-                  onTap: () {
-                    setState(() {
-                      _isExpanded = false;
-                    });
-                  },
-                  child: Icon(
-                    Icons.close,
-                    size: 32,
-                    color: Colors.white,
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ],
     );
   }
 }

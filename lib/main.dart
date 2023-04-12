@@ -1,4 +1,6 @@
-// ignore_for_file: unused_import, prefer_const_constructors, avoid_unnecessary_containers, unnecessary_import
+// ignore_for_file: unused_import, prefer_const_constructors, avoid_unnecessary_containers, unnecessary_import, avoid_web_libraries_in_flutter
+
+// import 'dart:js';
 
 import 'package:flutter/material.dart';
 import 'package:frenchify/Pages/settings.dart';
@@ -12,6 +14,7 @@ import 'package:frenchify/begin/begin.dart';
 // mmmmmmmmmmmmmmmmmmmmmmmmmmm advance routing mmmmmmmmmmmmmmmmmmmmmm
 import 'package:frenchify/advan/A_content.dart';
 import 'advan/Letter/informal.dart';
+import 'advan/Letter/formal.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -27,7 +30,8 @@ void main() {
       '/translator': (context) => Translator(),
       '/Beginner': (context) => Beginner(),
       '/AdvanContent': (context) => Letter(),
-      '/Informal': (context) => Informal()
+      '/Informal': (context) => Informal(),
+      '/Formal': (context) => Formal()
     },
   ));
 }

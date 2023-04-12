@@ -36,7 +36,9 @@ class Letter extends StatelessWidget {
                   title: Text('Formal Letter'),
                   subtitle: Text(''),
                   trailing: Icon(Icons.arrow_right),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, '/Formal');
+                  },
                 ),
               ),
               Card(
