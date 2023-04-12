@@ -12,9 +12,10 @@ import 'package:frenchify/Pages/translator.dart';
 // mmmmmmmmmmmmmmmmmmmmmmmmmmm beginner routing mmmmmmmmmmmmmmmmmmmmmm
 import 'package:frenchify/begin/begin.dart';
 // mmmmmmmmmmmmmmmmmmmmmmmmmmm advance routing mmmmmmmmmmmmmmmmmmmmmm
-import 'package:frenchify/advan/A_content.dart';
+import 'package:frenchify/advan/content.dart';
 import 'advan/Letter/informal.dart';
 import 'advan/Letter/formal.dart';
+import 'package:frenchify/advan/Letter/letterimage.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -31,7 +32,8 @@ void main() {
       '/Beginner': (context) => Beginner(),
       '/AdvanContent': (context) => Letter(),
       '/Informal': (context) => Informal(),
-      '/Formal': (context) => Formal()
+      '/Formal': (context) => Formal(),
+      '/Image': (context) => Images()
     },
   ));
 }

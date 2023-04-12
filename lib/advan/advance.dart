@@ -42,8 +42,6 @@ class AdvanIntro extends StatelessWidget {
               ),
             ),
             Card(
-              elevation: 8,
-              shadowColor: Colors.blue,
               child: ListTile(
                 leading: Icon(Icons.south_east_outlined),
                 title: Text('Letter Writing'),

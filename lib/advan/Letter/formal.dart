@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:frenchify/main.dart';
 import 'config.dart';
+import 'package:frenchify/advan/Letter/informal.dart';
 
 class Formal extends StatelessWidget {
   const Formal({super.key});
@@ -28,7 +29,7 @@ class Formal extends StatelessWidget {
             } else if (index == note.length + 1) {
               // Display the note at the bottom
               return SelectableText(onTap: () {
-                //Navigator.pushNamed(context, '/home');
+                Navigator.pushNamed(context, '/Image');
               }, focus,
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400));
             } else {
