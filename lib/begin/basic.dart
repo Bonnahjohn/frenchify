@@ -11,8 +11,8 @@ class Basic extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromRGBO(0, 0, 128, 1),
-        title: Text('Greetings and Introduction'),
+        backgroundColor: Color.fromRGBO(100, 149, 237, 1),
+        title: Text('Basic phrase'),
       ),
       body: SafeArea(
           child: Padding(
@@ -21,11 +21,7 @@ class Basic extends StatelessWidget {
           child: Column(
             children: <Widget>[
               SelectableText(
-                introText,
-                style: TextStyle(fontSize: 16),
-              ),
-              SelectableText(
-                para,
+                basicPhrase,
                 style: TextStyle(fontSize: 16),
               ),
               SizedBox(
@@ -36,30 +32,7 @@ class Basic extends StatelessWidget {
                 height: 20,
               ),
               SelectableText(
-                note,
-                style: TextStyle(fontSize: 16),
-              ),
-              SizedBox(
-                height: 30,
-              ),
-              SelectableText(
-                'French Introduction',
-                style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
-              ),
-              SelectableText(
-                intro,
-                style: TextStyle(fontSize: 16),
-              ),
-              //introduction class mmmmmmmmmmmmmmmmmmmmmm
-              SizedBox(
-                height: 30,
-              ),
-              Introduction(),
-              SizedBox(
-                height: 20,
-              ),
-              SelectableText(
-                footerIntro,
+                basicFooter,
                 style: TextStyle(fontSize: 16),
               ),
               SizedBox(
@@ -70,7 +43,7 @@ class Basic extends StatelessWidget {
         ),
       )),
       floatingActionButton: FloatingActionButton(
-          backgroundColor: Color.fromRGBO(0, 0, 128, 1),
+          backgroundColor: Color.fromRGBO(100, 149, 237, 1),
           onPressed: () {
             Navigator.pop(context);
           },
@@ -92,44 +65,59 @@ class Tables extends StatelessWidget {
           border: TableBorder.all(color: Color.fromRGBO(100, 149, 237, 1)),
           children: [
             TableRow(children: [
-              SelectableText('Greetings'),
+              SelectableText('French Phrase'),
               Text('Pronunciation'),
-              Text('Meaning'),
+              Text('English Translation'),
             ]),
             TableRow(children: [
               Text('Bonjour'),
-              Text('bohn-joor'),
+              Text('bohn-zhoor'),
               Text('Good day / Hello'),
             ]),
             TableRow(children: [
-              Text('Bonsoir'),
-              Text('bohn-swahr'),
-              Text('Good evening'),
+              Text('Au revoir'),
+              Text('oh ruh-vwah'),
+              Text('Goodbye'),
             ]),
             TableRow(children: [
-              Text('Salut'),
-              Text('sah-lyoo'),
-              Text('Hi / Hey'),
+              Text('Merci'),
+              Text('mehr-see'),
+              Text('Thank you'),
             ]),
             TableRow(children: [
-              Text('Coucou'),
-              Text('coo-coo'),
-              Text('Hi / Hello'),
+              Text("S'il vous plaît"),
+              Text('seel voo pleh'),
+              Text('Please'),
             ]),
             TableRow(children: [
-              Text('Comment ça va ?'),
+              Text('Oui'),
+              Text('wee'),
+              Text('Yes'),
+            ]),
+            TableRow(children: [
+              Text('Non'),
+              Text('nohn'),
+              Text('No'),
+            ]),
+            TableRow(children: [
+              Text('Comment ça va?'),
               Text('koh-mohn sah vah'),
               Text('How are you?'),
             ]),
             TableRow(children: [
-              Text('Ça va ?'),
-              Text('sah vah'),
-              Text('Are you OK?'),
+              Text('Ça va bien'),
+              Text('sah vah byeh'),
+              Text('I\'m doing well'),
             ]),
             TableRow(children: [
-              Text('Bienvenue'),
-              Text('byah-ven-yoo'),
-              Text('Welcome'),
+              Text('Je m\'appelle'),
+              Text('zhuh mah-pell'),
+              Text('My name is'),
+            ]),
+            TableRow(children: [
+              SelectableText('Excusez-moi'),
+              SelectableText('eks-koo-zay mwah'),
+              SelectableText('Excuse me'),
             ]),
           ],
         ));
@@ -137,68 +125,3 @@ class Tables extends StatelessWidget {
 }
 
 //intoduction table mmmmmmmmmmmmmmmmmmmmmmmmm
-
-class Introduction extends StatelessWidget {
-  const Introduction({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return InteractiveViewer(
-        boundaryMargin: EdgeInsets.all(20.0),
-        child: Table(
-          border: TableBorder.all(color: Color.fromRGBO(100, 149, 237, 1)),
-          children: [
-            TableRow(children: [
-              SelectableText(
-                'French',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
-              SelectableText(
-                'Pronunciation (Approximate)',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
-              SelectableText(
-                'English Translation',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              )
-            ]),
-            TableRow(children: [
-              SelectableText(
-                'Bonjour',
-                style: TextStyle(fontSize: 16),
-              ),
-              SelectableText(
-                'bohn-joor',
-                style: TextStyle(fontSize: 16),
-              ),
-              SelectableText(
-                'Good day / Hello',
-                style: TextStyle(fontSize: 16),
-              ),
-            ]),
-            TableRow(children: [
-              SelectableText('Comment ça va?'),
-              SelectableText('koh-mahn sah vah'),
-              SelectableText('How are you?'),
-            ]),
-            TableRow(children: [
-              SelectableText("Je m'appelle [your name]"),
-              SelectableText('zhuh mah-pehl [your name]'),
-              SelectableText('My name is [your name]'),
-            ]),
-            TableRow(children: [
-              SelectableText(
-                'Enchanté(e)',
-              ),
-              SelectableText('ahn-shahn-tay'),
-              SelectableText('Nice to meet you'),
-            ]),
-            TableRow(children: [
-              SelectableText('Au revoir'),
-              SelectableText('oh ruh-vwahr'),
-              SelectableText('Goodbye'),
-            ]),
-          ],
-        ));
-  }
-}

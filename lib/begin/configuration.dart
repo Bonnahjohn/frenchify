@@ -15,3 +15,9 @@ String intro =
 
 String footerIntro =
     "You can use these introductions when you meet someone new, or when you want to be polite and friendly. ";
+
+//basic phrase intro mmmmmmmmmmmmmmmmmmmmmmm
+String basicPhrase =
+    "French is a beautiful language spoken by many people around the world. If you want to learn some basic phrases in French, here are some easy ones to start with:";
+String basicFooter =
+    "These phrases are great to use when you're visiting France or when you meet someone who speaks French. Learning a new language can be lots of fun, so don't be afraid to practice and make mistakes. With practice, you'll soon be speaking French like a pro!";

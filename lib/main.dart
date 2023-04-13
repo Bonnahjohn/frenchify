@@ -10,6 +10,7 @@ import 'package:frenchify/Pages/personal.dart';
 import 'package:frenchify/Pages/translator.dart';
 // mmmmmmmmmmmmmmmmmmmmmmmmmmm beginner routing mmmmmmmmmmmmmmmmmmmmmm
 import 'package:frenchify/begin/begin.dart';
+import 'package:frenchify/begin/basic.dart';
 // mmmmmmmmmmmmmmmmmmmmmmmmmmm advance routing mmmmmmmmmmmmmmmmmmmmmm
 import 'package:frenchify/advan/content.dart';
 import 'package:frenchify/begin/salutation.dart';
@@ -34,7 +35,8 @@ void main() {
       '/Informal': (context) => Informal(),
       '/Formal': (context) => Formal(),
       '/Image': (context) => Images(),
-      '/Salutation': (context) => Salutation()
+      '/Salutation': (context) => Salutation(),
+      '/Basic': (context) => Basic()
     },
   ));
 }

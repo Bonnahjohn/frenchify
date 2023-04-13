@@ -31,7 +31,9 @@ class Beginner extends StatelessWidget {
                 title: Text('Basic phrases'),
                 subtitle: Text(''),
                 trailing: Icon(Icons.arrow_right),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/Basic');
+                },
               ),
             ),
             Card(

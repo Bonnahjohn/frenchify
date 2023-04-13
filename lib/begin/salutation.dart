@@ -11,7 +11,7 @@ class Salutation extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromRGBO(0, 0, 128, 1),
+        backgroundColor: Color.fromRGBO(100, 149, 237, 1),
         title: Text('Greetings and Introduction'),
       ),
       body: SafeArea(
@@ -70,7 +70,7 @@ class Salutation extends StatelessWidget {
         ),
       )),
       floatingActionButton: FloatingActionButton(
-          backgroundColor: Color.fromRGBO(0, 0, 128, 1),
+          backgroundColor: Color.fromRGBO(100, 149, 237, 1),
           onPressed: () {
             Navigator.pop(context);
           },
@@ -98,7 +98,7 @@ class Tables extends StatelessWidget {
             ]),
             TableRow(children: [
               Text('Bonjour'),
-              Text('bohn-joor'),
+              Text('bohn-zhoor'),
               Text('Good day / Hello'),
             ]),
             TableRow(children: [
@@ -168,7 +168,7 @@ class Introduction extends StatelessWidget {
                 style: TextStyle(fontSize: 16),
               ),
               SelectableText(
-                'bohn-joor',
+                'bohn-zhoor',
                 style: TextStyle(fontSize: 16),
               ),
               SelectableText(
