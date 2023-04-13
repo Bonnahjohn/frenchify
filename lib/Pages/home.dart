@@ -62,7 +62,7 @@ class Drawers extends StatelessWidget {
           child: Text(
             'Frenchify  French  App',
             style: TextStyle(
-                fontSize: 20, color: Colors.black, fontFamily: 'serif'),
+                fontSize: 16, color: Colors.white, fontFamily: 'serif'),
             textAlign: TextAlign.center,
           ),
         ),
@@ -70,11 +70,11 @@ class Drawers extends StatelessWidget {
         ListTile(
           leading: Icon(
             Icons.home,
-            size: 25,
+            size: 20,
           ),
           title: Text(
             'Home',
-            style: TextStyle(fontSize: 20, color: Colors.black),
+            style: TextStyle(fontSize: 16, color: Colors.black),
           ),
           onTap: () => Navigator.pushNamed(context, '/homePage'),
         ),
@@ -82,11 +82,11 @@ class Drawers extends StatelessWidget {
         ListTile(
           leading: Icon(
             Icons.diamond,
-            size: 25,
+            size: 20,
           ),
           title: Text(
             'Personal study',
-            style: TextStyle(fontSize: 18, color: Colors.black),
+            style: TextStyle(fontSize: 16, color: Colors.black),
           ),
           onTap: () => Navigator.pushNamed(context, '/personal'),
         ),
@@ -95,11 +95,11 @@ class Drawers extends StatelessWidget {
         ListTile(
           leading: Icon(
             Icons.translate,
-            size: 25,
+            size: 20,
           ),
           title: Text(
             'Translator',
-            style: TextStyle(fontSize: 18, color: Colors.black),
+            style: TextStyle(fontSize: 16, color: Colors.black),
           ),
           onTap: () => Navigator.pushNamed(context, '/translator'),
         ),
@@ -108,11 +108,11 @@ class Drawers extends StatelessWidget {
         ListTile(
           leading: Icon(
             Icons.settings,
-            size: 25,
+            size: 20,
           ),
           title: Text(
             'Settings',
-            style: TextStyle(fontSize: 18, color: Colors.black),
+            style: TextStyle(fontSize: 16, color: Colors.black),
           ),
           trailing: Icon(
             Icons.arrow_right,
@@ -124,11 +124,11 @@ class Drawers extends StatelessWidget {
         ListTile(
           leading: Icon(
             Icons.info_outline_rounded,
-            size: 25,
+            size: 20,
           ),
           title: Text(
             'About Us',
-            style: TextStyle(fontSize: 18, color: Colors.black),
+            style: TextStyle(fontSize: 16, color: Colors.black),
           ),
           trailing: Icon(
             Icons.arrow_right,
@@ -140,12 +140,12 @@ class Drawers extends StatelessWidget {
         ListTile(
           leading: Icon(
             Icons.feedback,
-            size: 25,
+            size: 20,
           ),
           title: Text(
             'Feedback',
             style: TextStyle(
-              fontSize: 18,
+              fontSize: 16,
               color: Colors.black,
             ),
           ),

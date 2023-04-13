@@ -4,15 +4,15 @@ import 'package:flutter/material.dart';
 import 'package:frenchify/begin/configuration.dart';
 import 'package:frenchify/main.dart';
 
-class Colour extends StatelessWidget {
-  const Colour({super.key});
+class Weather extends StatelessWidget {
+  const Weather({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color.fromRGBO(100, 149, 237, 1),
-        title: Text('Colors and describing things'),
+        title: Text('Weather and seasons'),
       ),
       body: SafeArea(
           child: Padding(
@@ -21,37 +21,29 @@ class Colour extends StatelessWidget {
           child: Column(
             children: <Widget>[
               SelectableText(
-                colorIntro,
+                season,
                 style: TextStyle(fontSize: 16),
               ),
-
               SizedBox(
                 height: 30,
               ),
-              Figure(),
+              Season(),
               SizedBox(
                 height: 20,
               ),
               SelectableText(
-                adjectiveIntro,
+                'When talking about seasons, the French use the same names as in English:',
                 style: TextStyle(fontSize: 16),
               ),
-              SizedBox(
-                height: 30,
-              ),
-
-              //introduction class mmmmmmmmmmmmmmmmmmmmmm
-              SizedBox(
-                height: 30,
-              ),
-              Describe(),
               SizedBox(
                 height: 20,
               ),
-              SelectableText(
-                myFooter,
-                style: TextStyle(fontSize: 16),
+              Four(),
+              SizedBox(
+                height: 10,
               ),
+              SelectableText(
+                  "Now, you can talk about the weather and seasons just like the French do!"),
               SizedBox(
                 height: 50,
               ),
@@ -70,80 +62,10 @@ class Colour extends StatelessWidget {
 }
 
 //  mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm content of the table mmmmmmmmmmmmmmmmmm
+//  mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm content of the table mmmmmmmmmmmmmmmmmm
 
-class Figure extends StatelessWidget {
-  const Figure({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return InteractiveViewer(
-        boundaryMargin: EdgeInsets.all(20.0),
-        child: Table(
-          border: TableBorder.all(color: Color.fromRGBO(100, 149, 237, 1)),
-          children: [
-            TableRow(children: [
-              SelectableText(
-                'Color',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
-              SelectableText(
-                'French Translation',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
-            ]),
-            TableRow(children: [
-              SelectableText(' Red'),
-              SelectableText(' Rouge'),
-            ]),
-            TableRow(children: [
-              SelectableText(' Yellow'),
-              SelectableText(' Orange'),
-            ]),
-            TableRow(children: [
-              SelectableText("  Yellow"),
-              SelectableText(' Jaune'),
-            ]),
-            TableRow(children: [
-              SelectableText('  Green'),
-              SelectableText(' Vert'),
-            ]),
-            TableRow(children: [
-              SelectableText(' Blue'),
-              SelectableText(' Bleu'),
-            ]),
-            TableRow(children: [
-              SelectableText(' Purple'),
-              SelectableText(' Violet'),
-            ]),
-            TableRow(children: [
-              SelectableText(' Pink'),
-              SelectableText(' Rose'),
-            ]),
-            TableRow(children: [
-              SelectableText(' Black'),
-              SelectableText(' Noir'),
-            ]),
-            TableRow(children: [
-              SelectableText(' White'),
-              SelectableText(' Blanc'),
-            ]),
-            TableRow(children: [
-              SelectableText(' Brown'),
-              SelectableText(' Marron'),
-            ]),
-            TableRow(children: [
-              SelectableText(' Grey'),
-              SelectableText(' Gris'),
-            ]),
-          ],
-        ));
-  }
-}
-
-//intoduction table mmmmmmmmmmmmmmmmmmmmmmmmm
-
-class Describe extends StatelessWidget {
-  const Describe({super.key});
+class Season extends StatelessWidget {
+  const Season({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -154,7 +76,7 @@ class Describe extends StatelessWidget {
           children: [
             TableRow(children: [
               SelectableText(
-                'Adjective',
+                'French Phrase',
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
               SelectableText(
@@ -163,38 +85,105 @@ class Describe extends StatelessWidget {
               ),
             ]),
             TableRow(children: [
+              SelectableText(' Il fait beau.'),
+              SelectableText(' It\'s nice out.'),
+            ]),
+            TableRow(children: [
+              SelectableText('Il fait chaud'),
+              SelectableText(' It\'s hot out.'),
+            ]),
+            TableRow(children: [
+              SelectableText("  Il fait froid."),
+              SelectableText(' It\'s cold out.'),
+            ]),
+            TableRow(children: [
+              SelectableText(' Il pleut.'),
+              SelectableText(' It\'s raining.'),
+            ]),
+            TableRow(children: [
+              SelectableText(' Il neige.'),
+              SelectableText(' It\'s snowing.'),
+            ]),
+            TableRow(children: [
+              SelectableText(' Il y a du vent.	'),
+              SelectableText(' It\'s windy.'),
+            ]),
+            TableRow(children: [
+              SelectableText(' Le ciel est couvert.'),
+              SelectableText(' The sky is overcast.'),
+            ]),
+            TableRow(children: [
+              SelectableText(' Le temps est nuageux.'),
+              SelectableText(' The weather is cloudy.'),
+            ]),
+            TableRow(children: [
+              SelectableText(' Il y a un orage.'),
+              SelectableText(' There\'s a storm.'),
+            ]),
+          ],
+        ));
+  }
+}
+
+class Four extends StatelessWidget {
+  const Four({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return InteractiveViewer(
+        boundaryMargin: EdgeInsets.all(20.0),
+        child: Table(
+          border: TableBorder.all(color: Color.fromRGBO(100, 149, 237, 1)),
+          children: [
+            TableRow(children: [
               SelectableText(
-                'Grand(e)',
-                style: TextStyle(fontSize: 16),
+                'Les quatre saisons de l\'annee',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
               SelectableText(
-                'Big',
-                style: TextStyle(fontSize: 16),
+                'The four seasons of the year',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
             ]),
             TableRow(children: [
-              SelectableText('Joli(e)'),
-              SelectableText('Pretty'),
+              SelectableText(' le printemps'),
+              SelectableText(' spring'),
             ]),
             TableRow(children: [
-              SelectableText("Beau/Belle"),
-              SelectableText('Beautiful'),
+              SelectableText(' l\'été	'),
+              SelectableText(' summer'),
             ]),
             TableRow(children: [
-              SelectableText('Mignon(ne)'),
-              SelectableText('Cute'),
+              SelectableText("  l'automne"),
+              SelectableText(' fall/autumn'),
             ]),
             TableRow(children: [
-              SelectableText('Drôle'),
-              SelectableText('Funny'),
+              SelectableText(' l\'hiver.'),
+              SelectableText(' winter'),
             ]),
             TableRow(children: [
-              SelectableText('Intéressant(e)'),
-              SelectableText('Interesting'),
+              SelectableText(' '),
+              SelectableText(' '),
             ]),
             TableRow(children: [
-              SelectableText('Bon(ne)'),
-              SelectableText('Good'),
+              SelectableText(' 	'),
+              SelectableText(' '),
+            ]),
+            TableRow(children: [
+              SelectableText(' Le Printemps commence en mars'),
+              SelectableText(' Spring begins in march'),
+            ]),
+            TableRow(children: [
+              SelectableText(' l\'été	 commence en septembre'),
+              SelectableText(' Summer begins in june'),
+            ]),
+            TableRow(children: [
+              SelectableText("  l'automne  commence en septembre"),
+              SelectableText(' Autumn  begins in september'),
+            ]),
+            TableRow(children: [
+              SelectableText("  l'hiver commence en  décember"),
+              SelectableText(' Winter begins in september'),
             ]),
           ],
         ));

@@ -83,7 +83,7 @@ class Beginner extends StatelessWidget {
                 subtitle: Text('Famille et relations '),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
-                  Navigator.pushNamed(context, '/Basic');
+                  Navigator.pushNamed(context, '/family');
                 },
               ),
             ),
@@ -95,7 +95,7 @@ class Beginner extends StatelessWidget {
                 subtitle: Text('Heure et dates'),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
-                  Navigator.pushNamed(context, '/Basic');
+                  Navigator.pushNamed(context, '/time');
                 },
               ),
             ),
@@ -119,7 +119,7 @@ class Beginner extends StatelessWidget {
                 subtitle: Text('Jours fériés et jours spéciaux Festivals'),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
-                  Navigator.pushNamed(context, '/Basic');
+                  Navigator.pushNamed(context, '/public');
                 },
               ),
             ),
@@ -130,7 +130,7 @@ class Beginner extends StatelessWidget {
                 title: Text('Weather and seasons'),
                 subtitle: Text('Météo et saison'),
                 onTap: () {
-                  Navigator.pushNamed(context, '/Basic');
+                  Navigator.pushNamed(context, '/Weather');
                 },
               ),
             ),

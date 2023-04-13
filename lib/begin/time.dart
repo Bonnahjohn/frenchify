@@ -4,15 +4,15 @@ import 'package:flutter/material.dart';
 import 'package:frenchify/begin/configuration.dart';
 import 'package:frenchify/main.dart';
 
-class Numbers extends StatelessWidget {
-  const Numbers({super.key});
+class Time extends StatelessWidget {
+  const Time({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color.fromRGBO(100, 149, 237, 1),
-        title: Text('Numbers and counting'),
+        title: Text('Time and date'),
       ),
       body: SafeArea(
           child: Padding(
@@ -51,7 +51,7 @@ class Numbers extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              Next(),
+
               SizedBox(
                 height: 20,
               ),
@@ -165,124 +165,3 @@ class Nums extends StatelessWidget {
   }
 }
 //next number of the content mmmmmmmmmmmmmm
-
-class Next extends StatelessWidget {
-  const Next({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return SelectableText.rich(TextSpan(children: const [
-      TextSpan(text: '', style: TextStyle(color: Colors.black, fontSize: 18)),
-      TextSpan(
-          text: '\n1.',
-          style: TextStyle(
-              color: Colors.red, fontWeight: FontWeight.bold, fontSize: 17)),
-      TextSpan(
-          text: "15: quinze (kanz)",
-          style: TextStyle(
-              color: Colors.black,
-              fontWeight: FontWeight.normal,
-              fontSize: 16)),
-      TextSpan(
-          text: '\n2.',
-          style: TextStyle(
-              color: Colors.red, fontWeight: FontWeight.bold, fontSize: 17)),
-      TextSpan(
-          text: "20: vingt (van)",
-          style: TextStyle(
-              color: Colors.black,
-              fontWeight: FontWeight.normal,
-              fontSize: 17)),
-      TextSpan(
-          text: '\n3.',
-          style: TextStyle(
-              color: Colors.red, fontWeight: FontWeight.bold, fontSize: 17)),
-      TextSpan(
-          text: '25: vingt-cinq (van-sank)',
-          style: TextStyle(
-              color: Colors.black,
-              fontWeight: FontWeight.normal,
-              fontSize: 16)),
-      TextSpan(
-          text: '\n4.',
-          style: TextStyle(
-              color: Colors.red, fontWeight: FontWeight.bold, fontSize: 17)),
-      TextSpan(
-          text: "30: trente (tront)",
-          style: TextStyle(
-              color: Colors.black,
-              fontWeight: FontWeight.normal,
-              fontSize: 17)),
-      TextSpan(
-          text: '\n5.',
-          style: TextStyle(
-              color: Colors.red, fontWeight: FontWeight.bold, fontSize: 17)),
-      TextSpan(
-          text: "40: quarante (kah-rahnt)",
-          style: TextStyle(
-              color: Colors.black,
-              fontWeight: FontWeight.normal,
-              fontSize: 17)),
-      TextSpan(
-          text: '\n6.',
-          style: TextStyle(
-              color: Colors.red, fontWeight: FontWeight.bold, fontSize: 17)),
-      TextSpan(
-          text: "50: cinquante (sank-ont)",
-          style: TextStyle(
-              color: Colors.black,
-              fontWeight: FontWeight.normal,
-              fontSize: 17)),
-      TextSpan(
-          text: '\n7.',
-          style: TextStyle(
-              color: Colors.red, fontWeight: FontWeight.bold, fontSize: 17)),
-      TextSpan(
-          text: "60: soixante (swa-sont)",
-          style: TextStyle(
-              color: Colors.black,
-              fontWeight: FontWeight.normal,
-              fontSize: 17)),
-      TextSpan(
-          text: '\n8.',
-          style: TextStyle(
-              color: Colors.red, fontWeight: FontWeight.bold, fontSize: 17)),
-      TextSpan(
-          text: "70: soixante-dix (swa-sont-dees)",
-          style: TextStyle(
-              color: Colors.black,
-              fontWeight: FontWeight.normal,
-              fontSize: 17)),
-      TextSpan(
-          text: '\n9.',
-          style: TextStyle(
-              color: Colors.red, fontWeight: FontWeight.bold, fontSize: 17)),
-      TextSpan(
-          text: "80: quatre-vingts (katr-van)",
-          style: TextStyle(
-              color: Colors.black,
-              fontWeight: FontWeight.normal,
-              fontSize: 17)),
-      TextSpan(
-          text: '\n10.',
-          style: TextStyle(
-              color: Colors.red, fontWeight: FontWeight.bold, fontSize: 17)),
-      TextSpan(
-          text: "90: quatre-vingt-dix (katr-van-dees)",
-          style: TextStyle(
-              color: Colors.black,
-              fontWeight: FontWeight.normal,
-              fontSize: 17)),
-      TextSpan(
-          text: '\n11.',
-          style: TextStyle(
-              color: Colors.red, fontWeight: FontWeight.bold, fontSize: 17)),
-      TextSpan(
-          text: "100: cent (sahn)",
-          style: TextStyle(
-              color: Colors.black,
-              fontWeight: FontWeight.normal,
-              fontSize: 17)),
-    ]));
-  }
-}

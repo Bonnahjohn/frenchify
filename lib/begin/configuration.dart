@@ -35,7 +35,7 @@ String noteFooter =
 
 // mmmmmmmmmmmmmmmmmmmmmmmmmmmmm numbers and countiing of the app
 String myIntro =
-    "Bonjour! Do you want to learn how to count in French? C'est facile (it's easy)! Here's a little guide on numbers and counting:";
+    "Do you want to learn how to count in French? C'est facile (it's easy)! Here's a little guide on numbers and counting:";
 String next =
     'Once you\'ve learned the numbers from one to ten, you can easily count up to 20 and beyond by simply combining the numbers. For example, to say 11 in French, you simply say "onze," which is a combination of "dix" (10) and "un" (1).';
 String subIntro =
@@ -49,4 +49,8 @@ String colorIntro =
 String adjectiveIntro =
     'French people also use a lot of adjectives to describe things. They might say "une grande maison" which means "a big house" or "une jolie fleur" which means "a pretty flower". Here are some more common adjectives:';
 String myFooter =
-    "When we want to describe something, we use adjectives to give more information about it. For example, we might say \"La grande maison blanche\" which means \"The big white house.\" The adjective \"grande\" (big) describes the noun \"maison\" (house), and the adjective \"blanche\" (white) describes the noun \"maison\" (house) too.In French, we also have something called gender. Every noun is either masculine or feminine. This affects the adjectives we use to describe them. For example, if we want to describe a car (voiture), we would say \"La voiture rouge\" if the car is feminine, but \"Levoiture rouge\" if the car is masculine.So, that's a little bit about how French people talk about colors and describing things. Remember, adjectives are your friend! Use them to make your French more descriptive and interesting.";
+    "When we want to describe something, we use adjectives to give more information about it. For example, we might say \"La grande maison blanche\" which means \"The big white house.\" The adjective \"grande\" (big) describes the noun \"maison\" (house), and the adjective \"blanche\" (white) describes the noun \"maison\" (house) too.In French, we also have something called gender. Every noun is either masculine or feminine. This affects the adjectives we use to describe them. For example, if we want to describe a car (voiture), we would say \"La voiture rouge\" if the car is feminine, but \"Le voiture rouge\" if the car is masculine.So, that's a little bit about how French people talk about colors and describing things. Remember, adjectives are your friend! Use them to make your French more descriptive and interesting.";
+
+//weather intro mmmmmmmmmmmmmmmmmm
+String season =
+    'Have you ever wondered how French people talk about the weather? Well, just like in English, we use different words to describe different types of weather, such as "sunny," "rainy," "windy," and "cold." \n \n In French, the word for "weather" is "le temps." Here are some common weather-related phrases and their meanings:';
