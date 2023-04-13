@@ -50,7 +50,8 @@ class Beginner extends StatelessWidget {
             ),
             Card(
               child: ListTile(
-                leading: Icon(Icons.family_restroom),
+                leading: Image.asset('assets/images/num.jpg',
+                    width: 100, height: 500),
                 title: Text('Numbers and counting'),
                 subtitle: Text('Nombres et comptage'),
                 trailing: Icon(Icons.arrow_right),
@@ -61,7 +62,8 @@ class Beginner extends StatelessWidget {
             ),
             Card(
               child: ListTile(
-                leading: Icon(Icons.timeline),
+                leading: Image.asset('assets/images/num.jpg',
+                    width: 100, height: 500),
                 title: Text('Colors and describing things'),
                 subtitle: Text('couleurs et description des choses'),
                 trailing: Icon(Icons.arrow_right),

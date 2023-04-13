@@ -19,7 +19,7 @@ class Settings extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Image.asset('assets/images/ok.png', fit: BoxFit.fitHeight)
+              Image.asset('assets/images/logo.jpg', fit: BoxFit.fitHeight)
             ],
           ),
         ),

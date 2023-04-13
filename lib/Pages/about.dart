@@ -1,6 +1,8 @@
 // ignore_for_file: unused_import
 
 import 'package:flutter/material.dart';
+import 'package:frenchify/Pages/configuration.dart';
+import 'package:frenchify/advan/Letter/config.dart';
 import 'package:frenchify/main.dart';
 
 class About extends StatelessWidget {
@@ -18,9 +20,7 @@ class About extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: SingleChildScrollView(
           child: Column(
-            children: [
-              Image.asset('assets/images/ok.png', fit: BoxFit.fitHeight)
-            ],
+            children: <Widget>[Text(myNote)],
           ),
         ),
       )),
