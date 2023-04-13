@@ -13,6 +13,7 @@ import 'package:frenchify/Pages/translator.dart';
 import 'package:frenchify/begin/begin.dart';
 // mmmmmmmmmmmmmmmmmmmmmmmmmmm advance routing mmmmmmmmmmmmmmmmmmmmmm
 import 'package:frenchify/advan/content.dart';
+import 'package:frenchify/begin/salutation.dart';
 import 'advan/Letter/informal.dart';
 import 'advan/Letter/formal.dart';
 import 'package:frenchify/advan/Letter/letterimage.dart';
@@ -33,7 +34,8 @@ void main() {
       '/AdvanContent': (context) => Letter(),
       '/Informal': (context) => Informal(),
       '/Formal': (context) => Formal(),
-      '/Image': (context) => Images()
+      '/Image': (context) => Images(),
+      '/Salutation': (context) => Salutation()
     },
   ));
 }

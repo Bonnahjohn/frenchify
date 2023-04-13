@@ -20,7 +20,9 @@ class Beginner extends StatelessWidget {
                 title: Text('Greetings and Introduction'),
                 subtitle: Text('Salutation et Introduction'),
                 trailing: Icon(Icons.arrow_right),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/Salutation');
+                },
               ),
             ),
             Card(
@@ -97,8 +99,6 @@ class Beginner extends StatelessWidget {
               ),
             ),
             Card(
-              elevation: 8,
-              shadowColor: Colors.blue,
               child: ListTile(
                 leading: Icon(Icons.south_east_outlined),
                 title: Text('Weather and seasons'),

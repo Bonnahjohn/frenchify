@@ -51,7 +51,10 @@ class Images extends StatelessWidget {
                   minScale: 0.5,
                   child: Image.asset(
                     'assets/images/sam.jpeg',
-                  ))
+                  )),
+              SizedBox(
+                height: 40,
+              ),
             ],
           ),
         ),
