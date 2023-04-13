@@ -38,3 +38,7 @@ String myIntro =
     "Bonjour! Do you want to learn how to count in French? C'est facile (it's easy)! Here's a little guide on numbers and counting:";
 String next =
     'Once you\'ve learned the numbers from one to ten, you can easily count up to 20 and beyond by simply combining the numbers. For example, to say 11 in French, you simply say "onze," which is a combination of "dix" (10) and "un" (1).';
+String subIntro =
+    'In French, when counting beyond 69, you use a combination of numbers. For example, to say 73, you say "soixante-treize," which is a combination of "soixante" (60) and "treize" (13).';
+String finalNote =
+    'Learning to count in French is important because numbers are used in everyday life, from telling time to buying things at a store. So, practice your numbers and counting skills, and soon you\'ll be able to count like a native French speaker!';

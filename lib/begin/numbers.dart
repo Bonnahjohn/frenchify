@@ -12,7 +12,7 @@ class Numbers extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color.fromRGBO(100, 149, 237, 1),
-        title: Text('Days of the Week and Month of the year'),
+        title: Text('Numbers and counting'),
       ),
       body: SafeArea(
           child: Padding(
@@ -30,9 +30,12 @@ class Numbers extends StatelessWidget {
                 style: TextStyle(fontSize: 16),
               ),
               //lessonclass mmmmmmmmmmmmmmmmmmmmmm
+              SizedBox(
+                height: 10,
+              ),
               Nums(),
               SizedBox(
-                height: 30,
+                height: 20,
               ),
               SelectableText(
                 next,
@@ -46,9 +49,23 @@ class Numbers extends StatelessWidget {
                 style: TextStyle(fontSize: 16),
               ),
               SizedBox(
-                height: 20,
+                height: 10,
               ),
               Next(),
+              SizedBox(
+                height: 20,
+              ),
+              SelectableText(
+                subIntro,
+                style: TextStyle(fontSize: 16),
+              ),
+              SizedBox(
+                height: 25,
+              ),
+              SelectableText(
+                finalNote,
+                style: TextStyle(fontSize: 16),
+              ),
               SizedBox(
                 height: 50,
               ),
@@ -154,97 +171,118 @@ class Next extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InteractiveViewer(
-        boundaryMargin: EdgeInsets.all(20.0),
-        child: Table(
-          border: TableBorder.all(color: Color.fromRGBO(100, 149, 237, 1)),
-          children: [
-            TableRow(children: [
-              SelectableText(
-                'English',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
-              SelectableText(
-                'French',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
-              SelectableText(
-                'Pronunciation',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              )
-            ]),
-            TableRow(children: [
-              SelectableText(
-                'January',
-                style: TextStyle(fontSize: 16),
-              ),
-              SelectableText(
-                'Janvier',
-                style: TextStyle(fontSize: 16),
-              ),
-              SelectableText(
-                'Zhahn-vee-yay',
-                style: TextStyle(fontSize: 16),
-              ),
-            ]),
-            TableRow(children: [
-              SelectableText('February'),
-              SelectableText('Février'),
-              SelectableText('Fay-vree-yay'),
-            ]),
-            TableRow(children: [
-              SelectableText("March"),
-              SelectableText('Mars'),
-              SelectableText('mahrs'),
-            ]),
-            TableRow(children: [
-              SelectableText(
-                'April',
-              ),
-              SelectableText('Avril'),
-              SelectableText('Ah-vreel'),
-            ]),
-            TableRow(children: [
-              SelectableText('May'),
-              SelectableText('Mai'),
-              SelectableText('Mai'),
-            ]),
-            TableRow(children: [
-              SelectableText('June'),
-              SelectableText('Juin'),
-              SelectableText('Zhwa(n)'),
-            ]),
-            TableRow(children: [
-              SelectableText('July'),
-              SelectableText('Juillet'),
-              SelectableText('Zhwee-yay'),
-            ]),
-            TableRow(children: [
-              SelectableText('August'),
-              SelectableText('Août'),
-              SelectableText('Oot'),
-            ]),
-            TableRow(children: [
-              SelectableText('September'),
-              SelectableText('Septembre'),
-              SelectableText('Set-tuhmb'),
-            ]),
-            TableRow(children: [
-              SelectableText('October'),
-              SelectableText('Octobre'),
-              SelectableText('Ok-toh-br'),
-            ]),
-            TableRow(children: [
-              SelectableText('November'),
-              SelectableText('Novembre'),
-              SelectableText('Noh-vahmb'),
-            ]),
-            TableRow(children: [
-              SelectableText('December'),
-              SelectableText('Décembre'),
-              SelectableText('Day-sahmb'),
-            ]),
-          ],
-        ));
+    return SelectableText.rich(TextSpan(children: const [
+      TextSpan(text: '', style: TextStyle(color: Colors.black, fontSize: 18)),
+      TextSpan(
+          text: '\n1.',
+          style: TextStyle(
+              color: Colors.red, fontWeight: FontWeight.bold, fontSize: 17)),
+      TextSpan(
+          text: "15: quinze (kanz)",
+          style: TextStyle(
+              color: Colors.black,
+              fontWeight: FontWeight.normal,
+              fontSize: 16)),
+      TextSpan(
+          text: '\n2.',
+          style: TextStyle(
+              color: Colors.red, fontWeight: FontWeight.bold, fontSize: 17)),
+      TextSpan(
+          text: "20: vingt (van)",
+          style: TextStyle(
+              color: Colors.black,
+              fontWeight: FontWeight.normal,
+              fontSize: 17)),
+      TextSpan(
+          text: '\n3.',
+          style: TextStyle(
+              color: Colors.red, fontWeight: FontWeight.bold, fontSize: 17)),
+      TextSpan(
+          text: '25: vingt-cinq (van-sank)',
+          style: TextStyle(
+              color: Colors.black,
+              fontWeight: FontWeight.normal,
+              fontSize: 16)),
+      TextSpan(
+          text: '\n4.',
+          style: TextStyle(
+              color: Colors.red, fontWeight: FontWeight.bold, fontSize: 20)),
+      TextSpan(
+          text: "30: trente (tront)",
+          style: TextStyle(
+              color: Colors.black,
+              fontWeight: FontWeight.normal,
+              fontSize: 17)),
+      TextSpan(
+          text: '\n5.',
+          style: TextStyle(
+              color: Colors.red, fontWeight: FontWeight.bold, fontSize: 17)),
+      TextSpan(
+          text: "40: quarante (kah-rahnt)",
+          style: TextStyle(
+              color: Colors.black,
+              fontWeight: FontWeight.normal,
+              fontSize: 17)),
+      TextSpan(
+          text: '\n6.',
+          style: TextStyle(
+              color: Colors.red, fontWeight: FontWeight.bold, fontSize: 17)),
+      TextSpan(
+          text: "50: cinquante (sank-ont)",
+          style: TextStyle(
+              color: Colors.black,
+              fontWeight: FontWeight.normal,
+              fontSize: 17)),
+      TextSpan(
+          text: '\n7.',
+          style: TextStyle(
+              color: Colors.red, fontWeight: FontWeight.bold, fontSize: 17)),
+      TextSpan(
+          text: "60: soixante (swa-sont)",
+          style: TextStyle(
+              color: Colors.black,
+              fontWeight: FontWeight.normal,
+              fontSize: 17)),
+      TextSpan(
+          text: '\n8.',
+          style: TextStyle(
+              color: Colors.red, fontWeight: FontWeight.bold, fontSize: 17)),
+      TextSpan(
+          text: "70: soixante-dix (swa-sont-dees)",
+          style: TextStyle(
+              color: Colors.black,
+              fontWeight: FontWeight.normal,
+              fontSize: 17)),
+      TextSpan(
+          text: '\n9.',
+          style: TextStyle(
+              color: Colors.red, fontWeight: FontWeight.bold, fontSize: 17)),
+      TextSpan(
+          text: "80: quatre-vingts (katr-van)",
+          style: TextStyle(
+              color: Colors.black,
+              fontWeight: FontWeight.normal,
+              fontSize: 17)),
+      TextSpan(
+          text: '\n10.',
+          style: TextStyle(
+              color: Colors.red, fontWeight: FontWeight.bold, fontSize: 17)),
+      TextSpan(
+          text: "90: quatre-vingt-dix (katr-van-dees)",
+          style: TextStyle(
+              color: Colors.black,
+              fontWeight: FontWeight.normal,
+              fontSize: 17)),
+      TextSpan(
+          text: '\n11.',
+          style: TextStyle(
+              color: Colors.red, fontWeight: FontWeight.bold, fontSize: 17)),
+      TextSpan(
+          text: "100: cent (sahn)",
+          style: TextStyle(
+              color: Colors.black,
+              fontWeight: FontWeight.normal,
+              fontSize: 17)),
+    ]));
   }
 }
