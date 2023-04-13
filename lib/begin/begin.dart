@@ -71,7 +71,7 @@ class Beginner extends StatelessWidget {
                 subtitle: Text('couleurs et description des choses'),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
-                  Navigator.pushNamed(context, '/Basic');
+                  Navigator.pushNamed(context, '/Colors');
                 },
               ),
             ),

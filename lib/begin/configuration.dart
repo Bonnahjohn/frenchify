@@ -42,3 +42,5 @@ String subIntro =
     'In French, when counting beyond 69, you use a combination of numbers. For example, to say 73, you say "soixante-treize," which is a combination of "soixante" (60) and "treize" (13).';
 String finalNote =
     'Learning to count in French is important because numbers are used in everyday life, from telling time to buying things at a store. So, practice your numbers and counting skills, and soon you\'ll be able to count like a native French speaker!';
+//color section of the app mmmmmmmmmmmmmmmmmmmmmmmmmmm
+String colorIntro = "";

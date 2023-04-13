@@ -14,6 +14,7 @@ import 'package:frenchify/begin/salutation.dart';
 import 'package:frenchify/begin/basic.dart';
 import 'begin/days.dart';
 import 'begin/numbers.dart';
+import 'begin/color.dart';
 // mmmmmmmmmmmmmmmmmmmmmmmmmmm advance routing mmmmmmmmmmmmmmmmmmmmmm
 import 'package:frenchify/advan/content.dart';
 
@@ -42,6 +43,7 @@ void main() {
       '/Basic': (context) => Basic(),
       '/Days': (context) => Days(),
       '/Numbers': (context) => Numbers(),
+      '/Colors': (context) => Colour()
     },
   ));
 }

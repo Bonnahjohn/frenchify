@@ -43,7 +43,8 @@ class AdvanIntro extends StatelessWidget {
             ),
             Card(
               child: ListTile(
-                leading: Icon(Icons.south_east_outlined),
+                leading: Image.asset('assets/images/let.jpg',
+                    width: 60, height: 100),
                 title: Text('Letter Writing'),
                 subtitle: Text(''),
                 onTap: () {
