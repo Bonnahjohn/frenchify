@@ -43,4 +43,10 @@ String subIntro =
 String finalNote =
     'Learning to count in French is important because numbers are used in everyday life, from telling time to buying things at a store. So, practice your numbers and counting skills, and soon you\'ll be able to count like a native French speaker!';
 //color section of the app mmmmmmmmmmmmmmmmmmmmmmmmmmm
-String colorIntro = "";
+String colorIntro =
+    'Today we are going to learn about how French people talk about colors and describing things.In French, colors are very important! To talk about colors, we use adjectives. Adjectives are words that describe things. For example, we might say "La voiture rouge" which means "The red car."\n \n In French, adjectives come after the noun they are describing. This is different from English, where adjectives come before the noun. So, in French, we would say "La voiture rouge" instead of "The red car."\n \n Here is a table to help you understand some of the most common colors and their translations in French: ';
+
+String adjectiveIntro =
+    'French people also use a lot of adjectives to describe things. They might say "une grande maison" which means "a big house" or "une jolie fleur" which means "a pretty flower". Here are some more common adjectives:';
+String myFooter =
+    "When we want to describe something, we use adjectives to give more information about it. For example, we might say \"La grande maison blanche\" which means \"The big white house.\" The adjective \"grande\" (big) describes the noun \"maison\" (house), and the adjective \"blanche\" (white) describes the noun \"maison\" (house) too.In French, we also have something called gender. Every noun is either masculine or feminine. This affects the adjectives we use to describe them. For example, if we want to describe a car (voiture), we would say \"La voiture rouge\" if the car is feminine, but \"Levoiture rouge\" if the car is masculine.So, that's a little bit about how French people talk about colors and describing things. Remember, adjectives are your friend! Use them to make your French more descriptive and interesting.";

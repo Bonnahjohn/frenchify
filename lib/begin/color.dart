@@ -21,19 +21,19 @@ class Colour extends StatelessWidget {
           child: Column(
             children: <Widget>[
               SelectableText(
-                dayIntro,
+                colorIntro,
                 style: TextStyle(fontSize: 16),
               ),
 
               SizedBox(
                 height: 30,
               ),
-              Tables(),
+              Figure(),
               SizedBox(
                 height: 20,
               ),
               SelectableText(
-                monthIntro,
+                adjectiveIntro,
                 style: TextStyle(fontSize: 16),
               ),
               SizedBox(
@@ -44,12 +44,12 @@ class Colour extends StatelessWidget {
               SizedBox(
                 height: 30,
               ),
-              Year(),
+              Describe(),
               SizedBox(
                 height: 20,
               ),
               SelectableText(
-                noteFooter,
+                myFooter,
                 style: TextStyle(fontSize: 16),
               ),
               SizedBox(
@@ -71,8 +71,8 @@ class Colour extends StatelessWidget {
 
 //  mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm content of the table mmmmmmmmmmmmmmmmmm
 
-class Tables extends StatelessWidget {
-  const Tables({super.key});
+class Figure extends StatelessWidget {
+  const Figure({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -83,61 +83,57 @@ class Tables extends StatelessWidget {
           children: [
             TableRow(children: [
               SelectableText(
-                'English',
+                'Color',
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
               SelectableText(
-                'French',
+                'French Translation',
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
-              SelectableText(
-                'Pronunciation',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              )
             ]),
             TableRow(children: [
-              SelectableText(
-                'French',
-                style: TextStyle(fontSize: 16),
-              ),
-              SelectableText(
-                'Lundi',
-                style: TextStyle(fontSize: 16),
-              ),
-              SelectableText(
-                'Luhn-dee',
-                style: TextStyle(fontSize: 16),
-              ),
+              SelectableText(' Red'),
+              SelectableText(' Rouge'),
             ]),
             TableRow(children: [
-              SelectableText('Tuesday'),
-              SelectableText('	Mardi'),
-              SelectableText('Mar-dee'),
+              SelectableText(' Yellow'),
+              SelectableText(' Orange'),
             ]),
             TableRow(children: [
-              SelectableText("Wednesday"),
-              SelectableText('Mercredi'),
-              SelectableText('Mehr-kruh-dee'),
+              SelectableText("  Yellow"),
+              SelectableText(' Jaune'),
             ]),
             TableRow(children: [
-              SelectableText('Thursday'),
-              SelectableText('Jeudi'),
-              SelectableText('Juh-dee'),
+              SelectableText('  Green'),
+              SelectableText(' Vert'),
             ]),
             TableRow(children: [
-              SelectableText('Friday'),
-              SelectableText('Vendredi'),
-              SelectableText('Vahn-druh-dee'),
+              SelectableText(' Blue'),
+              SelectableText(' Bleu'),
             ]),
             TableRow(children: [
-              SelectableText('Saturday'),
-              SelectableText('Samedi'),
-              SelectableText('Sam-dee'),
+              SelectableText(' Purple'),
+              SelectableText(' Violet'),
             ]),
             TableRow(children: [
-              SelectableText('Friday'),
-              SelectableText('Dimanche'),
-              SelectableText('Dee-mahnsh'),
+              SelectableText(' Pink'),
+              SelectableText(' Rose'),
+            ]),
+            TableRow(children: [
+              SelectableText(' Black'),
+              SelectableText(' Noir'),
+            ]),
+            TableRow(children: [
+              SelectableText(' White'),
+              SelectableText(' Blanc'),
+            ]),
+            TableRow(children: [
+              SelectableText(' Brown'),
+              SelectableText(' Marron'),
+            ]),
+            TableRow(children: [
+              SelectableText(' Grey'),
+              SelectableText(' Gris'),
             ]),
           ],
         ));
@@ -146,8 +142,8 @@ class Tables extends StatelessWidget {
 
 //intoduction table mmmmmmmmmmmmmmmmmmmmmmmmm
 
-class Year extends StatelessWidget {
-  const Year({super.key});
+class Describe extends StatelessWidget {
+  const Describe({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -158,88 +154,67 @@ class Year extends StatelessWidget {
           children: [
             TableRow(children: [
               SelectableText(
-                'English',
+                'Adjective',
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
               SelectableText(
-                'French',
+                'English Translation',
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
-              SelectableText(
-                'Pronunciation',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              )
             ]),
             TableRow(children: [
               SelectableText(
-                'January',
+                'Grand(e)',
                 style: TextStyle(fontSize: 16),
               ),
               SelectableText(
-                'Janvier',
-                style: TextStyle(fontSize: 16),
-              ),
-              SelectableText(
-                'Zhahn-vee-yay',
+                'Big',
                 style: TextStyle(fontSize: 16),
               ),
             ]),
             TableRow(children: [
-              SelectableText('February'),
-              SelectableText('Février'),
-              SelectableText('Fay-vree-yay'),
+              SelectableText('Joli(e)'),
+              SelectableText('Pretty'),
             ]),
             TableRow(children: [
-              SelectableText("March"),
-              SelectableText('Mars'),
-              SelectableText('mahrs'),
+              SelectableText("Beau/Belle"),
+              SelectableText('Beautiful'),
             ]),
             TableRow(children: [
-              SelectableText(
-                'April',
-              ),
-              SelectableText('Avril'),
-              SelectableText('Ah-vreel'),
+              SelectableText('Mignon(ne)'),
+              SelectableText('Cute'),
             ]),
             TableRow(children: [
-              SelectableText('May'),
-              SelectableText('Mai'),
-              SelectableText('Mai'),
+              SelectableText('Drôle'),
+              SelectableText('Funny'),
             ]),
             TableRow(children: [
-              SelectableText('June'),
-              SelectableText('Juin'),
-              SelectableText('Zhwa(n)'),
+              SelectableText('Intéressant(e)'),
+              SelectableText('Interesting'),
             ]),
             TableRow(children: [
-              SelectableText('July'),
-              SelectableText('Juillet'),
-              SelectableText('Zhwee-yay'),
+              SelectableText('Bon(ne)'),
+              SelectableText('Good'),
             ]),
             TableRow(children: [
               SelectableText('August'),
               SelectableText('Août'),
-              SelectableText('Oot'),
             ]),
             TableRow(children: [
               SelectableText('September'),
               SelectableText('Septembre'),
-              SelectableText('Set-tuhmb'),
             ]),
             TableRow(children: [
               SelectableText('October'),
               SelectableText('Octobre'),
-              SelectableText('Ok-toh-br'),
             ]),
             TableRow(children: [
               SelectableText('November'),
               SelectableText('Novembre'),
-              SelectableText('Noh-vahmb'),
             ]),
             TableRow(children: [
               SelectableText('December'),
               SelectableText('Décembre'),
-              SelectableText('Day-sahmb'),
             ]),
           ],
         ));

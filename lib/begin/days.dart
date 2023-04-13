@@ -97,7 +97,7 @@ class Tables extends StatelessWidget {
             ]),
             TableRow(children: [
               SelectableText(
-                'French',
+                'Monday',
                 style: TextStyle(fontSize: 16),
               ),
               SelectableText(
