@@ -1,4 +1,4 @@
-// ignore_for_file: unused_import, prefer_const_literals_to_create_immutables, prefer_const_constructors, use_key_in_widget_constructors, non_constant_identifier_names, body_might_complete_normally_nullable
+// ignore_for_file: unused_import, prefer_const_literals_to_create_immutables, prefer_const_constructors, use_key_in_widget_constructors, non_constant_identifier_names, body_might_complete_normally_nullable, import_of_legacy_library_into_null_safe
 
 import 'package:flutter/material.dart';
 import 'package:frenchify/begin/begin.dart';

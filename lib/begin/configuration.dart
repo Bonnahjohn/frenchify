@@ -8,3 +8,10 @@ String para =
 // later note mmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 String note =
     "Remember, it's important to be polite and friendly when you say hello to someone in France!";
+
+// Introduction  mmmmmmmmmmmmmmmmmmmmmm
+String intro =
+    "In France, when people meet each other for the first time, they usually introduce themselves. An introduction is a polite way to say hello and tell someone your name.\n Here are some common French introductions you can use:";
+
+String footerIntro =
+    "You can use these introductions when you meet someone new, or when you want to be polite and friendly. ";

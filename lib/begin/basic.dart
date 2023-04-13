@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:frenchify/begin/configuration.dart';
 import 'package:frenchify/main.dart';
 
-class Salutation extends StatelessWidget {
-  const Salutation({super.key});
+class Basic extends StatelessWidget {
+  const Basic({super.key});
 
   @override
   Widget build(BuildContext context) {

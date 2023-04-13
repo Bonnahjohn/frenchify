@@ -1,7 +1,6 @@
-// ignore_for_file: unused_import, prefer_const_constructors, avoid_unnecessary_containers, unnecessary_import, avoid_web_libraries_in_flutter
+// ignore_for_file: unused_import, prefer_const_constructors, avoid_unnecessary_containers, unnecessary_import, avoid_web_libraries_in_flutter, import_of_legacy_library_into_null_safe
 
-// import 'dart:js';
-
+import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
 import 'package:frenchify/Pages/settings.dart';
 import 'package:frenchify/Pages/home.dart';
@@ -46,75 +45,81 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark);
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Padding(
-            padding: const EdgeInsets.only(top: 0.0),
-            child: SafeArea(
-                child: Stack(
-              children: [
-                FractionallySizedBox(
-                  widthFactor: 1,
-                  heightFactor: MediaQuery.of(context).size.height * 0.5,
-                  child: Image.asset(
-                    'assets/images/logo.jpg',
-                    fit: BoxFit.none,
-                  ),
-                ),
-                const Positioned(
-                    left: 12,
-                    top: 50,
-                    // right: 20,
-                    child: SizedBox(
-                      width: 400,
-                      child: Text(
-                        'Frenchify French \nLearning Library',
-                        style: TextStyle(
-                            fontSize: 28,
-                            fontFamily: 'Helvetica',
-                            fontWeight: FontWeight.w600,
-                            color: Colors.yellowAccent),
-                        overflow: TextOverflow.clip,
-                        textAlign: TextAlign.center,
+        debugShowCheckedModeBanner: false,
+        home: AnnotatedRegion<SystemUiOverlayStyle>(
+          value: SystemUiOverlayStyle.dark
+              .copyWith(statusBarColor: Color.fromRGBO(100, 149, 237, 1)),
+          child: Scaffold(
+            body: Padding(
+                padding: const EdgeInsets.only(top: 0.0),
+                child: SafeArea(
+                    child: Stack(
+                  children: [
+                    FractionallySizedBox(
+                      widthFactor: 1,
+                      heightFactor: MediaQuery.of(context).size.height * 0.5,
+                      child: Image.asset(
+                        'assets/images/logo.jpg',
+                        fit: BoxFit.none,
                       ),
-                    )),
-                const Positioned(
-                    top: 200,
-                    left: 5,
-                    child: SizedBox(
-                      width: 375,
-                      child: Text(
-                        'Bonjour! Frenchify is the perfect app for anyone looking to learn or improve their French language skills, with its user-friendly interface and innovative features making learning fun and interactive.',
-                        style: TextStyle(color: Colors.orange, fontSize: 17),
-                        overflow: TextOverflow.clip,
-                        textAlign: TextAlign.justify,
-                        textScaleFactor: 1.2,
-                      ),
-                    )),
-                Positioned(
-                    top: 550,
-                    left: 50,
-                    right: 50,
-                    child: TextButton(
-                        style: const ButtonStyle(
-                            backgroundColor: MaterialStatePropertyAll(
-                                Color.fromRGBO(100, 149, 237, 1)),
-                            elevation: MaterialStatePropertyAll(8),
-                            fixedSize: MaterialStatePropertyAll(Size(100, 60))),
-                        onPressed: () {
-                          Navigator.pushNamed(context, '/homePage');
-                        },
-                        child: const Text(
-                          'GET   STARTED',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20,
-                              fontFamily: 'Georgia'),
-                        )))
-              ],
-            ))),
-      ),
-    );
+                    ),
+                    const Positioned(
+                        left: 12,
+                        top: 50,
+                        // right: 20,
+                        child: SizedBox(
+                          width: 400,
+                          child: Text(
+                            'Frenchify French \nLearning Library',
+                            style: TextStyle(
+                                fontSize: 28,
+                                fontFamily: 'Helvetica',
+                                fontWeight: FontWeight.w600,
+                                color: Colors.yellowAccent),
+                            overflow: TextOverflow.clip,
+                            textAlign: TextAlign.center,
+                          ),
+                        )),
+                    const Positioned(
+                        top: 200,
+                        left: 5,
+                        child: SizedBox(
+                          width: 375,
+                          child: Text(
+                            'Bonjour! Frenchify is the perfect app for anyone looking to learn or improve their French language skills, with its user-friendly interface and innovative features making learning fun and interactive.',
+                            style:
+                                TextStyle(color: Colors.orange, fontSize: 17),
+                            overflow: TextOverflow.clip,
+                            textAlign: TextAlign.justify,
+                            textScaleFactor: 1.2,
+                          ),
+                        )),
+                    Positioned(
+                        top: 550,
+                        left: 50,
+                        right: 50,
+                        child: TextButton(
+                            style: const ButtonStyle(
+                                backgroundColor: MaterialStatePropertyAll(
+                                    Color.fromRGBO(100, 149, 237, 1)),
+                                elevation: MaterialStatePropertyAll(8),
+                                fixedSize:
+                                    MaterialStatePropertyAll(Size(100, 60))),
+                            onPressed: () {
+                              Navigator.pushNamed(context, '/homePage');
+                            },
+                            child: const Text(
+                              'GET   STARTED',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                  fontFamily: 'Georgia'),
+                            )))
+                  ],
+                ))),
+          ),
+        ));
   }
 }
