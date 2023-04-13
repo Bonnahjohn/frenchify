@@ -29,7 +29,7 @@ class Beginner extends StatelessWidget {
               child: ListTile(
                 leading: Icon(Icons.numbers),
                 title: Text('Basic phrases'),
-                subtitle: Text(''),
+                subtitle: Text('phrase de base'),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
                   Navigator.pushNamed(context, '/Basic');
@@ -43,43 +43,53 @@ class Beginner extends StatelessWidget {
                 subtitle: const Text(
                     "Les jours de la semaine et Les mois de l'annee"),
                 trailing: const Icon(Icons.arrow_right),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/Days');
+                },
               ),
             ),
             Card(
               child: ListTile(
                 leading: Icon(Icons.family_restroom),
                 title: Text('Numbers and counting'),
-                subtitle: Text(''),
+                subtitle: Text('Nombres et comptage'),
                 trailing: Icon(Icons.arrow_right),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/Numbers');
+                },
               ),
             ),
             Card(
               child: ListTile(
                 leading: Icon(Icons.timeline),
                 title: Text('Colors and describing things'),
-                subtitle: Text(''),
+                subtitle: Text('couleurs et description des choses'),
                 trailing: Icon(Icons.arrow_right),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/Basic');
+                },
               ),
             ),
             Card(
               child: ListTile(
                 leading: Icon(Icons.abc_sharp),
                 title: Text('Family and relationships'),
-                subtitle: Text('La famille et '),
+                subtitle: Text('Famille et relations '),
                 trailing: Icon(Icons.arrow_right),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/Basic');
+                },
               ),
             ),
             Card(
               child: ListTile(
                 leading: Icon(Icons.abc_sharp),
                 title: Text('Time and dates'),
-                subtitle: Text(''),
+                subtitle: Text('Heure et dates'),
                 trailing: Icon(Icons.arrow_right),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/Basic');
+                },
               ),
             ),
             Card(
@@ -88,24 +98,30 @@ class Beginner extends StatelessWidget {
                 title: Text('Profession'),
                 subtitle: Text('Les professions'),
                 trailing: Icon(Icons.arrow_right),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/Basic');
+                },
               ),
             ),
             Card(
               child: ListTile(
                 leading: Icon(Icons.abc_sharp),
                 title: Text('Public holidays and special days(Festivals)'),
-                subtitle: Text(''),
+                subtitle: Text('Jours fériés et jours spéciaux Festivals'),
                 trailing: Icon(Icons.arrow_right),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/Basic');
+                },
               ),
             ),
             Card(
               child: ListTile(
                 leading: Icon(Icons.south_east_outlined),
                 title: Text('Weather and seasons'),
-                subtitle: Text(''),
-                onTap: () {},
+                subtitle: Text('Météo et saison'),
+                onTap: () {
+                  Navigator.pushNamed(context, '/Basic');
+                },
               ),
             ),
             const SizedBox(
