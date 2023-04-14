@@ -29,3 +29,7 @@ String tensesIntro =
 
 String prensenT =
     "The present tense is one of the most commonly used tenses in French, and it is used to express actions and states that are happening right now or are habitual. Understanding the present tense is essential for speaking and understanding French, as it is used frequently in daily conversations.\n\nThe present tense in French has different conjugation patterns for each group of verbs (-er, -ir, and -re) and for irregular verbs. It's essential to learn these patterns to correctly use the present tense in French.\n\nHere are the conjugation patterns for the present tense of regular verbs:\n\n(i)-er verbs: To conjugate -er verbs in the present tense, drop the -er ending and add the following endings:";
+
+//past tense text initializing mmmmmmmmmmmmmmmmmmmm
+String pastIntro = "";
+String pastFooter = "";
