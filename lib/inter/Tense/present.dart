@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:frenchify/inter/configuration.dart';
 import 'package:frenchify/main.dart';
 
-class Tenses extends StatelessWidget {
-  const Tenses({super.key});
+class Present extends StatelessWidget {
+  const Present({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -189,7 +189,7 @@ class Irverbs extends StatelessWidget {
           SelectableText('', style: TextStyle(fontSize: 16))
         ]),
         TableRow(children: [
-          SelectableText('nous(We)', style: TextStyle(fontSize: 16)),
+          SelectableText('nous', style: TextStyle(fontSize: 16)),
           SelectableText('', style: TextStyle(fontSize: 16))
         ]),
         TableRow(children: [

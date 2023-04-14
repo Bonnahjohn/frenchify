@@ -25,33 +25,35 @@ class Tenses extends StatelessWidget {
             children: <Widget>[
               Card(
                 child: ListTile(
-                  leading: Icon(Icons.abc_sharp),
+                  leading: Icon(Icons.arrow_downward),
                   title: Text('Present tense'),
                   subtitle: Text(''),
                   trailing: Icon(Icons.arrow_right),
                   onTap: () {
-                    Navigator.pushNamed(context, '/noun');
+                    Navigator.pushNamed(context, '/present');
                   },
                 ),
               ),
               Card(
                 child: ListTile(
-                  leading: Icon(Icons.arrow_downward),
+                  leading: Icon(Icons.keyboard_arrow_left_rounded),
                   title: Text('Past tense'),
                   subtitle: Text(''),
                   trailing: Icon(Icons.arrow_left),
                   onTap: () {
-                    Navigator.pushNamed(context, '/pronoun');
+                    Navigator.pushNamed(context, '/past');
                   },
                 ),
               ),
               Card(
                 child: ListTile(
-                  leading: Icon(Icons.arrow_right),
+                  leading: Icon(Icons.arrow_right_alt_outlined),
                   title: Text('Future tense'),
                   subtitle: Text(''),
                   trailing: Icon(Icons.arrow_right),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, '/future');
+                  },
                 ),
               ),
             ],
