@@ -67,3 +67,12 @@ String publicIntro =
 
 String famIntro =
     "In France, families are very important, and they have special names for different family members. So instead of just saying 'mom' or 'dad', they say 'maman' and 'papa'. And if you have a grandma or grandpa, you would call them 'grand-mère' or 'grand-père'. It's kind of like having a special name just for your family!.These terms are used both in conversation and in writing, and they reflect the close relationships that French people have with their families. Many French families gather together frequently for meals, celebrations, and other important events, and family is often at the center of social life.";
+
+String dateIntro =
+    "Today we are going to learn some interesting information about how French people talk about time and date. Time and dates are an important aspect of daily life in France, and the French have developed their own unique way of expressing them.\n\nTo give you a better idea, I've created a table that lists some common French expressions related to time and   their corresponding meanings in English:";
+
+String timeIntro =
+    "In French, the 24-hour clock is commonly used, so if you hear someone say \"Il est vingt heures\" it means \"It's 8:00 pm\" in English. The French also use the 12-hour clock, but it's less common.\n\n I've created a table that lists some common French expressions related to time and their corresponding meanings in English:";
+
+String timeFooter =
+    "In addition to these expressions, the French also use the 24-hour clock, which means that they count the hours from 0 to 23. For example, if it's 2:00 pm, the French would say \"il est quatorze heures\" (it is 14:00).\nIt's important to note that the French value punctuality and timeliness, so it's considered rude to be late for appointments or meetings. It's also common for the French to take a break in the middle of the day, usually around noon, for lunch and relaxation.\n\nOverall, time and date are important aspects of French culture, and the French have developed their own unique expressions to convey them.";

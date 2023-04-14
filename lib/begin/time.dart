@@ -21,49 +21,71 @@ class Time extends StatelessWidget {
           child: Column(
             children: <Widget>[
               SelectableText(
-                myIntro,
+                dateIntro,
                 style: TextStyle(fontSize: 16),
               ),
 
-              SelectableText(
-                'First, let\'s start with the numbers from one to ten:',
-                style: TextStyle(fontSize: 16),
-              ),
               //lessonclass mmmmmmmmmmmmmmmmmmmmmm
               SizedBox(
                 height: 10,
               ),
-              Nums(),
+              Dates(),
               SizedBox(
                 height: 20,
               ),
               SelectableText(
-                next,
+                'Time/L\'heure',
+                style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    decoration: TextDecoration.underline),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              SelectableText(
+                timeIntro,
                 style: TextStyle(fontSize: 16),
               ),
               SizedBox(
                 height: 10,
               ),
-              SelectableText(
-                'Here are some examples of how to count in French:',
-                style: TextStyle(fontSize: 16),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-
+              My(),
               SizedBox(
                 height: 20,
               ),
               SelectableText(
-                subIntro,
-                style: TextStyle(fontSize: 16),
-              ),
-              SizedBox(
-                height: 25,
+                'Asking question about time.',
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               SelectableText(
-                finalNote,
+                'Quelle heure est-il ? /Il est quelle heure ?(What says the time)',
+                style: TextStyle(
+                  fontSize: 16,
+                ),
+              ),
+              SelectableText(
+                'Responds',
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              SelectableText(
+                'Il est...(It is ...)',
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              SelectableText(
+                timeFooter,
                 style: TextStyle(fontSize: 16),
               ),
               SizedBox(
@@ -85,8 +107,8 @@ class Time extends StatelessWidget {
 
 //intoduction table mmmmmmmmmmmmmmmmmmmmmmmmm
 
-class Nums extends StatelessWidget {
-  const Nums({super.key});
+class Dates extends StatelessWidget {
+  const Dates({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -96,72 +118,150 @@ class Nums extends StatelessWidget {
       children: [
         TableRow(children: [
           SelectableText(
-            'Number',
+            'French',
             style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),
-          SelectableText('French',
+          SelectableText('Pronunciation',
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               textAlign: TextAlign.center),
-          SelectableText('Pronunciation',
+          SelectableText('Meaning',
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               textAlign: TextAlign.center)
         ]),
         TableRow(children: [
-          SelectableText('1',
+          SelectableText('Aujourd\'hui',
               style: TextStyle(fontSize: 16), textAlign: TextAlign.center),
-          SelectableText('un',
+          SelectableText('',
               style: TextStyle(fontSize: 16), textAlign: TextAlign.center),
-          SelectableText('ahn',
+          SelectableText('Today',
               style: TextStyle(fontSize: 16), textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('2', textAlign: TextAlign.center),
-          SelectableText(' deux', textAlign: TextAlign.center),
-          SelectableText('duh', textAlign: TextAlign.center),
+          SelectableText('Demain', textAlign: TextAlign.center),
+          SelectableText(' ', textAlign: TextAlign.center),
+          SelectableText('Tomorrow', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText("3", textAlign: TextAlign.center),
-          SelectableText('trois', textAlign: TextAlign.center),
-          SelectableText('twah', textAlign: TextAlign.center),
+          SelectableText("Hier", textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
+          SelectableText('Yesterday', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('4', textAlign: TextAlign.center),
-          SelectableText('quatre', textAlign: TextAlign.center),
-          SelectableText('katr', textAlign: TextAlign.center),
+          SelectableText('Maintenant', textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
+          SelectableText('Now', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('5', textAlign: TextAlign.center),
-          SelectableText('cinq', textAlign: TextAlign.center),
-          SelectableText('sank', textAlign: TextAlign.center),
+          SelectableText('Midi', textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
+          SelectableText('Noon', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('6', textAlign: TextAlign.center),
-          SelectableText('six', textAlign: TextAlign.center),
-          SelectableText('sees', textAlign: TextAlign.center),
+          SelectableText('Minuit', textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
+          SelectableText('Midnight', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('7', textAlign: TextAlign.center),
-          SelectableText('sept', textAlign: TextAlign.center),
-          SelectableText(' seht', textAlign: TextAlign.center),
+          SelectableText('Matin', textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
+          SelectableText(' Morning', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('8', textAlign: TextAlign.center),
-          SelectableText(' huit', textAlign: TextAlign.center),
-          SelectableText('wheet', textAlign: TextAlign.center),
+          SelectableText('Après-midi', textAlign: TextAlign.center),
+          SelectableText(' ', textAlign: TextAlign.center),
+          SelectableText('Afternoon', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('9', textAlign: TextAlign.center),
-          SelectableText('neuf', textAlign: TextAlign.center),
-          SelectableText('nuhf', textAlign: TextAlign.center),
+          SelectableText('Soir', textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
+          SelectableText('Evening', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('10', textAlign: TextAlign.center),
-          SelectableText('dix ', textAlign: TextAlign.center),
-          SelectableText('dees', textAlign: TextAlign.center),
+          SelectableText('Nuit	', textAlign: TextAlign.center),
+          SelectableText(' ', textAlign: TextAlign.center),
+          SelectableText('Night', textAlign: TextAlign.center),
         ]),
       ],
     );
   }
 }
 //next number of the content mmmmmmmmmmmmmm
+
+//intoduction table mmmmmmmmmmmmmmmmmmmmmmmmm
+
+class My extends StatelessWidget {
+  const My({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Table(
+      textDirection: TextDirection.ltr,
+      border: TableBorder.all(color: Color.fromRGBO(100, 149, 237, 1)),
+      children: [
+        TableRow(children: [
+          SelectableText(
+            'French',
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+            textAlign: TextAlign.center,
+          ),
+          SelectableText('Pronunciation',
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              textAlign: TextAlign.center),
+          SelectableText('Meaning',
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              textAlign: TextAlign.center)
+        ]),
+        TableRow(children: [
+          SelectableText('Heure	',
+              style: TextStyle(fontSize: 16), textAlign: TextAlign.center),
+          SelectableText('',
+              style: TextStyle(fontSize: 16), textAlign: TextAlign.center),
+          SelectableText('Hour',
+              style: TextStyle(fontSize: 16), textAlign: TextAlign.center),
+        ]),
+        TableRow(children: [
+          SelectableText('Minute', textAlign: TextAlign.center),
+          SelectableText(' ', textAlign: TextAlign.center),
+          SelectableText('Minute', textAlign: TextAlign.center),
+        ]),
+        TableRow(children: [
+          SelectableText("Seconde", textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
+          SelectableText('Second', textAlign: TextAlign.center),
+        ]),
+        TableRow(children: [
+          SelectableText('Quart d\'heure', textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
+          SelectableText('15 minutes', textAlign: TextAlign.center),
+        ]),
+        TableRow(children: [
+          SelectableText('Demi-heure', textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
+          SelectableText('Half hour', textAlign: TextAlign.center),
+        ]),
+        TableRow(children: [
+          SelectableText('Trois quarts d\'heure', textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
+          SelectableText('45 minutes', textAlign: TextAlign.center),
+        ]),
+        TableRow(children: [
+          SelectableText('Une heure pile', textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
+          SelectableText(' Exactly one hour', textAlign: TextAlign.center),
+        ]),
+        TableRow(children: [
+          SelectableText('Une heure et demie', textAlign: TextAlign.center),
+          SelectableText(' ', textAlign: TextAlign.center),
+          SelectableText('One and a half hours', textAlign: TextAlign.center),
+        ]),
+        TableRow(children: [
+          SelectableText('Deux heures moins le quart',
+              textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
+          SelectableText('Quarter to two', textAlign: TextAlign.center),
+        ]),
+      ],
+    );
+  }
+}
