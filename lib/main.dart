@@ -12,20 +12,26 @@ import 'package:frenchify/Pages/translator.dart';
 import 'package:frenchify/begin/begin.dart';
 import 'package:frenchify/begin/salutation.dart';
 import 'package:frenchify/begin/basic.dart';
-import 'begin/days.dart';
-import 'begin/numbers.dart';
-import 'begin/color.dart';
-import 'begin/family.dart';
-import 'begin/time.dart';
-import 'begin/prof.dart';
-import 'begin/public.dart';
-import 'begin/weather.dart';
+import 'package:frenchify/begin/days.dart';
+import 'package:frenchify/begin/numbers.dart';
+import 'package:frenchify/begin/color.dart';
+import 'package:frenchify/begin/family.dart';
+import 'package:frenchify/begin/time.dart';
+import 'package:frenchify/begin/prof.dart';
+import 'package:frenchify/begin/public.dart';
+import 'package:frenchify/begin/weather.dart';
+// mmmmmmmmmmmmmmmmmmmmmmmmmmm intermediate routing mmmmmmmmmmmmmmmmmmmmmm
+import 'package:frenchify/inter/noun.dart';
+import 'inter/pronoun.dart';
+import 'package:frenchify/inter/verb.dart';
+import 'package:frenchify/inter/preposition.dart';
 // mmmmmmmmmmmmmmmmmmmmmmmmmmm advance routing mmmmmmmmmmmmmmmmmmmmmm
 import 'package:frenchify/advan/content.dart';
 
-import 'advan/Letter/informal.dart';
-import 'advan/Letter/formal.dart';
+import 'package:frenchify/advan/Letter/informal.dart';
+import 'package:frenchify/advan/Letter/formal.dart';
 import 'package:frenchify/advan/Letter/letterimage.dart';
+//import 'Pages/function.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -53,7 +59,11 @@ void main() {
       '/family': (context) => Family(),
       '/time': (context) => Time(),
       '/prof': (context) => Prof(),
-      '/public': (context) => Public()
+      '/public': (context) => Public(),
+      '/noun': (context) => Noun(),
+      '/pronoun': (context) => Pronoun(),
+      '/verb': (context) => Verb(),
+      '/preposition': (context) => Preposition()
     },
   ));
 }

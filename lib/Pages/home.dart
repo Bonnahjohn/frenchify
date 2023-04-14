@@ -15,6 +15,9 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
+//search query mmmmmmmmmmmmmmmmmm
+bool _isSerached = false;
+
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
@@ -34,9 +37,21 @@ class _HomePageState extends State<HomePage> {
             ),
           ]),
           backgroundColor: Color.fromRGBO(100, 149, 237, 1),
-          title: Text('French Level'),
+          title: _isSerached
+              ? TextField(
+                  decoration: InputDecoration(
+                    hintText: 'Search...',
+                  ),
+                )
+              : Text('French Level'),
           actions: [
-            IconButton(onPressed: () {}, icon: Icon(Icons.search)),
+            IconButton(
+                onPressed: () {
+                  setState(() {
+                    _isSerached = !_isSerached;
+                  });
+                },
+                icon: Icon(Icons.search)),
             IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
           ],
         ),

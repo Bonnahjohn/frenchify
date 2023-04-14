@@ -20,7 +20,9 @@ class Intermediate extends StatelessWidget {
                 title: Text('Nouns and Articles'),
                 subtitle: Text(''),
                 trailing: Icon(Icons.arrow_right),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/noun');
+                },
               ),
             ),
             Card(
@@ -29,7 +31,9 @@ class Intermediate extends StatelessWidget {
                 title: Text('Pronouns'),
                 subtitle: Text(''),
                 trailing: Icon(Icons.arrow_right),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/pronoun');
+                },
               ),
             ),
             Card(
@@ -38,7 +42,9 @@ class Intermediate extends StatelessWidget {
                 title: Text('Verbs'),
                 subtitle: Text(''),
                 trailing: Icon(Icons.arrow_right),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/verb');
+                },
               ),
             ),
             Card(
@@ -83,7 +89,9 @@ class Intermediate extends StatelessWidget {
                 title: Text('prepositions'),
                 subtitle: Text(''),
                 trailing: Icon(Icons.arrow_right),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/preposition');
+                },
               ),
             ),
             const SizedBox(

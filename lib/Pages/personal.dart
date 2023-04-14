@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:frenchify/main.dart';
 import 'package:frenchify/Pages/home.dart';
+import 'function.dart';
 
 class Personal extends StatelessWidget {
   const Personal({super.key});
@@ -24,9 +25,7 @@ class Personal extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: SingleChildScrollView(
           child: Column(
-            children: [
-              Image.asset('assets/images/ok.png', fit: BoxFit.fitHeight)
-            ],
+            children: const [Text('data')],
           ),
         ),
       )),
