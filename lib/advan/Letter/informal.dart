@@ -126,7 +126,7 @@ class Informal extends StatelessWidget {
                         decoration: TextDecoration.underline,
                         color: Colors.black,
                         fontWeight: FontWeight.bold,
-                        fontSize: 20)),
+                        fontSize: 17)),
                 TextSpan(
                     text: '\n1.',
                     style: TextStyle(

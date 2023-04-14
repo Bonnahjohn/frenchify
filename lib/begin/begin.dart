@@ -40,7 +40,7 @@ class Beginner extends StatelessWidget {
             ),
             Card(
               child: ListTile(
-                leading: Image.asset('assets/images/prof.jpg',
+                leading: Image.asset('assets/images/day.jpg',
                     width: 60, height: 100),
                 title: const Text('Days of the Week and Month of the year'),
                 subtitle: const Text(

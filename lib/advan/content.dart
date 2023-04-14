@@ -41,15 +41,7 @@ class Letter extends StatelessWidget {
                   },
                 ),
               ),
-              Card(
-                child: ListTile(
-                  leading: Icon(Icons.abc_sharp),
-                  title: Text('Refusal and accepted invitation'),
-                  subtitle: Text('Refuser et accepter une invitation'),
-                  trailing: Icon(Icons.arrow_right),
-                  onTap: () {},
-                ),
-              ),
+             
               const SizedBox(
                 height: 30,
               )

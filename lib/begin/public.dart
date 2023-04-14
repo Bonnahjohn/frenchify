@@ -127,7 +127,7 @@ class Pub extends StatelessWidget {
           SelectableText('', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('La sain valentin', textAlign: TextAlign.center),
+          SelectableText('La saint valentin', textAlign: TextAlign.center),
           SelectableText('La saint valentin', textAlign: TextAlign.center),
           SelectableText('', textAlign: TextAlign.center),
         ]),
