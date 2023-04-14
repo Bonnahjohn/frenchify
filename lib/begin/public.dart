@@ -21,51 +21,26 @@ class Public extends StatelessWidget {
           child: Column(
             children: <Widget>[
               SelectableText(
-                myIntro,
+                publicIntro,
                 style: TextStyle(fontSize: 16),
               ),
 
-              SelectableText(
-                'First, let\'s start with the numbers from one to ten:',
-                style: TextStyle(fontSize: 16),
-              ),
               //lessonclass mmmmmmmmmmmmmmmmmmmmmm
               SizedBox(
                 height: 10,
               ),
-              Nums(),
+              Pub(),
               SizedBox(
                 height: 20,
               ),
               SelectableText(
-                next,
+                'You can check the french name of the festivals you celebrate in your country by using  the translator in this app.',
                 style: TextStyle(fontSize: 16),
               ),
               SizedBox(
-                height: 10,
-              ),
-              SelectableText(
-                'Here are some examples of how to count in French:',
-                style: TextStyle(fontSize: 16),
-              ),
-              SizedBox(
-                height: 10,
+                height: 20,
               ),
 
-              SizedBox(
-                height: 20,
-              ),
-              SelectableText(
-                subIntro,
-                style: TextStyle(fontSize: 16),
-              ),
-              SizedBox(
-                height: 25,
-              ),
-              SelectableText(
-                finalNote,
-                style: TextStyle(fontSize: 16),
-              ),
               SizedBox(
                 height: 50,
               ),
@@ -85,8 +60,8 @@ class Public extends StatelessWidget {
 
 //intoduction table mmmmmmmmmmmmmmmmmmmmmmmmm
 
-class Nums extends StatelessWidget {
-  const Nums({super.key});
+class Pub extends StatelessWidget {
+  const Pub({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -96,7 +71,7 @@ class Nums extends StatelessWidget {
       children: [
         TableRow(children: [
           SelectableText(
-            'Number',
+            'English',
             style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),
@@ -108,57 +83,59 @@ class Nums extends StatelessWidget {
               textAlign: TextAlign.center)
         ]),
         TableRow(children: [
-          SelectableText('1',
+          SelectableText('New Year\'s Day',
               style: TextStyle(fontSize: 16), textAlign: TextAlign.center),
-          SelectableText('un',
+          SelectableText('Le jour de l\'an',
               style: TextStyle(fontSize: 16), textAlign: TextAlign.center),
-          SelectableText('ahn',
+          SelectableText('',
               style: TextStyle(fontSize: 16), textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('2', textAlign: TextAlign.center),
-          SelectableText(' deux', textAlign: TextAlign.center),
-          SelectableText('duh', textAlign: TextAlign.center),
+          SelectableText('Easter', textAlign: TextAlign.center),
+          SelectableText(' Pâques', textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText("3", textAlign: TextAlign.center),
-          SelectableText('trois', textAlign: TextAlign.center),
-          SelectableText('twah', textAlign: TextAlign.center),
+          SelectableText("Labor Day ", textAlign: TextAlign.center),
+          SelectableText('La fête du travail', textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('4', textAlign: TextAlign.center),
-          SelectableText('quatre', textAlign: TextAlign.center),
-          SelectableText('katr', textAlign: TextAlign.center),
+          SelectableText('Victory in Europe Day ', textAlign: TextAlign.center),
+          SelectableText('Le jour de la Victoire', textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('5', textAlign: TextAlign.center),
-          SelectableText('cinq', textAlign: TextAlign.center),
-          SelectableText('sank', textAlign: TextAlign.center),
+          SelectableText('Bastille Day', textAlign: TextAlign.center),
+          SelectableText('(Le 14 juillet', textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('6', textAlign: TextAlign.center),
-          SelectableText('six', textAlign: TextAlign.center),
-          SelectableText('sees', textAlign: TextAlign.center),
+          SelectableText('All Saints\' Day ', textAlign: TextAlign.center),
+          SelectableText('(La Toussaint', textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('7', textAlign: TextAlign.center),
-          SelectableText('sept', textAlign: TextAlign.center),
-          SelectableText(' seht', textAlign: TextAlign.center),
+          SelectableText('Christmas ', textAlign: TextAlign.center),
+          SelectableText('Noël', textAlign: TextAlign.center),
+          SelectableText(' ', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('8', textAlign: TextAlign.center),
-          SelectableText(' huit', textAlign: TextAlign.center),
-          SelectableText('wheet', textAlign: TextAlign.center),
+          SelectableText('French national day', textAlign: TextAlign.center),
+          SelectableText('  La fête  nationale de la France',
+              textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('9', textAlign: TextAlign.center),
-          SelectableText('neuf', textAlign: TextAlign.center),
-          SelectableText('nuhf', textAlign: TextAlign.center),
+          SelectableText('La sain valentin', textAlign: TextAlign.center),
+          SelectableText('La saint valentin', textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('10', textAlign: TextAlign.center),
-          SelectableText('dix ', textAlign: TextAlign.center),
-          SelectableText('dees', textAlign: TextAlign.center),
+          SelectableText('Boxing day', textAlign: TextAlign.center),
+          SelectableText('La Journée des boxeurs ',
+              textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
         ]),
       ],
     );
