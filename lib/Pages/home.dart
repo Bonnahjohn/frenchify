@@ -81,11 +81,11 @@ class Drawers extends StatelessWidget {
         /* mmmmmmmmmmmmmmmmmmmmmmmm personal and its navigation mmmmmmmmmmmmmmmmmmmmmm*\ */
         ListTile(
           leading: Icon(
-            Icons.diamond,
+            Icons.note_add,
             size: 20,
           ),
           title: Text(
-            'Personal study',
+            'Note',
             style: TextStyle(fontSize: 16, color: Colors.black),
           ),
           onTap: () => Navigator.pushNamed(context, '/personal'),
