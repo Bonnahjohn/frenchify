@@ -15,7 +15,7 @@ class Verb extends StatelessWidget {
           IconButton(onPressed: () {}, icon: const Icon(Icons.more_vert))
         ],
         backgroundColor: const Color.fromRGBO(100, 149, 237, 1),
-        title: const Text('Nouns and article'),
+        title: const Text('Verb'),
       ),
       body: SafeArea(
           child: Padding(
@@ -24,7 +24,7 @@ class Verb extends StatelessWidget {
           child: Column(
             children: <Widget>[
               SelectableText(
-                nounIntro,
+                verbIntro,
                 style: const TextStyle(fontSize: 16),
               ),
               const SizedBox(
@@ -35,7 +35,7 @@ class Verb extends StatelessWidget {
                 height: 20,
               ),
               SelectableText(
-                nounFooter,
+                verbFooter,
                 style: const TextStyle(fontSize: 16),
               ),
               const SizedBox(
@@ -61,71 +61,66 @@ class Verbo extends StatelessWidget {
       children: const [
         TableRow(children: [
           SelectableText(
-            'Noun',
+            'Verb',
             style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
           ),
           SelectableText(
-            'Gender',
+            'Present Tense Conjugation',
             style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
           ),
-          SelectableText(
-            'Singular Article',
-            style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
-          ),
-          SelectableText(
-            'Plural Article',
-            style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
-          )
         ]),
         TableRow(children: [
-          SelectableText('Chat (cat)', style: TextStyle(fontSize: 16)),
-          SelectableText('Masculine', style: TextStyle(fontSize: 16)),
-          SelectableText('Le', style: TextStyle(fontSize: 16)),
-          SelectableText('Les', style: TextStyle(fontSize: 16))
+          SelectableText('être (to be)', style: TextStyle(fontSize: 16)),
+          SelectableText('suis, es, est, sommes, êtes, sont',
+              style: TextStyle(fontSize: 16))
         ]),
         TableRow(children: [
-          SelectableText('Table (table)', style: TextStyle(fontSize: 16)),
-          SelectableText('Gender', style: TextStyle(fontSize: 16)),
-          SelectableText('La', style: TextStyle(fontSize: 16)),
-          SelectableText('Les', style: TextStyle(fontSize: 16))
+          SelectableText('avoir (to have)', style: TextStyle(fontSize: 16)),
+          SelectableText('ai, as, a, avons, avez, ont',
+              style: TextStyle(fontSize: 16))
         ]),
         TableRow(children: [
-          SelectableText('Livre (book)', style: TextStyle(fontSize: 16)),
-          SelectableText('Masculine', style: TextStyle(fontSize: 16)),
-          SelectableText('Le', style: TextStyle(fontSize: 16)),
-          SelectableText('Les', style: TextStyle(fontSize: 16))
+          SelectableText('aller(go)', style: TextStyle(fontSize: 16)),
+          SelectableText('vais, vas, va, allons, allez, vont',
+              style: TextStyle(fontSize: 16))
         ]),
         TableRow(children: [
-          SelectableText('Pomme (apple)', style: TextStyle(fontSize: 16)),
-          SelectableText('Feminine', style: TextStyle(fontSize: 16)),
-          SelectableText('La', style: TextStyle(fontSize: 16)),
-          SelectableText('Les', style: TextStyle(fontSize: 16))
+          SelectableText('faire (to do/make)', style: TextStyle(fontSize: 16)),
+          SelectableText('fais, fais, fait, faisons, faites, font',
+              style: TextStyle(fontSize: 16))
         ]),
         TableRow(children: [
-          SelectableText('Fleur (flower)', style: TextStyle(fontSize: 16)),
-          SelectableText('Feminine', style: TextStyle(fontSize: 16)),
-          SelectableText('La', style: TextStyle(fontSize: 16)),
-          SelectableText('Les', style: TextStyle(fontSize: 16))
+          SelectableText('dire (to say)', style: TextStyle(fontSize: 16)),
+          SelectableText('dis, dis, dit, disons, dites, disent',
+              style: TextStyle(fontSize: 16))
         ]),
         TableRow(children: [
-          SelectableText('Chien (dog)', style: TextStyle(fontSize: 16)),
-          SelectableText('Masculine', style: TextStyle(fontSize: 16)),
-          SelectableText('Le', style: TextStyle(fontSize: 16)),
-          SelectableText('Les', style: TextStyle(fontSize: 16))
-        ]),
-        TableRow(children: [
-          SelectableText('L\'oiseau (The bird)',
+          SelectableText('pouvoir (can/to be able to)',
               style: TextStyle(fontSize: 16)),
-          SelectableText('Masculine', style: TextStyle(fontSize: 16)),
-          SelectableText("L' ", style: TextStyle(fontSize: 16)),
-          SelectableText('Les', style: TextStyle(fontSize: 16))
+          SelectableText('peux, peux, peut, pouvons, pouvez, peuvent',
+              style: TextStyle(fontSize: 16))
         ]),
         TableRow(children: [
-          SelectableText('La voiture (The car)',
+          SelectableText('vouloir (to want)', style: TextStyle(fontSize: 16)),
+          SelectableText("veux, veux, veut, voulons, voulez, veulent",
               style: TextStyle(fontSize: 16)),
-          SelectableText('Feminine', style: TextStyle(fontSize: 16)),
-          SelectableText("La ", style: TextStyle(fontSize: 16)),
-          SelectableText('Les', style: TextStyle(fontSize: 16))
+        ]),
+        TableRow(children: [
+          SelectableText('devoir (to have to/must)',
+              style: TextStyle(fontSize: 16)),
+          SelectableText('dois, dois, doit, devons, devez, doivent',
+              style: TextStyle(fontSize: 16)),
+        ]),
+        TableRow(children: [
+          SelectableText('savoir (to know (facts))',
+              style: TextStyle(fontSize: 16)),
+          SelectableText('sais, sais, sait, savons, savez, savent',
+              style: TextStyle(fontSize: 16)),
+        ]),
+        TableRow(children: [
+          SelectableText('venir(to come)', style: TextStyle(fontSize: 16)),
+          SelectableText('viens, viens, vient, venons, venez, viennent',
+              style: TextStyle(fontSize: 16)),
         ])
       ],
     );

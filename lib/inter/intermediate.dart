@@ -53,16 +53,9 @@ class Intermediate extends StatelessWidget {
                 title: Text('Tenses'),
                 subtitle: Text(''),
                 trailing: Icon(Icons.arrow_right),
-                onTap: () {},
-              ),
-            ),
-            Card(
-              child: ListTile(
-                leading: Icon(Icons.timeline),
-                title: Text('conjunctions'),
-                subtitle: Text(''),
-                trailing: Icon(Icons.arrow_right),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/tense');
+                },
               ),
             ),
             Card(

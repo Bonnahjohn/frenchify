@@ -24,6 +24,7 @@ import 'package:frenchify/begin/weather.dart';
 import 'package:frenchify/inter/noun.dart';
 import 'inter/pronoun.dart';
 import 'package:frenchify/inter/verb.dart';
+import 'package:frenchify/inter/Tense/tenses.dart';
 import 'package:frenchify/inter/preposition.dart';
 // mmmmmmmmmmmmmmmmmmmmmmmmmmm advance routing mmmmmmmmmmmmmmmmmmmmmm
 import 'package:frenchify/advan/content.dart';
@@ -63,7 +64,8 @@ void main() {
       '/noun': (context) => Noun(),
       '/pronoun': (context) => Pronoun(),
       '/verb': (context) => Verb(),
-      '/preposition': (context) => Preposition()
+      '/preposition': (context) => Preposition(),
+      '/tense': (context) => Tenses()
     },
   ));
 }
