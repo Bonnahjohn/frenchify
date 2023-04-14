@@ -21,51 +21,31 @@ class Family extends StatelessWidget {
           child: Column(
             children: <Widget>[
               SelectableText(
-                myIntro,
+                famIntro,
                 style: TextStyle(fontSize: 16),
               ),
 
               SelectableText(
-                'First, let\'s start with the numbers from one to ten:',
+                '\nHere is a table that shows the French terms for family members and their relationships:',
                 style: TextStyle(fontSize: 16),
               ),
               //lessonclass mmmmmmmmmmmmmmmmmmmmmm
               SizedBox(
                 height: 10,
               ),
-              Nums(),
-              SizedBox(
-                height: 20,
-              ),
-              SelectableText(
-                next,
-                style: TextStyle(fontSize: 16),
-              ),
+              Fam(),
+
               SizedBox(
                 height: 10,
               ),
               SelectableText(
-                'Here are some examples of how to count in French:',
+                'Overall, French families are close-knit and highly valued, and their language reflects this with specific terms for different family members.',
                 style: TextStyle(fontSize: 16),
               ),
               SizedBox(
                 height: 10,
               ),
 
-              SizedBox(
-                height: 20,
-              ),
-              SelectableText(
-                subIntro,
-                style: TextStyle(fontSize: 16),
-              ),
-              SizedBox(
-                height: 25,
-              ),
-              SelectableText(
-                finalNote,
-                style: TextStyle(fontSize: 16),
-              ),
               SizedBox(
                 height: 50,
               ),
@@ -85,8 +65,8 @@ class Family extends StatelessWidget {
 
 //intoduction table mmmmmmmmmmmmmmmmmmmmmmmmm
 
-class Nums extends StatelessWidget {
-  const Nums({super.key});
+class Fam extends StatelessWidget {
+  const Fam({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -96,11 +76,11 @@ class Nums extends StatelessWidget {
       children: [
         TableRow(children: [
           SelectableText(
-            'Number',
+            'Family Member',
             style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),
-          SelectableText('French',
+          SelectableText('French Term',
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               textAlign: TextAlign.center),
           SelectableText('Pronunciation',
@@ -108,57 +88,72 @@ class Nums extends StatelessWidget {
               textAlign: TextAlign.center)
         ]),
         TableRow(children: [
-          SelectableText('1',
+          SelectableText('Mother',
               style: TextStyle(fontSize: 16), textAlign: TextAlign.center),
-          SelectableText('un',
+          SelectableText('Maman',
               style: TextStyle(fontSize: 16), textAlign: TextAlign.center),
-          SelectableText('ahn',
+          SelectableText('',
               style: TextStyle(fontSize: 16), textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('2', textAlign: TextAlign.center),
-          SelectableText(' deux', textAlign: TextAlign.center),
-          SelectableText('duh', textAlign: TextAlign.center),
+          SelectableText('Father', textAlign: TextAlign.center),
+          SelectableText(' Papa', textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText("3", textAlign: TextAlign.center),
-          SelectableText('trois', textAlign: TextAlign.center),
-          SelectableText('twah', textAlign: TextAlign.center),
+          SelectableText("Grandmother", textAlign: TextAlign.center),
+          SelectableText('Grand-mère', textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('4', textAlign: TextAlign.center),
-          SelectableText('quatre', textAlign: TextAlign.center),
-          SelectableText('katr', textAlign: TextAlign.center),
+          SelectableText('Grandfather', textAlign: TextAlign.center),
+          SelectableText('Grand-père', textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('5', textAlign: TextAlign.center),
-          SelectableText('cinq', textAlign: TextAlign.center),
-          SelectableText('sank', textAlign: TextAlign.center),
+          SelectableText('Brother', textAlign: TextAlign.center),
+          SelectableText('Frère', textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('6', textAlign: TextAlign.center),
-          SelectableText('six', textAlign: TextAlign.center),
-          SelectableText('sees', textAlign: TextAlign.center),
+          SelectableText('Sister', textAlign: TextAlign.center),
+          SelectableText('Soeur', textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('7', textAlign: TextAlign.center),
-          SelectableText('sept', textAlign: TextAlign.center),
-          SelectableText(' seht', textAlign: TextAlign.center),
+          SelectableText('Son', textAlign: TextAlign.center),
+          SelectableText('Fils', textAlign: TextAlign.center),
+          SelectableText(' ', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('8', textAlign: TextAlign.center),
-          SelectableText(' huit', textAlign: TextAlign.center),
-          SelectableText('wheet', textAlign: TextAlign.center),
+          SelectableText('Daughter', textAlign: TextAlign.center),
+          SelectableText('Fille', textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('9', textAlign: TextAlign.center),
-          SelectableText('neuf', textAlign: TextAlign.center),
-          SelectableText('nuhf', textAlign: TextAlign.center),
+          SelectableText('Uncle	', textAlign: TextAlign.center),
+          SelectableText('Oncle', textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('10', textAlign: TextAlign.center),
-          SelectableText('dix ', textAlign: TextAlign.center),
-          SelectableText('dees', textAlign: TextAlign.center),
+          SelectableText('Aunt	', textAlign: TextAlign.center),
+          SelectableText('Tante', textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
+        ]),
+        TableRow(children: [
+          SelectableText('Cousin', textAlign: TextAlign.center),
+          SelectableText('Cousin(e) ', textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
+        ]),
+        TableRow(children: [
+          SelectableText('Husband	', textAlign: TextAlign.center),
+          SelectableText('Mari', textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
+        ]),
+        TableRow(children: [
+          SelectableText('Wife', textAlign: TextAlign.center),
+          SelectableText('Femme ', textAlign: TextAlign.center),
+          SelectableText('', textAlign: TextAlign.center),
         ]),
       ],
     );
