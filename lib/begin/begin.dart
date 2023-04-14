@@ -107,7 +107,7 @@ class Beginner extends StatelessWidget {
                 subtitle: Text('Les professions'),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
-                  Navigator.pushNamed(context, '/Basic');
+                  Navigator.pushNamed(context, '/prof');
                 },
               ),
             ),

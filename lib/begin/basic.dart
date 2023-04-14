@@ -65,9 +65,18 @@ class Tables extends StatelessWidget {
           border: TableBorder.all(color: Color.fromRGBO(100, 149, 237, 1)),
           children: [
             TableRow(children: [
-              SelectableText('French Phrase'),
-              Text('Pronunciation'),
-              Text('English Translation'),
+              SelectableText(
+                'French Phrase',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              ),
+              Text(
+                'Pronunciation',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              ),
+              Text(
+                'English Translation',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              ),
             ]),
             TableRow(children: [
               Text('Bonjour'),

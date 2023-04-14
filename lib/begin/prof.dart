@@ -21,14 +21,10 @@ class Prof extends StatelessWidget {
           child: Column(
             children: <Widget>[
               SelectableText(
-                myIntro,
+                profIntro,
                 style: TextStyle(fontSize: 16),
               ),
 
-              SelectableText(
-                'First, let\'s start with the numbers from one to ten:',
-                style: TextStyle(fontSize: 16),
-              ),
               //lessonclass mmmmmmmmmmmmmmmmmmmmmm
               SizedBox(
                 height: 10,
@@ -37,33 +33,12 @@ class Prof extends StatelessWidget {
               SizedBox(
                 height: 20,
               ),
-              SelectableText(
-                next,
-                style: TextStyle(fontSize: 16),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              SelectableText(
-                'Here are some examples of how to count in French:',
-                style: TextStyle(fontSize: 16),
-              ),
-              SizedBox(
-                height: 10,
-              ),
 
-              SizedBox(
-                height: 20,
-              ),
-              SelectableText(
-                subIntro,
-                style: TextStyle(fontSize: 16),
-              ),
               SizedBox(
                 height: 25,
               ),
               SelectableText(
-                finalNote,
+                profFooter,
                 style: TextStyle(fontSize: 16),
               ),
               SizedBox(
@@ -96,69 +71,69 @@ class Nums extends StatelessWidget {
       children: [
         TableRow(children: [
           SelectableText(
-            'Number',
+            'French',
             style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),
-          SelectableText('French',
+          SelectableText('Pronunciation',
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               textAlign: TextAlign.center),
-          SelectableText('Pronunciation',
+          SelectableText('English',
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               textAlign: TextAlign.center)
         ]),
         TableRow(children: [
-          SelectableText('1',
+          SelectableText('Médecin',
               style: TextStyle(fontSize: 16), textAlign: TextAlign.center),
-          SelectableText('un',
+          SelectableText('meh-duh-SAN',
               style: TextStyle(fontSize: 16), textAlign: TextAlign.center),
-          SelectableText('ahn',
+          SelectableText('Doctor',
               style: TextStyle(fontSize: 16), textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('2', textAlign: TextAlign.center),
-          SelectableText(' deux', textAlign: TextAlign.center),
-          SelectableText('duh', textAlign: TextAlign.center),
+          SelectableText('Avocat', textAlign: TextAlign.center),
+          SelectableText(' ah-voh-KAH', textAlign: TextAlign.center),
+          SelectableText('Lawyer', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText("3", textAlign: TextAlign.center),
-          SelectableText('trois', textAlign: TextAlign.center),
-          SelectableText('twah', textAlign: TextAlign.center),
+          SelectableText("Enseignant(e)", textAlign: TextAlign.center),
+          SelectableText('on-say-nyahn(t)', textAlign: TextAlign.center),
+          SelectableText('Teacher', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('4', textAlign: TextAlign.center),
-          SelectableText('quatre', textAlign: TextAlign.center),
-          SelectableText('katr', textAlign: TextAlign.center),
+          SelectableText('Ingénieur(e)', textAlign: TextAlign.center),
+          SelectableText('an-jay-nieur', textAlign: TextAlign.center),
+          SelectableText('Engineer', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('5', textAlign: TextAlign.center),
-          SelectableText('cinq', textAlign: TextAlign.center),
-          SelectableText('sank', textAlign: TextAlign.center),
+          SelectableText('Artiste', textAlign: TextAlign.center),
+          SelectableText('ar-teest ', textAlign: TextAlign.center),
+          SelectableText('Artist', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('6', textAlign: TextAlign.center),
-          SelectableText('six', textAlign: TextAlign.center),
-          SelectableText('sees', textAlign: TextAlign.center),
+          SelectableText('Journaliste', textAlign: TextAlign.center),
+          SelectableText('	zhoor-nah-leest', textAlign: TextAlign.center),
+          SelectableText('Journalist', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('7', textAlign: TextAlign.center),
-          SelectableText('sept', textAlign: TextAlign.center),
-          SelectableText(' seht', textAlign: TextAlign.center),
+          SelectableText('Vendeur(euse)', textAlign: TextAlign.center),
+          SelectableText('von-duhr(uh)', textAlign: TextAlign.center),
+          SelectableText(' Salesperson', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('8', textAlign: TextAlign.center),
-          SelectableText(' huit', textAlign: TextAlign.center),
-          SelectableText('wheet', textAlign: TextAlign.center),
+          SelectableText('Chef de cuisine', textAlign: TextAlign.center),
+          SelectableText(' shef duh kwee-zeen', textAlign: TextAlign.center),
+          SelectableText('Chef', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('9', textAlign: TextAlign.center),
-          SelectableText('neuf', textAlign: TextAlign.center),
-          SelectableText('nuhf', textAlign: TextAlign.center),
+          SelectableText('Écrivain(e)', textAlign: TextAlign.center),
+          SelectableText('ay-kree-van', textAlign: TextAlign.center),
+          SelectableText('Writer', textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('10', textAlign: TextAlign.center),
-          SelectableText('dix ', textAlign: TextAlign.center),
-          SelectableText('dees', textAlign: TextAlign.center),
+          SelectableText('Policier(ère)', textAlign: TextAlign.center),
+          SelectableText(' poh-lee-see-ay(uhr)', textAlign: TextAlign.center),
+          SelectableText(' Police officer', textAlign: TextAlign.center),
         ]),
       ],
     );

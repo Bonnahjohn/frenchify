@@ -54,3 +54,9 @@ String myFooter =
 //weather intro mmmmmmmmmmmmmmmmmm
 String season =
     'Have you ever wondered how French people talk about the weather? Well, just like in English, we use different words to describe different types of weather, such as "sunny," "rainy," "windy," and "cold." \n \n In French, the word for "weather" is "le temps." Here are some common weather-related phrases and their meanings:';
+
+//profession intro mmmmmmmmmmmmmmmmmm
+String profIntro =
+    "I wanted to share with you some interesting information about how French people talk about professions. In France, jobs and careers are viewed with great importance and are often considered a key aspect of a person's identity.\n \nTo give you a better idea, I've created a table that lists a few common French professions and their corresponding job titles in English:";
+String profFooter =
+    "As you can see, French job titles are similar to those in English, but there are some differences. For example, the word \"médecin\" translates to \"doctor\" in English, but in French it's used as a noun rather than a title.\nLearning how to pronounce French job titles correctly can be a challenge, but it can also be a rewarding experience. If you're interested in improving your French language skills, practicing the pronunciation of these job titles can be a great way to start.\n\nFrench people take pride in their professions, and they often use their job titles as a way to introduce themselves in social settings. However, it's important to note that they also value work-life balance and prioritize personal relationships and leisure time.\n\nI hope this information has given you a better understanding of how French people talk about professions.";
