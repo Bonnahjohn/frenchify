@@ -9,3 +9,9 @@ String pronIntro =
     "French Pronouns are used to replace a noun in a sentence to avoid repetition. They are essential to make a sentence less awkward and more concise. In French, pronouns vary according to their function, gender, and number.\n\nHere is a table of the most common French pronouns:";
 String proFooter =
     "It's important to note that French pronouns also change form depending on their position in the sentence (subject or object) and if they are used with prepositions. However, the table above covers the most common forms of French pronouns.";
+//preposition text initializing mmmmmmmmmmmmmmmmmmmm
+String prepIntro =
+    "French prepositions are words that indicate the position or relationship between two nouns or pronouns in a sentence. They are important in French because they can completely change the meaning of a sentence. Here is a table of some common French prepositions";
+
+String prepFooter =
+    "It is important to note that French prepositions can be tricky because they often do not have a direct English equivalent. Therefore, it is necessary to learn them in context and practice their usage to become proficient in the French language.\n\nUnderstanding and mastering French prepositions will greatly enhance your ability to communicate in French and make your language skills more natural and fluid.";

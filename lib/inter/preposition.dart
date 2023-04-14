@@ -15,7 +15,7 @@ class Preposition extends StatelessWidget {
           IconButton(onPressed: () {}, icon: const Icon(Icons.more_vert))
         ],
         backgroundColor: const Color.fromRGBO(100, 149, 237, 1),
-        title: const Text('Nouns and article'),
+        title: const Text('Preposition'),
       ),
       body: SafeArea(
           child: Padding(
@@ -24,7 +24,7 @@ class Preposition extends StatelessWidget {
           child: Column(
             children: <Widget>[
               SelectableText(
-                nounIntro,
+                prepIntro,
                 style: const TextStyle(fontSize: 16),
               ),
               const SizedBox(
@@ -35,7 +35,7 @@ class Preposition extends StatelessWidget {
                 height: 20,
               ),
               SelectableText(
-                nounFooter,
+                prepFooter,
                 style: const TextStyle(fontSize: 16),
               ),
               const SizedBox(
@@ -61,71 +61,73 @@ class Prepo extends StatelessWidget {
       children: const [
         TableRow(children: [
           SelectableText(
-            'Noun',
+            'Preposition',
             style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
           ),
           SelectableText(
-            'Gender',
+            'Example',
             style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
           ),
-          SelectableText(
-            'Singular Article',
-            style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
-          ),
-          SelectableText(
-            'Plural Article',
-            style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
-          )
         ]),
         TableRow(children: [
-          SelectableText('Chat (cat)', style: TextStyle(fontSize: 16)),
-          SelectableText('Masculine', style: TextStyle(fontSize: 16)),
-          SelectableText('Le', style: TextStyle(fontSize: 16)),
-          SelectableText('Les', style: TextStyle(fontSize: 16))
-        ]),
-        TableRow(children: [
-          SelectableText('Table (table)', style: TextStyle(fontSize: 16)),
-          SelectableText('Gender', style: TextStyle(fontSize: 16)),
-          SelectableText('La', style: TextStyle(fontSize: 16)),
-          SelectableText('Les', style: TextStyle(fontSize: 16))
-        ]),
-        TableRow(children: [
-          SelectableText('Livre (book)', style: TextStyle(fontSize: 16)),
-          SelectableText('Masculine', style: TextStyle(fontSize: 16)),
-          SelectableText('Le', style: TextStyle(fontSize: 16)),
-          SelectableText('Les', style: TextStyle(fontSize: 16))
-        ]),
-        TableRow(children: [
-          SelectableText('Pomme (apple)', style: TextStyle(fontSize: 16)),
-          SelectableText('Feminine', style: TextStyle(fontSize: 16)),
-          SelectableText('La', style: TextStyle(fontSize: 16)),
-          SelectableText('Les', style: TextStyle(fontSize: 16))
-        ]),
-        TableRow(children: [
-          SelectableText('Fleur (flower)', style: TextStyle(fontSize: 16)),
-          SelectableText('Feminine', style: TextStyle(fontSize: 16)),
-          SelectableText('La', style: TextStyle(fontSize: 16)),
-          SelectableText('Les', style: TextStyle(fontSize: 16))
-        ]),
-        TableRow(children: [
-          SelectableText('Chien (dog)', style: TextStyle(fontSize: 16)),
-          SelectableText('Masculine', style: TextStyle(fontSize: 16)),
-          SelectableText('Le', style: TextStyle(fontSize: 16)),
-          SelectableText('Les', style: TextStyle(fontSize: 16))
-        ]),
-        TableRow(children: [
-          SelectableText('L\'oiseau (The bird)',
+          SelectableText(' à (at, to, in)', style: TextStyle(fontSize: 16)),
+          SelectableText('Je vais à l\'école. \n(I am going to school.)',
               style: TextStyle(fontSize: 16)),
-          SelectableText('Masculine', style: TextStyle(fontSize: 16)),
-          SelectableText("L' ", style: TextStyle(fontSize: 16)),
-          SelectableText('Les', style: TextStyle(fontSize: 16))
         ]),
         TableRow(children: [
-          SelectableText('La voiture (The car)',
+          SelectableText('avec (With)', style: TextStyle(fontSize: 16)),
+          SelectableText("J'ai mangé avec mes amis. \n(I ate with my friends.)",
+              style: TextStyle(fontSize: 16))
+        ]),
+        TableRow(children: [
+          SelectableText('chez \n(at the house of, at the office of)',
               style: TextStyle(fontSize: 16)),
-          SelectableText('Feminine', style: TextStyle(fontSize: 16)),
-          SelectableText("La ", style: TextStyle(fontSize: 16)),
-          SelectableText('Les', style: TextStyle(fontSize: 16))
+          SelectableText(
+              "Je vais chez le docteur. \n(I am going to the doctor's office.)",
+              style: TextStyle(fontSize: 16))
+        ]),
+        TableRow(children: [
+          SelectableText(' dans (in, inside)', style: TextStyle(fontSize: 16)),
+          SelectableText(
+              "Le chat est dans la maison.\n (The cat is inside the house.)",
+              style: TextStyle(fontSize: 16))
+        ]),
+        TableRow(children: [
+          SelectableText(' de (of, from)', style: TextStyle(fontSize: 16)),
+          SelectableText(
+              " La robe de ma mère est bleue. \n(My mother's dress is blue.)",
+              style: TextStyle(fontSize: 16))
+        ]),
+        TableRow(children: [
+          SelectableText(' pour (for, in order to)',
+              style: TextStyle(fontSize: 16)),
+          SelectableText(
+              " J'ai acheté des fleurs pour ma mère. \n(I bought flowers for my mother.)",
+              style: TextStyle(fontSize: 16))
+        ]),
+        TableRow(children: [
+          SelectableText('sans (without)', style: TextStyle(fontSize: 16)),
+          SelectableText(" Je mange sans viande. \n(I am eating without meat.)",
+              style: TextStyle(fontSize: 16))
+        ]),
+        TableRow(children: [
+          SelectableText('sur(On,Onto)', style: TextStyle(fontSize: 16)),
+          SelectableText(
+              'Le livre est sur la table. \n(The book is on the table.)',
+              style: TextStyle(fontSize: 16)),
+        ]),
+        TableRow(children: [
+          SelectableText('vers (Towards)', style: TextStyle(fontSize: 16)),
+          SelectableText(
+              'Je marche vers la gare. \n(I am walking towards the train station.)',
+              style: TextStyle(fontSize: 16))
+        ]),
+        TableRow(children: [
+          SelectableText('devant (in front of)',
+              style: TextStyle(fontSize: 16)),
+          SelectableText(
+              'Le ballon est devant la table. \n(The ball is infront of the table.)',
+              style: TextStyle(fontSize: 16))
         ])
       ],
     );
