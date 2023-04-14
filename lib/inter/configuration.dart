@@ -3,3 +3,9 @@ String nounIntro =
 
 String nounFooter =
     "To determine the gender of a noun, there are some general rules you can follow. For example, most nouns ending in -e are feminine, while those ending in -age, -isme, and -ment are usually masculine. However, there are also many exceptions, and sometimes the gender of a noun simply needs to be memorized.\nIt's important to remember that the gender of a noun can't always be determined by its meaning, so it's helpful to learn the gender of a noun as you learn new vocabulary.\n\nKnowing French nouns is important if you want to speak and understand the French language. So, try to practice using French nouns in your everyday conversations and have fun learning a new language!";
+
+//pronoun text initializing mmmmmmmmmmmmmmmmmmmm
+String pronIntro =
+    "French Pronouns are used to replace a noun in a sentence to avoid repetition. They are essential to make a sentence less awkward and more concise. In French, pronouns vary according to their function, gender, and number.\n\nHere is a table of the most common French pronouns:";
+String proFooter =
+    "It's important to note that French pronouns also change form depending on their position in the sentence (subject or object) and if they are used with prepositions. However, the table above covers the most common forms of French pronouns.";
