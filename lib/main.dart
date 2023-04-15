@@ -33,7 +33,7 @@ import 'inter/adjective.dart';
 import 'package:frenchify/inter/preposition.dart';
 // mmmmmmmmmmmmmmmmmmmmmmmmmmm advance routing mmmmmmmmmmmmmmmmmmmmmm
 import 'package:frenchify/advan/content.dart';
-
+import 'advan/descriptive.dart';
 import 'package:frenchify/advan/Letter/informal.dart';
 import 'package:frenchify/advan/Letter/formal.dart';
 import 'package:frenchify/advan/Letter/letterimage.dart';
@@ -75,7 +75,8 @@ void main() {
       '/past': (context) => Past(),
       '/future': (context) => Future(),
       '/adverb': (context) => Adverb(),
-      '/adjective': (context) => Adjective()
+      '/adjective': (context) => Adjective(),
+      '/descriptive': (context) => Descriptive()
     },
   ));
 }
