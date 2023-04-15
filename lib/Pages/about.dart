@@ -20,7 +20,9 @@ class About extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: SingleChildScrollView(
           child: Column(
-            children: <Widget>[Text(myNote)],
+            children: <Widget>[
+              Text(myNote, style: const TextStyle(fontSize: 16))
+            ],
           ),
         ),
       )),
