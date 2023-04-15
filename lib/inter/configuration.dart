@@ -51,7 +51,7 @@ String irregular =
     "2.  Irregular Verbs\n\nThere are several irregular verbs in French that have a different stem in the future tense. Here are some of the most common irregular verbs and their future tense conjugation:\n";
 
 String conditional =
-    '\n\n The conditional tense is another way to express future actions in French. It is formed by adding the endings of the imparfait to the infinitive of the verb. Here is the conjugation of the conditional tense for the verb "parler" (to speak):\n';
+    '\n\n 3.Conditional Tense \n\n The conditional tense is another way to express future actions in French. It is formed by adding the endings of the imparfait to the infinitive of the verb. Here is the conjugation of the conditional tense for the verb "parler" (to speak):\n';
 
 String futureFooter =
     "In conclusion, the future tense and conditional tense are important tenses in French for expressing actions or events that will happen in the future. It is important to master their conjugation in order to communicate effectively in French.";

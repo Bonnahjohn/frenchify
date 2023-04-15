@@ -24,22 +24,30 @@ class Future extends StatelessWidget {
           child: Column(
             children: <Widget>[
               SelectableText(
-                tensesIntro,
+                futureIntro,
                 style: const TextStyle(fontSize: 16),
               ),
               const SizedBox(
                 height: 20,
               ),
+              SelectableText(
+                irregular,
+                style: const TextStyle(fontSize: 16),
+              ),
               const SizedBox(
                 height: 20,
               ),
-              const SelectableText(
-                  'For example, the verb "parler" (to speak) is an -er verb. To conjugate it in the present tense:'),
+              SelectableText(
+                conditional,
+                style: const TextStyle(fontSize: 16),
+              ),
               const SizedBox(
                 height: 20,
               ),
-              const SelectableText(
-                  '\n-ir verbs: To conjugate -ir verbs in the present tense, drop the -ir ending and add the following endings:\n'),
+              SelectableText(
+                futureFooter,
+                style: const TextStyle(fontSize: 16),
+              ),
               const SizedBox(
                 height: 50,
               ),
