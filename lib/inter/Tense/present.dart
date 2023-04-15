@@ -35,25 +35,25 @@ class Present extends StatelessWidget {
                 height: 20,
               ),
               const SelectableText(
-                  'For example, the verb "parler" (to speak) is an -er verb. To conjugate it in the present tense:'),
+                  'For example, the verb "parler" (to speak) is an -er verb. To conjugate it in the present tense:',style: TextStyle(fontSize: 16)),
               const SizedBox(
                 height: 20,
               ),
               const Parler(),
               const SelectableText(
-                  '\n-ir verbs: To conjugate -ir verbs in the present tense, drop the -ir ending and add the following endings:\n'),
+                  '\n-ir verbs: To conjugate -ir verbs in the present tense, drop the -ir ending and add the following endings:\n',style: TextStyle(fontSize: 16)),
               const Irverbs(),
               const SelectableText(
-                  '\nFor example, the verb "finir" (to finish) is an -ir verb. To conjugate it in the present tense:\n'),
+                  '\nFor example, the verb "finir" (to finish) is an -ir verb. To conjugate it in the present tense:\n',style: TextStyle(fontSize: 16)),
               const Example(),
               const SelectableText(
-                  '\n-re verbs: To conjugate -re verbs in the present tense, drop the -re ending and add the following endings:\n'),
+                  '\n-re verbs: To conjugate -re verbs in the present tense, drop the -re ending and add the following endings:\n',style: TextStyle(fontSize: 16)),
               const Reverbs(),
               const SelectableText(
-                  '\nFor example, the verb "prendre" (to take) is an -re verb. To conjugate it in the present tense:\n'),
+                  '\nFor example, the verb "prendre" (to take) is an -re verb. To conjugate it in the present tense:\n',style: TextStyle(fontSize: 16)),
               const Reexample(),
               const SelectableText(
-                  '\nHere are the conjugation patterns for some of the most popular French irregular verbs in the present tense:\n'),
+                  '\nHere are the conjugation patterns for some of the most popular French irregular verbs in the present tense:\n',style: TextStyle(fontSize: 16)),
               const Tobe(),
               const SizedBox(
                 height: 50,
