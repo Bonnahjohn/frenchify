@@ -35,11 +35,11 @@ String noteFooter =
 
 // mmmmmmmmmmmmmmmmmmmmmmmmmmmmm numbers and countiing of the app
 String myIntro =
-    "Do you want to learn how to count in French? C'est facile (it's easy)! Here's a little guide on numbers and counting:";
+    "Do you want to learn how to count in French? C'est facile (it's easy)!.French numbers are used to count and express quantities in the French language. They are essential to communication, from giving your phone number to counting the number of items on a shopping list. Here's a little guide on numbers and counting:";
 String next =
     'Once you\'ve learned the numbers from one to ten, you can easily count up to 20 and beyond by simply combining the numbers. For example, to say 11 in French, you simply say "onze," which is a combination of "dix" (10) and "un" (1).';
 String subIntro =
-    'In French, when counting beyond 69, you use a combination of numbers. For example, to say 73, you say "soixante-treize," which is a combination of "soixante" (60) and "treize" (13).';
+    'For numbers from 70 to 99, the French language uses a different system. The number 70 is expressed as "soixante-dix" (sixty-ten), and the numbers from 71 to 79 are expressed as "soixante-onze" (sixty-eleven) to "soixante-dix-neuf" (sixty-nineteen). The number 80 is expressed as "quatre-vingts" (four twenties), and the numbers from 81 to 89 are expressed as "quatre-vingt-un" (four twenties and one) to "quatre-vingt-dix-neuf" (four twenties and nineteen). The numbers 90 and 100 are expressed as "quatre-vingt-dix" (four twenties and ten) and "cent" (one hundred), respectively.';
 String finalNote =
     'Learning to count in French is important because numbers are used in everyday life, from telling time to buying things at a store. So, practice your numbers and counting skills, and soon you\'ll be able to count like a native French speaker!';
 //color section of the app mmmmmmmmmmmmmmmmmmmmmmmmmmm

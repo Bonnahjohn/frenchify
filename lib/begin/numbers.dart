@@ -26,7 +26,7 @@ class Numbers extends StatelessWidget {
               ),
 
               SelectableText(
-                'First, let\'s start with the numbers from one to ten:',
+                'First, let\'s start with the numbers from 1 to 10:',
                 style: TextStyle(fontSize: 16),
               ),
               //lessonclass mmmmmmmmmmmmmmmmmmmmmm
