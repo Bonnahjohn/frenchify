@@ -38,7 +38,7 @@ class Tenses extends StatelessWidget {
                 child: ListTile(
                   leading: Icon(Icons.keyboard_arrow_left_rounded),
                   title: Text('Past tense'),
-                  subtitle: Text(''),
+                  subtitle: Text('Passé Composé'),
                   trailing: Icon(Icons.arrow_left),
                   onTap: () {
                     Navigator.pushNamed(context, '/past');

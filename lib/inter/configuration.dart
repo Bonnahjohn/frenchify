@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names
+
 String nounIntro =
     "French nouns are an important part of the French language. They are words that name people, animals, things, and ideas.In French, every noun has a gender, either masculine or feminine and it's important to use the correct article, \"le\" for masculine and \"la\" for feminine, when talking about them. For some nouns that begin with a vowel, the article \"l' \" is used instead to make it easier to say. This gender determines which article should be used before the noun. There are also singular and plural forms of both masculine and feminine nouns.\n\nHere is a table that shows some examples of French nouns and their corresponding articles:";
 
@@ -31,5 +33,25 @@ String prensenT =
     "The present tense is one of the most commonly used tenses in French, and it is used to express actions and states that are happening right now or are habitual. Understanding the present tense is essential for speaking and understanding French, as it is used frequently in daily conversations.\n\nThe present tense in French has different conjugation patterns for each group of verbs (-er, -ir, and -re) and for irregular verbs. It's essential to learn these patterns to correctly use the present tense in French.\n\nHere are the conjugation patterns for the present tense of regular verbs:\n\n(i)-er verbs: To conjugate -er verbs in the present tense, drop the -er ending and add the following endings:";
 
 //past tense text initializing mmmmmmmmmmmmmmmmmmmm
-String pastIntro = "";
-String pastFooter = "";
+String pastIntro =
+    "French has a range of tenses, each of which is used to describe a particular time frame. Learning how to use these tenses correctly is essential for mastering the French language. Here's an overview of the most important tenses in French, along with their conjugation patterns:\n\n1.Past Tenses\n\nThe past tenses are used to describe actions that have already happened. There are several past tenses in French, including:\n\n Passé Composé: This is the most common past tense in French, and it's used to describe completed actions in the recent past. It's formed by using the auxiliary verb \"avoir\" or \"être\" with the past participle of the main verb. Here are some examples:";
+String pastFooter =
+    "In conclusion, the passé composé ,imparfait and Passé Simple are the most commonly used past tenses in French, and mastering their conjugation is crucial for effective communication in French.";
+
+String imparfait =
+    "Imparfait: This tense is used to describe actions that were ongoing or habitual in the past. It's formed by taking the present tense nous form of the verb, removing the -ons, and adding the following endings:";
+String simple =
+    "Passé Simple: This tense is used in formal writing to describe completed actions in the past. It's formed by taking the third-person singular form of the verb in the present tense, removing the -ent ending, and adding the following endings:\n";
+
+//future tense text initializing mmmmmmmmmmmmmmmmmmmm
+String futureIntro =
+    "The future tense in French is used to describe actions or events that will happen in the future. In French, the future tense is formed by adding endings to the infinitive of the verb.\n\n1.  Regular Verbs \n\nThe future tense of regular verbs is formed by adding the following endings to the infinitive of the verb:";
+
+String irregular =
+    "2.  Irregular Verbs\n\nThere are several irregular verbs in French that have a different stem in the future tense. Here are some of the most common irregular verbs and their future tense conjugation:\n";
+
+String conditional =
+    '\n\n The conditional tense is another way to express future actions in French. It is formed by adding the endings of the imparfait to the infinitive of the verb. Here is the conjugation of the conditional tense for the verb "parler" (to speak):\n';
+
+String futureFooter =
+    "In conclusion, the future tense and conditional tense are important tenses in French for expressing actions or events that will happen in the future. It is important to master their conjugation in order to communicate effectively in French.";
