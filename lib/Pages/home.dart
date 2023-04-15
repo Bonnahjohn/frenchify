@@ -43,7 +43,10 @@ class _HomePageState extends State<HomePage> {
                     hintText: 'Search...',
                   ),
                 )
-              : Text('French Level'),
+              : Text(
+                  'French Level',
+                  style: TextStyle(fontFamily: 'monospace'),
+                ),
           actions: [
             IconButton(
                 onPressed: () {

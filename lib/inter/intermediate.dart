@@ -49,7 +49,8 @@ class Intermediate extends StatelessWidget {
             ),
             Card(
               child: ListTile(
-                leading: Icon(Icons.abc_sharp),
+                leading: Image.asset('assets/images/tense.jpg',
+                    width: 60, height: 50),
                 title: Text('Tenses'),
                 subtitle: Text(''),
                 trailing: Icon(Icons.arrow_right),
@@ -60,7 +61,8 @@ class Intermediate extends StatelessWidget {
             ),
             Card(
               child: ListTile(
-                leading: const Icon(Icons.color_lens),
+                leading: Image.asset('assets/images/adverb.jpg',
+                    width: 60, height: 100),
                 title: const Text('Adverbs'),
                 subtitle: const Text(""),
                 trailing: const Icon(Icons.arrow_right),
@@ -71,7 +73,8 @@ class Intermediate extends StatelessWidget {
             ),
             Card(
               child: ListTile(
-                leading: Icon(Icons.family_restroom),
+                leading: Image.asset('assets/images/adjective.jpg',
+                    width: 60, height: 100),
                 title: Text('adjectives'),
                 subtitle: Text(''),
                 trailing: Icon(Icons.arrow_right),
@@ -82,7 +85,8 @@ class Intermediate extends StatelessWidget {
             ),
             Card(
               child: ListTile(
-                leading: Icon(Icons.abc_sharp),
+                leading: Image.asset('assets/images/prep.png',
+                    width: 60, height: 50),
                 title: Text('prepositions'),
                 subtitle: Text(''),
                 trailing: Icon(Icons.arrow_right),

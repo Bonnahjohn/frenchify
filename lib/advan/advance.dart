@@ -34,9 +34,10 @@ class AdvanIntro extends StatelessWidget {
             ),
             Card(
               child: ListTile(
-                leading: Icon(Icons.abc_sharp),
+                leading: Image.asset('assets/images/des.jpg',
+                    width: 60, height: 100),
                 title: Text('Descriptive Essay'),
-                subtitle: Text(''),
+                subtitle: Text('Essai descriptif'),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {},
               ),
@@ -47,6 +48,7 @@ class AdvanIntro extends StatelessWidget {
                     width: 60, height: 100),
                 title: Text('Letter Writing'),
                 subtitle: Text(''),
+                trailing: Icon(Icons.arrow_right),
                 onTap: () {
                   Navigator.pushNamed(context, '/AdvanContent');
                 },
