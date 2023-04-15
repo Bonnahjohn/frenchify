@@ -28,6 +28,8 @@ import 'package:frenchify/inter/Tense/tenses.dart';
 import 'inter/Tense/present.dart';
 import 'inter/Tense/future.dart';
 import 'inter/Tense/past.dart';
+import 'inter/adverb.dart';
+import 'inter/adjective.dart';
 import 'package:frenchify/inter/preposition.dart';
 // mmmmmmmmmmmmmmmmmmmmmmmmmmm advance routing mmmmmmmmmmmmmmmmmmmmmm
 import 'package:frenchify/advan/content.dart';
@@ -71,7 +73,9 @@ void main() {
       '/tense': (context) => Tenses(),
       '/present': (context) => Present(),
       '/past': (context) => Past(),
-      '/future': (context) => Future()
+      '/future': (context) => Future(),
+      '/adverb': (context) => Adverb(),
+      '/adjective': (context) => Adjective()
     },
   ));
 }

@@ -1,18 +1,18 @@
 // ignore_for_file: unused_import, prefer_const_constructors, file_names, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:frenchify/begin/configuration.dart';
+
 import 'package:frenchify/main.dart';
 
-class Basic extends StatelessWidget {
-  const Basic({super.key});
+class Adverb extends StatelessWidget {
+  const Adverb({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color.fromRGBO(100, 149, 237, 1),
-        title: Text('Basic phrase'),
+        title: Text('Adverb'),
       ),
       body: SafeArea(
           child: Padding(
@@ -20,20 +20,12 @@ class Basic extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              SelectableText(
-                basicPhrase,
-                style: TextStyle(fontSize: 16),
-              ),
               SizedBox(
                 height: 30,
               ),
               Tables(),
               SizedBox(
                 height: 20,
-              ),
-              SelectableText(
-                basicFooter,
-                style: TextStyle(fontSize: 16),
               ),
               SizedBox(
                 height: 50,

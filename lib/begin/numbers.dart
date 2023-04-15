@@ -73,12 +73,6 @@ class Numbers extends StatelessWidget {
           ),
         ),
       )),
-      floatingActionButton: FloatingActionButton(
-          backgroundColor: Color.fromRGBO(100, 149, 237, 1),
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Icon(Icons.arrow_back)),
     );
   }
 }

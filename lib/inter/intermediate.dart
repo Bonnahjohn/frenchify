@@ -64,7 +64,9 @@ class Intermediate extends StatelessWidget {
                 title: const Text('Adverbs'),
                 subtitle: const Text(""),
                 trailing: const Icon(Icons.arrow_right),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/adverb');
+                },
               ),
             ),
             Card(
@@ -73,7 +75,9 @@ class Intermediate extends StatelessWidget {
                 title: Text('adjectives'),
                 subtitle: Text(''),
                 trailing: Icon(Icons.arrow_right),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/adjective');
+                },
               ),
             ),
             Card(
