@@ -45,7 +45,7 @@ String simple =
 
 //future tense text initializing mmmmmmmmmmmmmmmmmmmm
 String futureIntro =
-    "The future tense in French is used to describe actions or events that will happen in the future. In French, the future tense is formed by adding endings to the infinitive of the verb.\n\n1.  Regular Verbs \n\nThe future tense of regular verbs is formed by adding the following endings to the infinitive of the verb:";
+    "The future tense in French is used to describe actions or events that will happen in the future. In French, the future tense is formed by adding endings to the infinitive of the verb.\n\n1.  Regular Verbs \n\nThe future tense of regular verbs is formed by adding the following endings to the infinitive of the verb.Here we conjugate  the future tense for the verb \"parler\" (to speak):";
 
 String irregular =
     "2.  Irregular Verbs\n\nThere are several irregular verbs in French that have a different stem in the future tense. Here are some of the most common irregular verbs and their future tense conjugation:\n";
