@@ -115,8 +115,8 @@ class MyApp extends StatelessWidget {
                           child: Text(
                             'Frenchify French \nLearning Library',
                             style: TextStyle(
-                                fontSize: 28,
-                                fontFamily: 'Helvetica',
+                                fontSize: 17,
+                                fontFamily: 'Roboto',
                                 fontWeight: FontWeight.w600,
                                 color: Colors.yellowAccent),
                             overflow: TextOverflow.clip,
@@ -130,8 +130,10 @@ class MyApp extends StatelessWidget {
                           width: 375,
                           child: Text(
                             'Bonjour! Frenchify is the perfect app for anyone looking to learn or improve their French language skills, with its user-friendly interface and innovative features making learning fun and interactive.',
-                            style:
-                                TextStyle(color: Colors.orange, fontSize: 17),
+                            style: TextStyle(
+                                color: Colors.orange,
+                                fontSize: 16,
+                                fontFamily: 'Roboto'),
                             overflow: TextOverflow.clip,
                             textAlign: TextAlign.justify,
                             textScaleFactor: 1.2,
@@ -155,8 +157,8 @@ class MyApp extends StatelessWidget {
                               'GET   STARTED',
                               style: TextStyle(
                                   color: Colors.white,
-                                  fontSize: 20,
-                                  fontFamily: 'Georgia'),
+                                  fontSize: 16,
+                                  fontFamily: 'Roboto'),
                             )))
                   ],
                 ))),
