@@ -1,6 +1,16 @@
 // ignore_for_file: prefer_const_constructors, duplicate_ignore
 
 import 'package:flutter/material.dart';
+import 'package:frenchify/begin/salutation.dart';
+import 'basic.dart';
+import 'package:frenchify/begin/days.dart';
+import 'package:frenchify/begin/numbers.dart';
+import 'package:frenchify/begin/color.dart';
+import 'package:frenchify/begin/family.dart';
+import 'package:frenchify/begin/time.dart';
+import 'package:frenchify/begin/prof.dart';
+import 'package:frenchify/begin/public.dart';
+import 'package:frenchify/begin/weather.dart';
 
 class Beginner extends StatelessWidget {
   const Beginner({super.key});
@@ -21,7 +31,8 @@ class Beginner extends StatelessWidget {
                 title: Text('Greetings and Introduction'),
                 subtitle: Text('Salutation et Introduction'),
                 trailing: Icon(Icons.arrow_right),
-                onTap: () => Navigator.pushNamed(context, '/Salutation'),
+                onTap: () => Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Salutation())),
               ),
             ),
             Card(
@@ -32,7 +43,8 @@ class Beginner extends StatelessWidget {
                 subtitle: Text('phrase de base'),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
-                  Navigator.pushNamed(context, '/Basic');
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Basic()));
                 },
               ),
             ),
@@ -45,7 +57,8 @@ class Beginner extends StatelessWidget {
                     "Les jours de la semaine et Les mois de l'annee"),
                 trailing: const Icon(Icons.arrow_right),
                 onTap: () {
-                  Navigator.pushNamed(context, '/Days');
+                  Navigator.push(
+                      context, MaterialPageRoute(builder: (context) => Days()));
                 },
               ),
             ),
@@ -57,7 +70,8 @@ class Beginner extends StatelessWidget {
                 subtitle: Text('Nombres et comptage'),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
-                  Navigator.pushNamed(context, '/Numbers');
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Numbers()));
                 },
               ),
             ),
@@ -69,7 +83,8 @@ class Beginner extends StatelessWidget {
                 subtitle: Text('couleurs et description des choses'),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
-                  Navigator.pushNamed(context, '/Colors');
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Colour()));
                 },
               ),
             ),
@@ -81,7 +96,8 @@ class Beginner extends StatelessWidget {
                 subtitle: Text('Famille et relations '),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
-                  Navigator.pushNamed(context, '/family');
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Family()));
                 },
               ),
             ),
@@ -93,7 +109,8 @@ class Beginner extends StatelessWidget {
                 subtitle: Text('Heure et dates'),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
-                  Navigator.pushNamed(context, '/time');
+                  Navigator.push(
+                      context, MaterialPageRoute(builder: (context) => Time()));
                 },
               ),
             ),
@@ -105,7 +122,8 @@ class Beginner extends StatelessWidget {
                 subtitle: Text('Les professions'),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
-                  Navigator.pushNamed(context, '/prof');
+                  Navigator.push(
+                      context, MaterialPageRoute(builder: (context) => Prof()));
                 },
               ),
             ),
@@ -117,7 +135,8 @@ class Beginner extends StatelessWidget {
                 subtitle: Text('Jours fériés et jours spéciaux Festivals'),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
-                  Navigator.pushNamed(context, '/public');
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Public()));
                 },
               ),
             ),
@@ -127,8 +146,10 @@ class Beginner extends StatelessWidget {
                     width: 60, height: 100),
                 title: Text('Weather and seasons'),
                 subtitle: Text('Météo et saison'),
+                trailing: Icon(Icons.arrow_right),
                 onTap: () {
-                  Navigator.pushNamed(context, '/Weather');
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Weather()));
                 },
               ),
             ),

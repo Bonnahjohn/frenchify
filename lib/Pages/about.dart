@@ -21,7 +21,10 @@ class About extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              Text(myNote, style: const TextStyle(fontSize: 16))
+              Text(myNote, style: const TextStyle(fontSize: 16)),
+              const SizedBox(
+                height: 60,
+              )
             ],
           ),
         ),

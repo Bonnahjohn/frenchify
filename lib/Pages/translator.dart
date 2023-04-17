@@ -18,7 +18,6 @@ class Translator extends StatelessWidget {
         title: const Text('Translator'),
         // ignore: prefer_const_constructors
       ),
-      drawer: const Drawers(),
       body: SafeArea(
           child: Padding(
         padding: const EdgeInsets.all(16.0),
