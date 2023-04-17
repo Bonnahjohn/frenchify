@@ -26,8 +26,7 @@ class Beginner extends StatelessWidget {
           children: <Widget>[
             Card(
               child: ListTile(
-                leading: Image.asset('assets/images/greet.jpg',
-                    width: 60, height: 100),
+                //
                 title: Text('Greetings and Introduction'),
                 subtitle: Text('Salutation et Introduction'),
                 trailing: Icon(Icons.arrow_right),

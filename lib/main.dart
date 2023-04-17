@@ -67,6 +67,11 @@ class _DownappbarState extends State<Downappbar> {
             currentIndex: _selectedIndex,
             onTap: _onItemTapped,
             elevation: 10,
+
+            // styling mmmmmmmmmmmmmmmmmmmmmmm
+            backgroundColor: Color.fromRGBO(100, 149, 237, 1),
+            fixedColor: Colors.white,
+            iconSize: 28,
             type: BottomNavigationBarType.fixed,
             items: const [
               BottomNavigationBarItem(
