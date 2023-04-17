@@ -10,18 +10,6 @@ import 'package:frenchify/Pages/home.dart';
 import 'package:frenchify/Pages/about.dart';
 import 'package:frenchify/Pages/feedback.dart';
 
-// mmmmmmmmmmmmmmmmmmmmmmmmmmm beginner routing m mmmmmmmmmmmmmmmmmmmmm
-
-// mmmmmmmmmmmmmmmmmmmmmmmmmmm intermediate routing mmmmmmmmmmmmmmmmmmmmmm
-
-// mmmmmmmmmmmmmmmmmmmmmmmmmmm advance routing mmmmmmmmmmmmmmmmmmmmmm
-import 'package:frenchify/advan/content.dart';
-import 'advan/descriptive.dart';
-import 'package:frenchify/advan/Letter/informal.dart';
-import 'package:frenchify/advan/Letter/formal.dart';
-import 'package:frenchify/advan/Letter/letterimage.dart';
-import 'advan/sentence.dart';
-
 void main() {
   runApp(MaterialApp(
     title: 'French Level',
@@ -29,13 +17,6 @@ void main() {
     initialRoute: '/',
     routes: {
       '/': (context) => MyApp(),
-      '/Beginner': (context) => Beginner(),
-      '/AdvanContent': (context) => Letter(),
-      '/Informal': (context) => Informal(),
-      '/Formal': (context) => Formal(),
-      '/Image': (context) => Images(),
-      '/descriptive': (context) => Descriptive(),
-      '/sentence': (context) => Sentence()
     },
   ));
 }

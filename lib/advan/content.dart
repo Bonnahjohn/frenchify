@@ -2,6 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:frenchify/main.dart';
+import 'package:frenchify/advan/content.dart';
+import 'package:frenchify/advan/Letter/informal.dart';
+import 'package:frenchify/advan/Letter/formal.dart';
+import 'package:frenchify/advan/Letter/letterimage.dart';
 
 class Letter extends StatelessWidget {
   const Letter({super.key});
@@ -21,27 +25,30 @@ class Letter extends StatelessWidget {
             children: <Widget>[
               Card(
                 child: ListTile(
-                  leading: Icon(Icons.abc_sharp),
+                  leading: Image.asset('assets/images/let.jpg',
+                      width: 60, height: 100),
                   title: Text('Informal letter'),
                   subtitle: Text('Lettre informelle'),
                   trailing: Icon(Icons.arrow_right),
                   onTap: () {
-                    Navigator.pushNamed(context, '/Informal');
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Informal()));
                   },
                 ),
               ),
               Card(
                 child: ListTile(
-                  leading: Icon(Icons.abc_sharp),
+                  leading: Image.asset('assets/images/let.jpg',
+                      width: 60, height: 100),
                   title: Text('Formal Letter'),
                   subtitle: Text('Lettre formelle'),
                   trailing: Icon(Icons.arrow_right),
                   onTap: () {
-                    Navigator.pushNamed(context, '/Formal');
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Formal()));
                   },
                 ),
               ),
-             
               const SizedBox(
                 height: 30,
               )

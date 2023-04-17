@@ -1,6 +1,7 @@
 // ignore_for_file: unused_import, prefer_const_constructors, file_names, use_key_in_widget_constructors, library_private_types_in_public_api, prefer_const_literals_to_create_immutables, unnecessary_brace_in_string_interps, dead_code, unnecessary_string_interpolations
 
 import 'package:flutter/material.dart';
+import 'package:frenchify/advan/Letter/letterimage.dart';
 import 'package:frenchify/main.dart';
 import 'config.dart';
 import 'package:frenchify/advan/Letter/informal.dart';
@@ -29,7 +30,8 @@ class Formal extends StatelessWidget {
             } else if (index == note.length + 1) {
               // Display the note at the bottom
               return SelectableText(onTap: () {
-                Navigator.pushNamed(context, '/Image');
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Images()));
               }, focus,
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400));
             } else {

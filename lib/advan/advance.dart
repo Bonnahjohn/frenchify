@@ -1,6 +1,10 @@
 // ignore_for_file: unused_import, prefer_const_constructors, file_names
 
 import 'package:flutter/material.dart';
+import 'package:frenchify/advan/Letter/formal.dart';
+import 'package:frenchify/advan/content.dart';
+import 'package:frenchify/advan/descriptive.dart';
+import 'package:frenchify/advan/sentence.dart';
 import 'package:frenchify/main.dart';
 
 class AdvanIntro extends StatelessWidget {
@@ -21,7 +25,8 @@ class AdvanIntro extends StatelessWidget {
                 subtitle: Text(''),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
-                  Navigator.pushNamed(context, '/sentence');
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Sentence()));
                 },
               ),
             ),
@@ -33,7 +38,8 @@ class AdvanIntro extends StatelessWidget {
                 subtitle: Text('Essai descriptif'),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
-                  Navigator.pushNamed(context, '/descriptive');
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Descriptive()));
                 },
               ),
             ),
@@ -45,7 +51,8 @@ class AdvanIntro extends StatelessWidget {
                 subtitle: Text(''),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
-                  Navigator.pushNamed(context, '/AdvanContent');
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Letter()));
                 },
               ),
             ),

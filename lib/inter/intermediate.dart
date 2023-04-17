@@ -28,10 +28,7 @@ class Intermediate extends StatelessWidget {
                 title: Text('Nouns and Articles'),
                 subtitle: Text(''),
                 trailing: Icon(Icons.arrow_right),
-                onTap: () {
-                  Navigator.push(
-                      context, MaterialPageRoute(builder: (context) => Noun()));
-                },
+                onTap: () {},
               ),
             ),
             Card(
