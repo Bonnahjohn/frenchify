@@ -4,8 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:frenchify/begin/begin.dart';
 import 'package:frenchify/inter/intermediate.dart';
 import 'package:frenchify/advan/advance.dart';
-
-import 'package:frenchify/main.dart';
 import 'package:frenchify/Pages/translator.dart';
 
 class HomePage extends StatefulWidget {
@@ -15,9 +13,6 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
-//search query mmmmmmmmmmmmmmmmmm
-bool _isSerached = false;
-
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
@@ -25,7 +20,7 @@ class _HomePageState extends State<HomePage> {
       length: 3,
       child: Scaffold(
         appBar: AppBar(
-          bottom: TabBar(indicatorColor: Colors.white, tabs: [
+          bottom: TabBar(indicatorColor: Colors.white, tabs: const [
             Tab(
               child: Text('Beginner'),
             ),
@@ -37,28 +32,17 @@ class _HomePageState extends State<HomePage> {
             ),
           ]),
           backgroundColor: Color.fromRGBO(100, 149, 237, 1),
-          title: _isSerached
-              ? TextField(
-                  decoration: InputDecoration(
-                    hintText: 'Search...',
-                  ),
-                )
-              : Text(
-                  'French Level',
-                  style: TextStyle(fontFamily: 'monospace'),
-                ),
+          title: Text(
+            'French Level',
+            style: TextStyle(fontFamily: 'monospace'),
+          ),
           actions: [
-            IconButton(
-                onPressed: () {
-                  setState(() {
-                    _isSerached = !_isSerached;
-                  });
-                },
-                icon: Icon(Icons.search)),
+            IconButton(onPressed: () {}, icon: Icon(Icons.search)),
             IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
           ],
         ),
-        body: TabBarView(children: [Beginner(), Intermediate(), AdvanIntro()]),
+        body: TabBarView(
+            children: const [Beginner(), Intermediate(), AdvanIntro()]),
         drawer: Drawers(),
       ),
     );
@@ -136,7 +120,7 @@ class Drawers extends StatelessWidget {
             Icons.arrow_right,
             size: 40,
           ),
-          onTap: () => Navigator.pushNamed(context, '/Settings'),
+          onTap: () => Navigator.of(context).pushNamed('/settings'),
         ),
         /* mmmmmmmmmmmmmmmmmmmmmmmm About us and its navigation mmmmmmmmmmmmmmmmmmmmmm*\ */
         ListTile(

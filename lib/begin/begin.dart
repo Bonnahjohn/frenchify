@@ -21,9 +21,7 @@ class Beginner extends StatelessWidget {
                 title: Text('Greetings and Introduction'),
                 subtitle: Text('Salutation et Introduction'),
                 trailing: Icon(Icons.arrow_right),
-                onTap: () {
-                  Navigator.pushNamed(context, '/Salutation');
-                },
+                onTap: () => Navigator.pushNamed(context, '/Salutation'),
               ),
             ),
             Card(

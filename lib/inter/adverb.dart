@@ -1,6 +1,8 @@
 // ignore_for_file: unused_import, prefer_const_constructors, file_names, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:frenchify/begin/configuration.dart';
+import 'package:frenchify/inter/configuration.dart';
 
 import 'package:frenchify/main.dart';
 
@@ -20,12 +22,20 @@ class Adverb extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
+              SelectableText(
+                adverbIntro,
+                style: TextStyle(fontSize: 16),
+              ),
               SizedBox(
                 height: 30,
               ),
               Tables(),
               SizedBox(
                 height: 20,
+              ),
+              SelectableText(
+                adverbFooter,
+                style: TextStyle(fontSize: 16),
               ),
               SizedBox(
                 height: 50,
@@ -52,67 +62,129 @@ class Tables extends StatelessWidget {
           children: [
             TableRow(children: [
               SelectableText(
-                'French Phrase',
+                'Adverb',
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
               Text(
-                'Pronunciation',
+                'Meaning	',
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
               Text(
-                'English Translation',
+                'Adjective',
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
             ]),
             TableRow(children: [
-              Text('Bonjour'),
-              Text('bohn-zhoor'),
-              Text('Good day / Hello'),
+              Text(
+                'rapidement',
+                style: TextStyle(fontSize: 16),
+              ),
+              Text(
+                'quickly',
+                style: TextStyle(fontSize: 16),
+              ),
+              Text(
+                'rapide (fast)',
+                style: TextStyle(fontSize: 16),
+              ),
             ]),
             TableRow(children: [
-              Text('Au revoir'),
-              Text('oh ruh-vwah'),
-              Text('Goodbye'),
+              Text(
+                'lentement',
+                style: TextStyle(fontSize: 16),
+              ),
+              Text(
+                'slowly',
+                style: TextStyle(fontSize: 16),
+              ),
+              Text(
+                'lent (slow)',
+                style: TextStyle(fontSize: 16),
+              ),
             ]),
             TableRow(children: [
-              Text('Merci'),
-              Text('mehr-see'),
-              Text('Thank you'),
+              Text(
+                'bien',
+                style: TextStyle(fontSize: 16),
+              ),
+              Text(
+                'well',
+                style: TextStyle(fontSize: 16),
+              ),
+              Text(
+                'bon(ne) (good)',
+                style: TextStyle(fontSize: 16),
+              ),
             ]),
             TableRow(children: [
-              Text("S'il vous plaît"),
-              Text('seel voo pleh'),
-              Text('Please'),
+              Text(
+                "mal",
+                style: TextStyle(fontSize: 16),
+              ),
+              Text(
+                'badly',
+                style: TextStyle(fontSize: 16),
+              ),
+              Text(
+                'mauvais(e) (bad)',
+                style: TextStyle(fontSize: 16),
+              ),
             ]),
             TableRow(children: [
-              Text('Oui'),
-              Text('wee'),
-              Text('Yes'),
+              Text(
+                'doucement',
+                style: TextStyle(fontSize: 16),
+              ),
+              Text(
+                'gently',
+                style: TextStyle(fontSize: 16),
+              ),
+              Text(
+                'doux / douce (soft)',
+                style: TextStyle(fontSize: 16),
+              ),
             ]),
             TableRow(children: [
-              Text('Non'),
-              Text('nohn'),
-              Text('No'),
+              Text(
+                'bruyamment',
+                style: TextStyle(fontSize: 16),
+              ),
+              Text(
+                'loudly',
+                style: TextStyle(fontSize: 16),
+              ),
+              Text(
+                'bruyant(e) (noisy)',
+                style: TextStyle(fontSize: 16),
+              ),
             ]),
             TableRow(children: [
-              Text('Comment ça va?'),
-              Text('koh-mohn sah vah'),
-              Text('How are you?'),
+              SelectableText(
+                'facilement',
+                style: TextStyle(fontSize: 16),
+              ),
+              Text(
+                'easily',
+                style: TextStyle(fontSize: 16),
+              ),
+              Text(
+                'facile (easy)',
+                style: TextStyle(fontSize: 16),
+              ),
             ]),
             TableRow(children: [
-              Text('Ça va bien'),
-              Text('sah vah byeh'),
-              Text('I\'m doing well'),
-            ]),
-            TableRow(children: [
-              Text('Je m\'appelle'),
-              Text('zhuh mah-pell'),
-              Text('My name is'),
-            ]),
-            TableRow(children: [
-              SelectableText('Excusez-moi'),
-              SelectableText('eks-koo-zay mwah'),
-              SelectableText('Excuse me'),
+              Text(
+                'difficilement	',
+                style: TextStyle(fontSize: 16),
+              ),
+              Text(
+                'difficultly',
+                style: TextStyle(fontSize: 16),
+              ),
+              Text(
+                'difficile (difficult)',
+                style: TextStyle(fontSize: 16),
+              ),
             ]),
           ],
         ));

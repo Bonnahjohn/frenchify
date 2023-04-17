@@ -27,15 +27,29 @@ class Descriptive extends StatelessWidget {
               SizedBox(
                 height: 30,
               ),
-              Image.asset(
-                'assets/images/one.jpeg',
+              InteractiveViewer(
+                child: Image.asset(
+                  'assets/images/two.jpeg',
+                ),
               ),
               SizedBox(
                 height: 30,
               ),
-              Tables(),
+              InteractiveViewer(
+                child: Image.asset(
+                  'assets/images/three.jpeg',
+                ),
+              ),
               SizedBox(
-                height: 20,
+                height: 30,
+              ),
+              InteractiveViewer(
+                child: Image.asset(
+                  'assets/images/four.jpeg',
+                ),
+              ),
+              SizedBox(
+                height: 30,
               ),
               SizedBox(
                 height: 50,
@@ -50,83 +64,3 @@ class Descriptive extends StatelessWidget {
 
 //  mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm content of the table mmmmmmmmmmmmmmmmmm
 
-class Tables extends StatelessWidget {
-  const Tables({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return InteractiveViewer(
-        boundaryMargin: EdgeInsets.all(20.0),
-        child: Table(
-          border: TableBorder.all(color: Color.fromRGBO(100, 149, 237, 1)),
-          children: [
-            TableRow(children: [
-              SelectableText(
-                'French Phrase',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
-              Text(
-                'Pronunciation',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
-              Text(
-                'English Translation',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
-            ]),
-            TableRow(children: [
-              Text('Bonjour'),
-              Text('bohn-zhoor'),
-              Text('Good day / Hello'),
-            ]),
-            TableRow(children: [
-              Text('Au revoir'),
-              Text('oh ruh-vwah'),
-              Text('Goodbye'),
-            ]),
-            TableRow(children: [
-              Text('Merci'),
-              Text('mehr-see'),
-              Text('Thank you'),
-            ]),
-            TableRow(children: [
-              Text("S'il vous plaît"),
-              Text('seel voo pleh'),
-              Text('Please'),
-            ]),
-            TableRow(children: [
-              Text('Oui'),
-              Text('wee'),
-              Text('Yes'),
-            ]),
-            TableRow(children: [
-              Text('Non'),
-              Text('nohn'),
-              Text('No'),
-            ]),
-            TableRow(children: [
-              Text('Comment ça va?'),
-              Text('koh-mohn sah vah'),
-              Text('How are you?'),
-            ]),
-            TableRow(children: [
-              Text('Ça va bien'),
-              Text('sah vah byeh'),
-              Text('I\'m doing well'),
-            ]),
-            TableRow(children: [
-              Text('Je m\'appelle'),
-              Text('zhuh mah-pell'),
-              Text('My name is'),
-            ]),
-            TableRow(children: [
-              SelectableText('Excusez-moi'),
-              SelectableText('eks-koo-zay mwah'),
-              SelectableText('Excuse me'),
-            ]),
-          ],
-        ));
-  }
-}
-
-//intoduction table mmmmmmmmmmmmmmmmmmmmmmmmm

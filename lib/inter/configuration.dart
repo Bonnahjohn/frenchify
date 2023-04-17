@@ -55,3 +55,8 @@ String conditional =
 
 String futureFooter =
     "In conclusion, the future tense and conditional tense are important tenses in French for expressing actions or events that will happen in the future. It is important to master their conjugation in order to communicate effectively in French.";
+
+String adverbIntro =
+    "In French, adverbs are words that modify verbs, adjectives or other adverbs. They are used to add more information about how, when, where or to what degree an action is performed. Adverbs are essential in making your sentences more precise and descriptive.\n\nMost French adverbs are formed by adding the suffix -ment to the feminine form of the adjective. For example, the adjective \"rapide\" (fast) becomes \"rapidement\" (quickly) as an adverb. However, there are some irregular adverbs that don't follow this pattern, such as \"bien\" (well), \"mal\" (badly) and \"tôt\" (early).\nHere are some examples of French adverbs and their meanings:";
+String adverbFooter =
+    "French adverbs can be placed in different positions within a sentence depending on what information you want to emphasize. Usually, adverbs are placed directly after the verb they are modifying. For example, \"Il parle doucement\" means \"He speaks softly\".\n\nHowever, adverbs can also be placed at the beginning or end of a sentence to emphasize a particular point. For example, \"Rapidement, il a couru vers la porte\" means \"Quickly, he ran to the door\".\n\nAdverbs are a crucial part of French language and can help make your writing and speaking more accurate and descriptive. By using adverbs, you can convey more nuanced meaning and paint a clearer picture of the actions or events you're describing.";
