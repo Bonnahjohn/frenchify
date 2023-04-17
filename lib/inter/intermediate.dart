@@ -1,7 +1,15 @@
 // ignore_for_file: unused_import, prefer_const_constructors, file_names
 
 import 'package:flutter/material.dart';
+import 'package:frenchify/inter/Tense/present.dart';
+import 'package:frenchify/inter/adjective.dart';
+import 'package:frenchify/inter/adverb.dart';
+import 'package:frenchify/inter/pronoun.dart';
 import 'package:frenchify/main.dart';
+import 'package:frenchify/inter/noun.dart';
+import 'package:frenchify/inter/verb.dart';
+import 'package:frenchify/inter/Tense/tenses.dart';
+import 'package:frenchify/inter/preposition.dart';
 
 class Intermediate extends StatelessWidget {
   const Intermediate({super.key});
@@ -21,7 +29,8 @@ class Intermediate extends StatelessWidget {
                 subtitle: Text(''),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
-                  Navigator.pushNamed(context, '/noun');
+                  Navigator.push(
+                      context, MaterialPageRoute(builder: (context) => Noun()));
                 },
               ),
             ),
@@ -32,7 +41,8 @@ class Intermediate extends StatelessWidget {
                 subtitle: Text(''),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
-                  Navigator.pushNamed(context, '/pronoun');
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Pronoun()));
                 },
               ),
             ),
@@ -43,7 +53,8 @@ class Intermediate extends StatelessWidget {
                 subtitle: Text(''),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
-                  Navigator.pushNamed(context, '/verb');
+                  Navigator.push(
+                      context, MaterialPageRoute(builder: (context) => Verb()));
                 },
               ),
             ),
@@ -55,7 +66,8 @@ class Intermediate extends StatelessWidget {
                 subtitle: Text(''),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
-                  Navigator.pushNamed(context, '/tense');
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Tense()));
                 },
               ),
             ),
@@ -67,7 +79,8 @@ class Intermediate extends StatelessWidget {
                 subtitle: const Text(""),
                 trailing: const Icon(Icons.arrow_right),
                 onTap: () {
-                  Navigator.pushNamed(context, '/adverb');
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Adverb()));
                 },
               ),
             ),
@@ -79,7 +92,8 @@ class Intermediate extends StatelessWidget {
                 subtitle: Text(''),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
-                  Navigator.pushNamed(context, '/adjective');
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Adjective()));
                 },
               ),
             ),

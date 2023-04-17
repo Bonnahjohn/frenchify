@@ -1,7 +1,10 @@
 // ignore_for_file: unused_import, non_constant_identifier_names, use_key_in_widget_constructors, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:frenchify/inter/Tense/past.dart';
+import 'package:frenchify/inter/Tense/present.dart';
 import 'package:frenchify/inter/configuration.dart';
+import 'package:frenchify/inter/Tense/future.dart';
 import 'package:frenchify/main.dart';
 
 class Tenses extends StatelessWidget {
@@ -27,7 +30,8 @@ class Tenses extends StatelessWidget {
                   subtitle: Text(''),
                   trailing: Icon(Icons.arrow_right),
                   onTap: () {
-                    Navigator.pushNamed(context, '/present');
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Present()));
                   },
                 ),
               ),
@@ -38,7 +42,8 @@ class Tenses extends StatelessWidget {
                   subtitle: Text('Passé Composé'),
                   trailing: Icon(Icons.arrow_left),
                   onTap: () {
-                    Navigator.pushNamed(context, '/past');
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Past()));
                   },
                 ),
               ),
@@ -49,7 +54,8 @@ class Tenses extends StatelessWidget {
                   subtitle: Text(''),
                   trailing: Icon(Icons.arrow_right),
                   onTap: () {
-                    Navigator.pushNamed(context, '/future');
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Future()));
                   },
                 ),
               ),
