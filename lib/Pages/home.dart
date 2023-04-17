@@ -37,8 +37,16 @@ class _HomePageState extends State<HomePage> {
             style: TextStyle(fontFamily: 'monospace'),
           ),
           actions: [
-            IconButton(onPressed: () {}, icon: Icon(Icons.search)),
-            IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
+            IconButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/About');
+                },
+                icon: Icon(Icons.info_outline_rounded)),
+            IconButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/feedback');
+                },
+                icon: Icon(Icons.feedback)),
           ],
         ),
         body: TabBarView(
@@ -80,18 +88,6 @@ class Drawers extends StatelessWidget {
           ),
           onTap: () => Navigator.pushNamed(context, '/homePage'),
         ),
-        /* mmmmmmmmmmmmmmmmmmmmmmmm personal and its navigation mmmmmmmmmmmmmmmmmmmmmm*\ */
-        ListTile(
-          leading: Icon(
-            Icons.note_add,
-            size: 20,
-          ),
-          title: Text(
-            'Note',
-            style: TextStyle(fontSize: 16, color: Colors.black),
-          ),
-          onTap: () => Navigator.pushNamed(context, '/personal'),
-        ),
 
         /* mmmmmmmmmmmmmmmmmmmmmmmm home page and its navigation mmmmmmmmmmmmmmmmmmmmmm*\ */
         ListTile(
@@ -106,22 +102,7 @@ class Drawers extends StatelessWidget {
           onTap: () => Navigator.pushNamed(context, '/translator'),
         ),
         Divider(color: Colors.black),
-        /* mmmmmmmmmmmmmmmmmmmmmmmm Settings and its navigation mmmmmmmmmmmmmmmmmmmmmm*\ */
-        ListTile(
-          leading: Icon(
-            Icons.settings,
-            size: 20,
-          ),
-          title: Text(
-            'Settings',
-            style: TextStyle(fontSize: 16, color: Colors.black),
-          ),
-          trailing: Icon(
-            Icons.arrow_right,
-            size: 40,
-          ),
-          onTap: () => Navigator.of(context).pushNamed('/settings'),
-        ),
+
         /* mmmmmmmmmmmmmmmmmmmmmmmm About us and its navigation mmmmmmmmmmmmmmmmmmmmmm*\ */
         ListTile(
           leading: Icon(

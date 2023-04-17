@@ -1,6 +1,8 @@
 // ignore_for_file: unused_import, prefer_const_constructors, file_names, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:frenchify/begin/configuration.dart';
+import 'package:frenchify/inter/configuration.dart';
 
 import 'package:frenchify/main.dart';
 
@@ -20,12 +22,20 @@ class Adjective extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
+              SelectableText(
+                addIntro,
+                style: TextStyle(fontSize: 16),
+              ),
               SizedBox(
                 height: 30,
               ),
               Tables(),
               SizedBox(
                 height: 20,
+              ),
+              SelectableText(
+                addFooter,
+                style: TextStyle(fontSize: 16),
               ),
               SizedBox(
                 height: 50,
@@ -52,67 +62,67 @@ class Tables extends StatelessWidget {
           children: [
             TableRow(children: [
               SelectableText(
-                'French Phrase',
+                'Adjective',
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
               Text(
-                'Pronunciation',
+                'Masculine form',
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
               Text(
-                'English Translation',
+                'Feminine form',
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
             ]),
             TableRow(children: [
-              Text('Bonjour'),
-              Text('bohn-zhoor'),
-              Text('Good day / Hello'),
+              SelectableText('Beau/belle	'),
+              SelectableText('Beau'),
+              SelectableText('Belle	'),
             ]),
             TableRow(children: [
-              Text('Au revoir'),
-              Text('oh ruh-vwah'),
-              Text('Goodbye'),
+              SelectableText('Grand/grande'),
+              SelectableText('Grand'),
+              SelectableText('Grande'),
             ]),
             TableRow(children: [
-              Text('Merci'),
-              Text('mehr-see'),
-              Text('Thank you'),
+              SelectableText('Petit/petite'),
+              SelectableText('	Petit'),
+              SelectableText('	Petite'),
             ]),
             TableRow(children: [
-              Text("S'il vous plaît"),
-              Text('seel voo pleh'),
-              Text('Please'),
+              SelectableText('Vieux/vieille'),
+              SelectableText('Vieux	'),
+              SelectableText('Vieille'),
             ]),
             TableRow(children: [
-              Text('Oui'),
-              Text('wee'),
-              Text('Yes'),
+              SelectableText('Grand/grande'),
+              SelectableText('Grand'),
+              SelectableText('Grande'),
             ]),
             TableRow(children: [
-              Text('Non'),
-              Text('nohn'),
-              Text('No'),
+              SelectableText('Bon/bonne'),
+              SelectableText('Bon	'),
+              SelectableText('Bonne'),
             ]),
             TableRow(children: [
-              Text('Comment ça va?'),
-              Text('koh-mohn sah vah'),
-              Text('How are you?'),
+              SelectableText('Mauvais/mauvaise'),
+              SelectableText('Mauvais'),
+              SelectableText('Mauvaise'),
             ]),
             TableRow(children: [
-              Text('Ça va bien'),
-              Text('sah vah byeh'),
-              Text('I\'m doing well'),
+              SelectableText('Gros/grosse'),
+              SelectableText('Gros	'),
+              SelectableText('Grosse'),
             ]),
             TableRow(children: [
-              Text('Je m\'appelle'),
-              Text('zhuh mah-pell'),
-              Text('My name is'),
+              SelectableText('Fort/forte'),
+              SelectableText('Fort'),
+              SelectableText('Forte'),
             ]),
             TableRow(children: [
-              SelectableText('Excusez-moi'),
-              SelectableText('eks-koo-zay mwah'),
-              SelectableText('Excuse me'),
+              SelectableText('Nouveau'),
+              SelectableText('Nouveau'),
+              SelectableText('Nouvelle'),
             ]),
           ],
         ));
