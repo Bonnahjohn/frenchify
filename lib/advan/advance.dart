@@ -20,7 +20,9 @@ class AdvanIntro extends StatelessWidget {
                 title: Text('Sentence structure'),
                 subtitle: Text(''),
                 trailing: Icon(Icons.arrow_right),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/sentence');
+                },
               ),
             ),
             Card(

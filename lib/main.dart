@@ -1,11 +1,11 @@
 // ignore_for_file: unused_import, prefer_const_constructors, avoid_unnecessary_containers, unnecessary_import, avoid_web_libraries_in_flutter, import_of_legacy_library_into_null_safe
+
 import 'package:frenchify/begin/begin.dart';
 import 'package:frenchify/inter/intermediate.dart';
 import 'package:frenchify/advan/advance.dart';
 import 'package:frenchify/Pages/translator.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
-
 import 'package:frenchify/Pages/home.dart';
 import 'package:frenchify/Pages/about.dart';
 import 'package:frenchify/Pages/feedback.dart';
@@ -39,7 +39,7 @@ import 'advan/descriptive.dart';
 import 'package:frenchify/advan/Letter/informal.dart';
 import 'package:frenchify/advan/Letter/formal.dart';
 import 'package:frenchify/advan/Letter/letterimage.dart';
-//import 'Pages/function.dart';
+import 'advan/sentence.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -77,7 +77,8 @@ void main() {
       '/future': (context) => Future(),
       '/adverb': (context) => Adverb(),
       '/adjective': (context) => Adjective(),
-      '/descriptive': (context) => Descriptive()
+      '/descriptive': (context) => Descriptive(),
+      '/sentence': (context) => Sentence()
     },
   ));
 }
