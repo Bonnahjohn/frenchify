@@ -124,19 +124,19 @@ class MyApp extends StatelessWidget {
                     )),
                 const Positioned(
                     top: 200,
-                    left: 5,
+                    left: 10,
                     child: SizedBox(
                       width: 380,
                       child: Text(
                         'Bonjour! Frenchify is the perfect app for anyone looking to learn or improve their French language skills, with its user-friendly interface and innovative features making learning fun and interactive.',
                         style: TextStyle(
                             decoration: TextDecoration.none,
-                            color: Colors.orange,
+                            color: Colors.pink,
                             fontSize: 16,
                             fontFamily: 'Roboto'),
                         overflow: TextOverflow.clip,
                         textAlign: TextAlign.justify,
-                        textScaleFactor: 1.2,
+                        textScaleFactor: 1.3,
                       ),
                     )),
                 Positioned(

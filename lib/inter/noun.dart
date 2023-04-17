@@ -11,9 +11,6 @@ class Noun extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        actions: [
-          IconButton(onPressed: () {}, icon: const Icon(Icons.more_vert))
-        ],
         backgroundColor: const Color.fromRGBO(100, 149, 237, 1),
         title: const Text('Nouns and article'),
       ),
