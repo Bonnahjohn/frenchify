@@ -1,6 +1,8 @@
 // ignore_for_file: unused_import, prefer_const_literals_to_create_immutables, prefer_const_constructors, use_key_in_widget_constructors, non_constant_identifier_names, body_might_complete_normally_nullable, import_of_legacy_library_into_null_safe
 
 import 'package:flutter/material.dart';
+import 'package:frenchify/Pages/about.dart';
+import 'package:frenchify/Pages/feedback.dart';
 import 'package:frenchify/begin/begin.dart';
 import 'package:frenchify/inter/intermediate.dart';
 import 'package:frenchify/advan/advance.dart';
@@ -39,12 +41,14 @@ class _HomePageState extends State<HomePage> {
           actions: [
             IconButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, '/About');
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => About()));
                 },
                 icon: Icon(Icons.info_outline_rounded)),
             IconButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, '/feedback');
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Feedbacks()));
                 },
                 icon: Icon(Icons.feedback)),
           ],
