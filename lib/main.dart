@@ -9,15 +9,13 @@ import 'package:flutter/material.dart';
 import 'package:frenchify/Pages/home.dart';
 import 'package:frenchify/Pages/about.dart';
 import 'package:frenchify/Pages/feedback.dart';
+import 'Pages/splash.dart';
 
 void main() {
   runApp(MaterialApp(
     title: 'French Level',
     debugShowCheckedModeBanner: false,
-    initialRoute: '/',
-    routes: {
-      '/': (context) => MyApp(),
-    },
+    home: Screen(),
   ));
 }
 

@@ -25,8 +25,6 @@ class Letter extends StatelessWidget {
             children: <Widget>[
               Card(
                 child: ListTile(
-                  leading: Image.asset('assets/images/let.jpg',
-                      width: 60, height: 100),
                   title: Text('Informal letter'),
                   subtitle: Text('Lettre informelle'),
                   trailing: Icon(Icons.arrow_right),
@@ -38,8 +36,6 @@ class Letter extends StatelessWidget {
               ),
               Card(
                 child: ListTile(
-                  leading: Image.asset('assets/images/let.jpg',
-                      width: 60, height: 100),
                   title: Text('Formal Letter'),
                   subtitle: Text('Lettre formelle'),
                   trailing: Icon(Icons.arrow_right),
