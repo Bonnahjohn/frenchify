@@ -1,4 +1,4 @@
-// ignore_for_file: unused_import
+// ignore_for_file: unused_import, deprecated_member_use
 
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -44,16 +44,16 @@ class Feedbacks extends StatelessWidget {
                         color: Color.fromRGBO(100, 149, 237, 1)),
                     recognizer: TapGestureRecognizer()
                       ..onTap = () async {
-                        // final Uri params = Uri(
-                        //   scheme: 'mailto',
-                        //   path: 'Frenchifyteam@gmail.com',
-                        // );
-                        // String url = params.toString();
-                        // if (await canLaunch(url)) {
-                        //   await launch(url);
-                        // } else {
-                        //   throw 'Could not launch $url';
-                        // }
+                        final Uri params = Uri(
+                          scheme: 'mailto',
+                          path: 'Frenchifyteam@gmail.com',
+                        );
+                        String url = params.toString();
+                        if (await canLaunch(url)) {
+                          await launch(url);
+                        } else {
+                          throw 'Could not launch $url';
+                        }
                       }),
               ]))
             ],

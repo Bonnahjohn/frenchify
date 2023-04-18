@@ -36,7 +36,7 @@ class _HomePageState extends State<HomePage> {
           backgroundColor: Color.fromRGBO(100, 149, 237, 1),
           title: Text(
             'French Level',
-            style: TextStyle(fontFamily: 'monospace'),
+            style: TextStyle(fontFamily: 'Lato'),
           ),
           actions: [
             IconButton(
