@@ -28,7 +28,10 @@ class Intermediate extends StatelessWidget {
                 title: Text('Nouns and Articles'),
                 subtitle: Text(''),
                 trailing: Icon(Icons.arrow_right),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                      context, MaterialPageRoute(builder: (context) => Noun()));
+                },
               ),
             ),
             Card(
@@ -64,7 +67,7 @@ class Intermediate extends StatelessWidget {
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Tense()));
+                      MaterialPageRoute(builder: (context) => Tenses()));
                 },
               ),
             ),
