@@ -80,7 +80,10 @@ class _TreansState extends State<Treans> {
           ),
         ),
         const SizedBox(height: 20),
-        Text(_translatedText),
+        SelectableText(
+          _translatedText,
+          style: TextStyle(fontSize: 16),
+        ),
         const SizedBox(height: 20),
         ElevatedButton(
           onPressed: () {
