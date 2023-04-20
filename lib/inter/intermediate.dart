@@ -25,7 +25,7 @@ class Intermediate extends StatelessWidget {
             Card(
               child: ListTile(
                 title: Text('Nouns and Articles'),
-                subtitle: Text(''),
+                subtitle: Text('Nom et articles'),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
                   Navigator.push(
@@ -36,7 +36,7 @@ class Intermediate extends StatelessWidget {
             Card(
               child: ListTile(
                 title: Text('Pronouns'),
-                subtitle: Text(''),
+                subtitle: Text('Pronoms'),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
                   Navigator.push(context,
@@ -47,7 +47,7 @@ class Intermediate extends StatelessWidget {
             Card(
               child: ListTile(
                 title: Text('Verbs'),
-                subtitle: Text(''),
+                subtitle: Text('Verbes'),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
                   Navigator.push(
@@ -58,7 +58,7 @@ class Intermediate extends StatelessWidget {
             Card(
               child: ListTile(
                 title: Text('Tenses'),
-                subtitle: Text(''),
+                subtitle: Text('les temps verbaux'),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
                   Navigator.push(context,
@@ -71,7 +71,7 @@ class Intermediate extends StatelessWidget {
                 // leading: Image.asset('assets/images/adverb.jpg',
                 //     width: 60, height: 100),
                 title: const Text('Adverbs'),
-                subtitle: const Text(""),
+                subtitle: const Text("les adverbes"),
                 trailing: const Icon(Icons.arrow_right),
                 onTap: () {
                   Navigator.push(context,
@@ -84,7 +84,7 @@ class Intermediate extends StatelessWidget {
                 // leading: Image.asset('assets/images/adjective.jpg',
                 //     width: 60, height: 100),
                 title: Text('adjectives'),
-                subtitle: Text(''),
+                subtitle: Text('les adjectifs'),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
                   Navigator.push(context,
@@ -97,7 +97,7 @@ class Intermediate extends StatelessWidget {
                 // leading: Image.asset('assets/images/prep.png',
                 //     width: 60, height: 50),
                 title: Text('prepositions'),
-                subtitle: Text(''),
+                subtitle: Text('les prépositions'),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
                   Navigator.pushNamed(context, '/preposition');
