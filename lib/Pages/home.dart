@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:frenchify/Pages/about.dart';
 import 'package:frenchify/Pages/feedback.dart';
+
 import 'package:frenchify/begin/begin.dart';
 import 'package:frenchify/inter/intermediate.dart';
 import 'package:frenchify/advan/advance.dart';
