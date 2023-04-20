@@ -21,7 +21,7 @@ class AdvanIntro extends StatelessWidget {
             Card(
               child: ListTile(
                 title: Text('Sentence structure'),
-                subtitle: Text(''),
+                subtitle: Text('la structure de la phrase'),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
                   Navigator.push(context,
@@ -43,7 +43,7 @@ class AdvanIntro extends StatelessWidget {
             Card(
               child: ListTile(
                 title: Text('Letter Writing'),
-                subtitle: Text(''),
+                subtitle: Text('la correspondance épistolaire'),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
                   Navigator.push(context,
