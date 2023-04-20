@@ -16,7 +16,7 @@ class Screen extends StatefulWidget {
 class _ScreenState extends State<Screen> {
   void initState() {
     super.initState();
-    Timer(const Duration(seconds: 5), () {
+    Timer(const Duration(seconds: 3), () {
       Navigator.of(context).pushReplacement(
           MaterialPageRoute(builder: (context) => const MyApp()));
     });
@@ -35,13 +35,10 @@ class _ScreenState extends State<Screen> {
         home: AnnotatedRegion<SystemUiOverlayStyle>(
             value: SystemUiOverlayStyle.dark.copyWith(
                 statusBarColor: const Color.fromRGBO(100, 149, 237, 1)),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                  child: Center(child: Image.asset('assets/images/splash.png')),
-                )
-              ],
-            )));
+            child: Container(
+                color: Colors.white,
+                child: Center(
+                  child: Image.asset('assets/images/splash.png'),
+                ))));
   }
 }
