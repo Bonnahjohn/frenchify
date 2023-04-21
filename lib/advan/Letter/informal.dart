@@ -303,7 +303,7 @@ class Informal extends StatelessWidget {
                 height: 30,
               ),
               Text(
-                'Below is an image showing the sample of informal letter.',
+                'Below is an image showing the sample of informal letter.The address at the top left can be removed when you are writing yours or you can  maintain it as the image is.',
                 style: TextStyle(fontSize: 16),
               ),
               SizedBox(
