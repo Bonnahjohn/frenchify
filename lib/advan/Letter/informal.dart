@@ -49,7 +49,7 @@ class Informal extends StatelessWidget {
                         fontSize: 17)),
                 TextSpan(
                     text:
-                        'Date: The letter usually begins with the date, written in the format "Le [day] [month] [year]".',
+                        'Place and Date: The letter usually begins with the place and date, written in the format "[Place of the writer],Le [day] [month] [year]".',
                     style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.normal,
