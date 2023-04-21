@@ -49,13 +49,26 @@ class Informal extends StatelessWidget {
                         fontSize: 17)),
                 TextSpan(
                     text:
-                        'Salutation: The letter usually begins with "Cher/Chère" (Dear) followed by the first name of the recipient or a nickname, depending on how close the writer is to the recipient.',
+                        'Date: The letter usually begins with the date, written in the format "Le [day] [month] [year]".',
                     style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.normal,
                         fontSize: 17)),
                 TextSpan(
                     text: '\n2.',
+                    style: TextStyle(
+                        color: Colors.red,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 17)),
+                TextSpan(
+                    text:
+                        'Salutation: The letter usually begins with "Cher/Chère" (Dear) followed by the first name of the recipient or a nickname, depending on how close the writer is to the recipient.',
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.normal,
+                        fontSize: 17)),
+                TextSpan(
+                    text: '\n3.',
                     style: TextStyle(
                         color: Colors.red,
                         fontWeight: FontWeight.bold,
@@ -68,7 +81,7 @@ class Informal extends StatelessWidget {
                         fontWeight: FontWeight.normal,
                         fontSize: 16)),
                 TextSpan(
-                    text: '\n3.',
+                    text: '\n4.',
                     style: TextStyle(
                         color: Colors.red,
                         fontWeight: FontWeight.bold,
@@ -81,7 +94,7 @@ class Informal extends StatelessWidget {
                         fontWeight: FontWeight.normal,
                         fontSize: 16)),
                 TextSpan(
-                    text: '\n4.',
+                    text: '\n5.',
                     style: TextStyle(
                         color: Colors.red,
                         fontWeight: FontWeight.bold,
@@ -94,7 +107,7 @@ class Informal extends StatelessWidget {
                         fontWeight: FontWeight.normal,
                         fontSize: 16)),
                 TextSpan(
-                    text: '\n5.',
+                    text: '\n6.',
                     style: TextStyle(
                         color: Colors.red,
                         fontWeight: FontWeight.bold,
@@ -118,7 +131,10 @@ class Informal extends StatelessWidget {
                 TextSpan(
                     text:
                         "\n Some of the examples of the salutation (formule d'appel) are as follows;But note that if we are using Chèr addition with some names we should ensure that if the name we are referring to is a female we will  add E at the end of the chere like this (Chère) but if the name we are referring to is a male then we should maintain it as it is.",
-                    style: TextStyle(color: Colors.black, fontSize: 16)),
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 18,
+                        fontWeight: FontWeight.normal)),
                 TextSpan(
                     text:
                         "\n \nExamples of the salutation \n (Formule d'appel)",
