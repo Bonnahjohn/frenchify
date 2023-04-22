@@ -55,77 +55,75 @@ class Tables extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InteractiveViewer(
-        boundaryMargin: EdgeInsets.all(20.0),
-        child: Table(
-          border: TableBorder.all(color: Color.fromRGBO(100, 149, 237, 1)),
-          children: [
-            TableRow(children: [
-              SelectableText(
-                'Adjective',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
-              Text(
-                'Masculine form',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
-              Text(
-                'Feminine form',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
-            ]),
-            TableRow(children: [
-              SelectableText('Beau/belle	'),
-              SelectableText('Beau'),
-              SelectableText('Belle	'),
-            ]),
-            TableRow(children: [
-              SelectableText('Grand/grande'),
-              SelectableText('Grand'),
-              SelectableText('Grande'),
-            ]),
-            TableRow(children: [
-              SelectableText('Petit/petite'),
-              SelectableText('	Petit'),
-              SelectableText('	Petite'),
-            ]),
-            TableRow(children: [
-              SelectableText('Vieux/vieille'),
-              SelectableText('Vieux	'),
-              SelectableText('Vieille'),
-            ]),
-            TableRow(children: [
-              SelectableText('Grand/grande'),
-              SelectableText('Grand'),
-              SelectableText('Grande'),
-            ]),
-            TableRow(children: [
-              SelectableText('Bon/bonne'),
-              SelectableText('Bon	'),
-              SelectableText('Bonne'),
-            ]),
-            TableRow(children: [
-              SelectableText('Mauvais/mauvaise'),
-              SelectableText('Mauvais'),
-              SelectableText('Mauvaise'),
-            ]),
-            TableRow(children: [
-              SelectableText('Gros/grosse'),
-              SelectableText('Gros	'),
-              SelectableText('Grosse'),
-            ]),
-            TableRow(children: [
-              SelectableText('Fort/forte'),
-              SelectableText('Fort'),
-              SelectableText('Forte'),
-            ]),
-            TableRow(children: [
-              SelectableText('Nouveau'),
-              SelectableText('Nouveau'),
-              SelectableText('Nouvelle'),
-            ]),
-          ],
-        ));
+    return Table(
+      border: TableBorder.all(color: Color.fromRGBO(100, 149, 237, 1)),
+      children: [
+        TableRow(children: [
+          SelectableText(
+            'Adjective',
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          ),
+          Text(
+            'Masculine form',
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          ),
+          Text(
+            'Feminine form',
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          ),
+        ]),
+        TableRow(children: [
+          SelectableText('Beau/belle	'),
+          SelectableText('Beau'),
+          SelectableText('Belle	'),
+        ]),
+        TableRow(children: [
+          SelectableText('Grand/grande'),
+          SelectableText('Grand'),
+          SelectableText('Grande'),
+        ]),
+        TableRow(children: [
+          SelectableText('Petit/petite'),
+          SelectableText('	Petit'),
+          SelectableText('	Petite'),
+        ]),
+        TableRow(children: [
+          SelectableText('Vieux/vieille'),
+          SelectableText('Vieux	'),
+          SelectableText('Vieille'),
+        ]),
+        TableRow(children: [
+          SelectableText('Grand/grande'),
+          SelectableText('Grand'),
+          SelectableText('Grande'),
+        ]),
+        TableRow(children: [
+          SelectableText('Bon/bonne'),
+          SelectableText('Bon	'),
+          SelectableText('Bonne'),
+        ]),
+        TableRow(children: [
+          SelectableText('Mauvais/mauvaise'),
+          SelectableText('Mauvais'),
+          SelectableText('Mauvaise'),
+        ]),
+        TableRow(children: [
+          SelectableText('Gros/grosse'),
+          SelectableText('Gros	'),
+          SelectableText('Grosse'),
+        ]),
+        TableRow(children: [
+          SelectableText('Fort/forte'),
+          SelectableText('Fort'),
+          SelectableText('Forte'),
+        ]),
+        TableRow(children: [
+          SelectableText('Nouveau'),
+          SelectableText('Nouveau'),
+          SelectableText('Nouvelle'),
+        ]),
+      ],
+    );
   }
 }
 

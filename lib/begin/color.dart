@@ -70,67 +70,65 @@ class Figure extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InteractiveViewer(
-        boundaryMargin: EdgeInsets.all(20.0),
-        child: Table(
-          border: TableBorder.all(color: Color.fromRGBO(100, 149, 237, 1)),
-          children: [
-            TableRow(children: [
-              SelectableText(
-                'Color',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
-              SelectableText(
-                'French Translation',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
-            ]),
-            TableRow(children: [
-              SelectableText(' Red'),
-              SelectableText(' Rouge'),
-            ]),
-            TableRow(children: [
-              SelectableText(' Yellow'),
-              SelectableText(' Orange'),
-            ]),
-            TableRow(children: [
-              SelectableText("  Yellow"),
-              SelectableText(' Jaune'),
-            ]),
-            TableRow(children: [
-              SelectableText('  Green'),
-              SelectableText(' Vert'),
-            ]),
-            TableRow(children: [
-              SelectableText(' Blue'),
-              SelectableText(' Bleu'),
-            ]),
-            TableRow(children: [
-              SelectableText(' Purple'),
-              SelectableText(' Violet'),
-            ]),
-            TableRow(children: [
-              SelectableText(' Pink'),
-              SelectableText(' Rose'),
-            ]),
-            TableRow(children: [
-              SelectableText(' Black'),
-              SelectableText(' Noir'),
-            ]),
-            TableRow(children: [
-              SelectableText(' White'),
-              SelectableText(' Blanc'),
-            ]),
-            TableRow(children: [
-              SelectableText(' Brown'),
-              SelectableText(' Marron'),
-            ]),
-            TableRow(children: [
-              SelectableText(' Grey'),
-              SelectableText(' Gris'),
-            ]),
-          ],
-        ));
+    return Table(
+      border: TableBorder.all(color: Color.fromRGBO(100, 149, 237, 1)),
+      children: [
+        TableRow(children: [
+          SelectableText(
+            'Color',
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          ),
+          SelectableText(
+            'French Translation',
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          ),
+        ]),
+        TableRow(children: [
+          SelectableText(' Red'),
+          SelectableText(' Rouge'),
+        ]),
+        TableRow(children: [
+          SelectableText(' Yellow'),
+          SelectableText(' Orange'),
+        ]),
+        TableRow(children: [
+          SelectableText("  Yellow"),
+          SelectableText(' Jaune'),
+        ]),
+        TableRow(children: [
+          SelectableText('  Green'),
+          SelectableText(' Vert'),
+        ]),
+        TableRow(children: [
+          SelectableText(' Blue'),
+          SelectableText(' Bleu'),
+        ]),
+        TableRow(children: [
+          SelectableText(' Purple'),
+          SelectableText(' Violet'),
+        ]),
+        TableRow(children: [
+          SelectableText(' Pink'),
+          SelectableText(' Rose'),
+        ]),
+        TableRow(children: [
+          SelectableText(' Black'),
+          SelectableText(' Noir'),
+        ]),
+        TableRow(children: [
+          SelectableText(' White'),
+          SelectableText(' Blanc'),
+        ]),
+        TableRow(children: [
+          SelectableText(' Brown'),
+          SelectableText(' Marron'),
+        ]),
+        TableRow(children: [
+          SelectableText(' Grey'),
+          SelectableText(' Gris'),
+        ]),
+      ],
+    );
   }
 }
 
@@ -141,56 +139,54 @@ class Describe extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InteractiveViewer(
-        boundaryMargin: EdgeInsets.all(20.0),
-        child: Table(
-          border: TableBorder.all(color: Color.fromRGBO(100, 149, 237, 1)),
-          children: [
-            TableRow(children: [
-              SelectableText(
-                'Adjective',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
-              SelectableText(
-                'English Translation',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
-            ]),
-            TableRow(children: [
-              SelectableText(
-                'Grand(e)',
-                style: TextStyle(fontSize: 16),
-              ),
-              SelectableText(
-                'Big',
-                style: TextStyle(fontSize: 16),
-              ),
-            ]),
-            TableRow(children: [
-              SelectableText('Joli(e)'),
-              SelectableText('Pretty'),
-            ]),
-            TableRow(children: [
-              SelectableText("Beau/Belle"),
-              SelectableText('Beautiful'),
-            ]),
-            TableRow(children: [
-              SelectableText('Mignon(ne)'),
-              SelectableText('Cute'),
-            ]),
-            TableRow(children: [
-              SelectableText('Drôle'),
-              SelectableText('Funny'),
-            ]),
-            TableRow(children: [
-              SelectableText('Intéressant(e)'),
-              SelectableText('Interesting'),
-            ]),
-            TableRow(children: [
-              SelectableText('Bon(ne)'),
-              SelectableText('Good'),
-            ]),
-          ],
-        ));
+    return Table(
+      border: TableBorder.all(color: Color.fromRGBO(100, 149, 237, 1)),
+      children: [
+        TableRow(children: [
+          SelectableText(
+            'Adjective',
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          ),
+          SelectableText(
+            'English Translation',
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          ),
+        ]),
+        TableRow(children: [
+          SelectableText(
+            'Grand(e)',
+            style: TextStyle(fontSize: 16),
+          ),
+          SelectableText(
+            'Big',
+            style: TextStyle(fontSize: 16),
+          ),
+        ]),
+        TableRow(children: [
+          SelectableText('Joli(e)'),
+          SelectableText('Pretty'),
+        ]),
+        TableRow(children: [
+          SelectableText("Beau/Belle"),
+          SelectableText('Beautiful'),
+        ]),
+        TableRow(children: [
+          SelectableText('Mignon(ne)'),
+          SelectableText('Cute'),
+        ]),
+        TableRow(children: [
+          SelectableText('Drôle'),
+          SelectableText('Funny'),
+        ]),
+        TableRow(children: [
+          SelectableText('Intéressant(e)'),
+          SelectableText('Interesting'),
+        ]),
+        TableRow(children: [
+          SelectableText('Bon(ne)'),
+          SelectableText('Good'),
+        ]),
+      ],
+    );
   }
 }

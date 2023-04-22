@@ -80,62 +80,60 @@ class Tables extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InteractiveViewer(
-        boundaryMargin: EdgeInsets.all(20.0),
-        child: Table(
-          border: TableBorder.all(color: Color.fromRGBO(100, 149, 237, 1)),
-          children: [
-            TableRow(children: [
-              SelectableText(
-                'Greetings',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
-              Text(
-                'Pronunciation',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
-              Text(
-                'Meaning',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
-            ]),
-            TableRow(children: [
-              Text('Bonjour'),
-              Text('bohn-zhoor'),
-              Text('Good day / Hello'),
-            ]),
-            TableRow(children: [
-              Text('Bonsoir'),
-              Text('bohn-swahr'),
-              Text('Good evening'),
-            ]),
-            TableRow(children: [
-              Text('Salut'),
-              Text('sah-lyoo'),
-              Text('Hi / Hey'),
-            ]),
-            TableRow(children: [
-              Text('Coucou'),
-              Text('coo-coo'),
-              Text('Hi / Hello'),
-            ]),
-            TableRow(children: [
-              Text('Comment ça va ?'),
-              Text('koh-mohn sah vah'),
-              Text('How are you?'),
-            ]),
-            TableRow(children: [
-              Text('Ça va ?'),
-              Text('sah vah'),
-              Text('Are you OK?'),
-            ]),
-            TableRow(children: [
-              Text('Bienvenue'),
-              Text('byah-ven-yoo'),
-              Text('Welcome'),
-            ]),
-          ],
-        ));
+    return Table(
+      border: TableBorder.all(color: Color.fromRGBO(100, 149, 237, 1)),
+      children: [
+        TableRow(children: [
+          SelectableText(
+            'Greetings',
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          ),
+          Text(
+            'Pronunciation',
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          ),
+          Text(
+            'Meaning',
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          ),
+        ]),
+        TableRow(children: [
+          Text('Bonjour'),
+          Text('bohn-zhoor'),
+          Text('Good day / Hello'),
+        ]),
+        TableRow(children: [
+          Text('Bonsoir'),
+          Text('bohn-swahr'),
+          Text('Good evening'),
+        ]),
+        TableRow(children: [
+          Text('Salut'),
+          Text('sah-lyoo'),
+          Text('Hi / Hey'),
+        ]),
+        TableRow(children: [
+          Text('Coucou'),
+          Text('coo-coo'),
+          Text('Hi / Hello'),
+        ]),
+        TableRow(children: [
+          Text('Comment ça va ?'),
+          Text('koh-mohn sah vah'),
+          Text('How are you?'),
+        ]),
+        TableRow(children: [
+          Text('Ça va ?'),
+          Text('sah vah'),
+          Text('Are you OK?'),
+        ]),
+        TableRow(children: [
+          Text('Bienvenue'),
+          Text('byah-ven-yoo'),
+          Text('Welcome'),
+        ]),
+      ],
+    );
   }
 }
 
@@ -146,62 +144,60 @@ class Introduction extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InteractiveViewer(
-        boundaryMargin: EdgeInsets.all(20.0),
-        child: Table(
-          border: TableBorder.all(color: Color.fromRGBO(100, 149, 237, 1)),
-          children: [
-            TableRow(children: [
-              SelectableText(
-                'French',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
-              SelectableText(
-                'Pronunciation (Approximate)',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
-              SelectableText(
-                'English Translation',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              )
-            ]),
-            TableRow(children: [
-              SelectableText(
-                'Bonjour',
-                style: TextStyle(fontSize: 16),
-              ),
-              SelectableText(
-                'bohn-zhoor',
-                style: TextStyle(fontSize: 16),
-              ),
-              SelectableText(
-                'Good day / Hello',
-                style: TextStyle(fontSize: 16),
-              ),
-            ]),
-            TableRow(children: [
-              SelectableText('Comment ça va?'),
-              SelectableText('koh-mahn sah vah'),
-              SelectableText('How are you?'),
-            ]),
-            TableRow(children: [
-              SelectableText("Je m'appelle [your name]"),
-              SelectableText('zhuh mah-pehl [your name]'),
-              SelectableText('My name is [your name]'),
-            ]),
-            TableRow(children: [
-              SelectableText(
-                'Enchanté(e)',
-              ),
-              SelectableText('ahn-shahn-tay'),
-              SelectableText('Nice to meet you'),
-            ]),
-            TableRow(children: [
-              SelectableText('Au revoir'),
-              SelectableText('oh ruh-vwahr'),
-              SelectableText('Goodbye'),
-            ]),
-          ],
-        ));
+    return Table(
+      border: TableBorder.all(color: Color.fromRGBO(100, 149, 237, 1)),
+      children: [
+        TableRow(children: [
+          SelectableText(
+            'French',
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          ),
+          SelectableText(
+            'Pronunciation (Approximate)',
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          ),
+          SelectableText(
+            'English Translation',
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          )
+        ]),
+        TableRow(children: [
+          SelectableText(
+            'Bonjour',
+            style: TextStyle(fontSize: 16),
+          ),
+          SelectableText(
+            'bohn-zhoor',
+            style: TextStyle(fontSize: 16),
+          ),
+          SelectableText(
+            'Good day / Hello',
+            style: TextStyle(fontSize: 16),
+          ),
+        ]),
+        TableRow(children: [
+          SelectableText('Comment ça va?'),
+          SelectableText('koh-mahn sah vah'),
+          SelectableText('How are you?'),
+        ]),
+        TableRow(children: [
+          SelectableText("Je m'appelle [your name]"),
+          SelectableText('zhuh mah-pehl [your name]'),
+          SelectableText('My name is [your name]'),
+        ]),
+        TableRow(children: [
+          SelectableText(
+            'Enchanté(e)',
+          ),
+          SelectableText('ahn-shahn-tay'),
+          SelectableText('Nice to meet you'),
+        ]),
+        TableRow(children: [
+          SelectableText('Au revoir'),
+          SelectableText('oh ruh-vwahr'),
+          SelectableText('Goodbye'),
+        ]),
+      ],
+    );
   }
 }

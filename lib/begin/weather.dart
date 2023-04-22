@@ -63,59 +63,57 @@ class Season extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InteractiveViewer(
-        boundaryMargin: EdgeInsets.all(20.0),
-        child: Table(
-          border: TableBorder.all(color: Color.fromRGBO(100, 149, 237, 1)),
-          children: [
-            TableRow(children: [
-              SelectableText(
-                'French Phrase',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
-              SelectableText(
-                'English Translation',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
-            ]),
-            TableRow(children: [
-              SelectableText(' Il fait beau.'),
-              SelectableText(' It\'s nice out.'),
-            ]),
-            TableRow(children: [
-              SelectableText('Il fait chaud'),
-              SelectableText(' It\'s hot out.'),
-            ]),
-            TableRow(children: [
-              SelectableText("  Il fait froid."),
-              SelectableText(' It\'s cold out.'),
-            ]),
-            TableRow(children: [
-              SelectableText(' Il pleut.'),
-              SelectableText(' It\'s raining.'),
-            ]),
-            TableRow(children: [
-              SelectableText(' Il neige.'),
-              SelectableText(' It\'s snowing.'),
-            ]),
-            TableRow(children: [
-              SelectableText(' Il y a du vent.	'),
-              SelectableText(' It\'s windy.'),
-            ]),
-            TableRow(children: [
-              SelectableText(' Le ciel est couvert.'),
-              SelectableText(' The sky is overcast.'),
-            ]),
-            TableRow(children: [
-              SelectableText(' Le temps est nuageux.'),
-              SelectableText(' The weather is cloudy.'),
-            ]),
-            TableRow(children: [
-              SelectableText(' Il y a un orage.'),
-              SelectableText(' There\'s a storm.'),
-            ]),
-          ],
-        ));
+    return Table(
+      border: TableBorder.all(color: Color.fromRGBO(100, 149, 237, 1)),
+      children: [
+        TableRow(children: [
+          SelectableText(
+            'French Phrase',
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          ),
+          SelectableText(
+            'English Translation',
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          ),
+        ]),
+        TableRow(children: [
+          SelectableText(' Il fait beau.'),
+          SelectableText(' It\'s nice out.'),
+        ]),
+        TableRow(children: [
+          SelectableText('Il fait chaud'),
+          SelectableText(' It\'s hot out.'),
+        ]),
+        TableRow(children: [
+          SelectableText("  Il fait froid."),
+          SelectableText(' It\'s cold out.'),
+        ]),
+        TableRow(children: [
+          SelectableText(' Il pleut.'),
+          SelectableText(' It\'s raining.'),
+        ]),
+        TableRow(children: [
+          SelectableText(' Il neige.'),
+          SelectableText(' It\'s snowing.'),
+        ]),
+        TableRow(children: [
+          SelectableText(' Il y a du vent.	'),
+          SelectableText(' It\'s windy.'),
+        ]),
+        TableRow(children: [
+          SelectableText(' Le ciel est couvert.'),
+          SelectableText(' The sky is overcast.'),
+        ]),
+        TableRow(children: [
+          SelectableText(' Le temps est nuageux.'),
+          SelectableText(' The weather is cloudy.'),
+        ]),
+        TableRow(children: [
+          SelectableText(' Il y a un orage.'),
+          SelectableText(' There\'s a storm.'),
+        ]),
+      ],
+    );
   }
 }
 
@@ -124,62 +122,60 @@ class Four extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InteractiveViewer(
-        boundaryMargin: EdgeInsets.all(20.0),
-        child: Table(
-          border: TableBorder.all(color: Color.fromRGBO(100, 149, 237, 1)),
-          children: [
-            TableRow(children: [
-              SelectableText(
-                'Les quatre saisons de l\'annee',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
-              SelectableText(
-                'The four seasons of the year',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
-            ]),
-            TableRow(children: [
-              SelectableText(' le printemps'),
-              SelectableText(' spring'),
-            ]),
-            TableRow(children: [
-              SelectableText(' l\'été	'),
-              SelectableText(' summer'),
-            ]),
-            TableRow(children: [
-              SelectableText("  l'automne"),
-              SelectableText(' fall/autumn'),
-            ]),
-            TableRow(children: [
-              SelectableText(' l\'hiver.'),
-              SelectableText(' winter'),
-            ]),
-            TableRow(children: [
-              SelectableText(' '),
-              SelectableText(' '),
-            ]),
-            TableRow(children: [
-              SelectableText(' 	'),
-              SelectableText(' '),
-            ]),
-            TableRow(children: [
-              SelectableText(' Le Printemps commence en mars'),
-              SelectableText(' Spring begins in march'),
-            ]),
-            TableRow(children: [
-              SelectableText(' l\'été	 commence en septembre'),
-              SelectableText(' Summer begins in june'),
-            ]),
-            TableRow(children: [
-              SelectableText("  l'automne  commence en septembre"),
-              SelectableText(' Autumn  begins in september'),
-            ]),
-            TableRow(children: [
-              SelectableText("  l'hiver commence en  décember"),
-              SelectableText(' Winter begins in september'),
-            ]),
-          ],
-        ));
+    return Table(
+      border: TableBorder.all(color: Color.fromRGBO(100, 149, 237, 1)),
+      children: [
+        TableRow(children: [
+          SelectableText(
+            'Les quatre saisons de l\'annee',
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          ),
+          SelectableText(
+            'The four seasons of the year',
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          ),
+        ]),
+        TableRow(children: [
+          SelectableText(' le printemps'),
+          SelectableText(' spring'),
+        ]),
+        TableRow(children: [
+          SelectableText(' l\'été	'),
+          SelectableText(' summer'),
+        ]),
+        TableRow(children: [
+          SelectableText("  l'automne"),
+          SelectableText(' fall/autumn'),
+        ]),
+        TableRow(children: [
+          SelectableText(' l\'hiver.'),
+          SelectableText(' winter'),
+        ]),
+        TableRow(children: [
+          SelectableText(' '),
+          SelectableText(' '),
+        ]),
+        TableRow(children: [
+          SelectableText(' 	'),
+          SelectableText(' '),
+        ]),
+        TableRow(children: [
+          SelectableText(' Le Printemps commence en mars'),
+          SelectableText(' Spring begins in march'),
+        ]),
+        TableRow(children: [
+          SelectableText(' l\'été	 commence en septembre'),
+          SelectableText(' Summer begins in june'),
+        ]),
+        TableRow(children: [
+          SelectableText("  l'automne  commence en septembre"),
+          SelectableText(' Autumn  begins in september'),
+        ]),
+        TableRow(children: [
+          SelectableText("  l'hiver commence en  décember"),
+          SelectableText(' Winter begins in september'),
+        ]),
+      ],
+    );
   }
 }
