@@ -100,7 +100,8 @@ class Intermediate extends StatelessWidget {
                 subtitle: Text('les prépositions'),
                 trailing: Icon(Icons.arrow_right),
                 onTap: () {
-                  Navigator.pushNamed(context, '/preposition');
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Preposition()));
                 },
               ),
             ),
