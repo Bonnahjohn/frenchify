@@ -20,6 +20,7 @@ class AdvanIntro extends StatelessWidget {
           children: <Widget>[
             Card(
               child: ListTile(
+                leading: Image.asset('assets/images/sentence.png'),
                 title: Text('Sentence structure'),
                 subtitle: Text('la structure de la phrase'),
                 trailing: Icon(Icons.arrow_right),
@@ -31,6 +32,7 @@ class AdvanIntro extends StatelessWidget {
             ),
             Card(
               child: ListTile(
+                leading: Image.asset('assets/images/essay.png'),
                 title: Text('Descriptive Essay'),
                 subtitle: Text('Essai descriptif'),
                 trailing: Icon(Icons.arrow_right),
@@ -42,6 +44,7 @@ class AdvanIntro extends StatelessWidget {
             ),
             Card(
               child: ListTile(
+                leading: Image.asset('assets/images/letter.png'),
                 title: Text('Letter Writing'),
                 subtitle: Text('la correspondance épistolaire'),
                 trailing: Icon(Icons.arrow_right),
