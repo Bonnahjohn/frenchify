@@ -133,7 +133,7 @@ class Beginner extends StatelessWidget {
             ),
             Card(
               child: ListTile(
-                leading: Image.asset('assets/images/days.png'),
+                leading: Image.asset('assets/images/weather.png'),
                 title: Text('Weather and seasons'),
                 subtitle: Text('Météo et saison'),
                 trailing: Icon(Icons.arrow_right),
