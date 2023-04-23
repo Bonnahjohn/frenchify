@@ -24,6 +24,7 @@ class Intermediate extends StatelessWidget {
           children: <Widget>[
             Card(
               child: ListTile(
+                leading: Image.asset('assets/images/name.png'),
                 title: Text('Nouns and Articles'),
                 subtitle: Text('Nom et articles'),
                 trailing: Icon(Icons.arrow_right),
@@ -35,6 +36,7 @@ class Intermediate extends StatelessWidget {
             ),
             Card(
               child: ListTile(
+                leading: Image.asset('assets/images/pronoun.png'),
                 title: Text('Pronouns'),
                 subtitle: Text('Pronoms'),
                 trailing: Icon(Icons.arrow_right),
@@ -46,6 +48,7 @@ class Intermediate extends StatelessWidget {
             ),
             Card(
               child: ListTile(
+                leading: Image.asset('assets/images/verb.png'),
                 title: Text('Verbs'),
                 subtitle: Text('Verbes'),
                 trailing: Icon(Icons.arrow_right),
@@ -57,6 +60,7 @@ class Intermediate extends StatelessWidget {
             ),
             Card(
               child: ListTile(
+                leading: Image.asset('assets/images/tenses.png'),
                 title: Text('Tenses'),
                 subtitle: Text('les temps verbaux'),
                 trailing: Icon(Icons.arrow_right),
@@ -68,8 +72,7 @@ class Intermediate extends StatelessWidget {
             ),
             Card(
               child: ListTile(
-                // leading: Image.asset('assets/images/adverb.jpg',
-                //     width: 60, height: 100),
+                leading: Image.asset('assets/images/adverb.png'),
                 title: const Text('Adverbs'),
                 subtitle: const Text("les adverbes"),
                 trailing: const Icon(Icons.arrow_right),
@@ -81,8 +84,7 @@ class Intermediate extends StatelessWidget {
             ),
             Card(
               child: ListTile(
-                // leading: Image.asset('assets/images/adjective.jpg',
-                //     width: 60, height: 100),
+                leading: Image.asset('assets/images/adjective.png'),
                 title: Text('adjectives'),
                 subtitle: Text('les adjectifs'),
                 trailing: Icon(Icons.arrow_right),
@@ -94,8 +96,7 @@ class Intermediate extends StatelessWidget {
             ),
             Card(
               child: ListTile(
-                // leading: Image.asset('assets/images/prep.png',
-                //     width: 60, height: 50),
+                leading: Image.asset('assets/images/name.png'),
                 title: Text('prepositions'),
                 subtitle: Text('les prépositions'),
                 trailing: Icon(Icons.arrow_right),

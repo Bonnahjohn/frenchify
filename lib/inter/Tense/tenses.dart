@@ -25,7 +25,7 @@ class Tenses extends StatelessWidget {
             children: <Widget>[
               Card(
                 child: ListTile(
-                  leading: Icon(Icons.arrow_downward),
+                  leading: Image.asset('assets/images/now.png'),
                   title: Text('Present tense'),
                   subtitle: Text(''),
                   trailing: Icon(Icons.arrow_right),
@@ -37,7 +37,7 @@ class Tenses extends StatelessWidget {
               ),
               Card(
                 child: ListTile(
-                  leading: Icon(Icons.keyboard_arrow_left_rounded),
+                  leading: Image.asset('assets/images/past.png'),
                   title: Text('Past tense'),
                   subtitle: Text('Passé Composé'),
                   trailing: Icon(Icons.arrow_left),
@@ -49,7 +49,7 @@ class Tenses extends StatelessWidget {
               ),
               Card(
                 child: ListTile(
-                  leading: Icon(Icons.arrow_right_alt_outlined),
+                  leading: Image.asset('assets/images/future.png'),
                   title: Text('Future tense'),
                   subtitle: Text(''),
                   trailing: Icon(Icons.arrow_right),
