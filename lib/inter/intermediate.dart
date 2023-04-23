@@ -96,7 +96,7 @@ class Intermediate extends StatelessWidget {
             ),
             Card(
               child: ListTile(
-                leading: Image.asset('assets/images/name.png'),
+                leading: Image.asset('assets/images/preposition.png'),
                 title: Text('prepositions'),
                 subtitle: Text('les prépositions'),
                 trailing: Icon(Icons.arrow_right),
