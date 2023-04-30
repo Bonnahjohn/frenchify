@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:frenchify/main.dart';
-import 'package:frenchify/Pages/home.dart';
+
 import 'package:flutter/services.dart';
 import 'package:translator/translator.dart';
 
