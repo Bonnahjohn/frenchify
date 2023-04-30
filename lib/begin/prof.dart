@@ -22,7 +22,7 @@ class Prof extends StatelessWidget {
             children: <Widget>[
               SelectableText(
                 profIntro,
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
 
               //lessonclass mmmmmmmmmmmmmmmmmmmmmm
@@ -39,7 +39,7 @@ class Prof extends StatelessWidget {
               ),
               SelectableText(
                 profFooter,
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               SizedBox(
                 height: 50,
@@ -78,56 +78,140 @@ class Nums extends StatelessWidget {
         ]),
         TableRow(children: [
           SelectableText('Médecin',
-              style: TextStyle(fontSize: 16), textAlign: TextAlign.center),
+              style: Theme.of(context).textTheme.bodyMedium,
+              textAlign: TextAlign.center),
           SelectableText('meh-duh-SAN',
-              style: TextStyle(fontSize: 16), textAlign: TextAlign.center),
+              style: Theme.of(context).textTheme.bodyMedium,
+              textAlign: TextAlign.center),
           SelectableText('Doctor',
-              style: TextStyle(fontSize: 16), textAlign: TextAlign.center),
+              style: Theme.of(context).textTheme.bodyMedium,
+              textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('Avocat', textAlign: TextAlign.center),
-          SelectableText(' ah-voh-KAH', textAlign: TextAlign.center),
-          SelectableText('Lawyer', textAlign: TextAlign.center),
+          SelectableText(
+            'Avocat',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' ah-voh-KAH',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Lawyer',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText("Enseignant(e)", textAlign: TextAlign.center),
-          SelectableText('on-say-nyahn(t)', textAlign: TextAlign.center),
-          SelectableText('Teacher', textAlign: TextAlign.center),
+          SelectableText(
+            "Enseignant(e)",
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'on-say-nyahn(t)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Teacher',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Ingénieur(e)', textAlign: TextAlign.center),
-          SelectableText('an-jay-nieur', textAlign: TextAlign.center),
-          SelectableText('Engineer', textAlign: TextAlign.center),
+          SelectableText(
+            'Ingénieur(e)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'an-jay-nieur',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Engineer',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Artiste', textAlign: TextAlign.center),
-          SelectableText('ar-teest ', textAlign: TextAlign.center),
-          SelectableText('Artist', textAlign: TextAlign.center),
+          SelectableText(
+            'Artiste',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'ar-teest ',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Artist',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Journaliste', textAlign: TextAlign.center),
-          SelectableText('	zhoor-nah-leest', textAlign: TextAlign.center),
-          SelectableText('Journalist', textAlign: TextAlign.center),
+          SelectableText(
+            'Journaliste',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            '	zhoor-nah-leest',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Journalist',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Vendeur(euse)', textAlign: TextAlign.center),
-          SelectableText('von-duhr(uh)', textAlign: TextAlign.center),
-          SelectableText(' Salesperson', textAlign: TextAlign.center),
+          SelectableText(
+            'Vendeur(euse)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'von-duhr(uh)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' Salesperson',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Chef de cuisine', textAlign: TextAlign.center),
-          SelectableText(' shef duh kwee-zeen', textAlign: TextAlign.center),
-          SelectableText('Chef', textAlign: TextAlign.center),
+          SelectableText(
+            'Chef de cuisine',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' shef duh kwee-zeen',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Chef',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Écrivain(e)', textAlign: TextAlign.center),
-          SelectableText('ay-kree-van', textAlign: TextAlign.center),
-          SelectableText('Writer', textAlign: TextAlign.center),
+          SelectableText(
+            'Écrivain(e)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'ay-kree-van',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Writer',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Policier(ère)', textAlign: TextAlign.center),
-          SelectableText(' poh-lee-see-ay(uhr)', textAlign: TextAlign.center),
-          SelectableText(' Police officer', textAlign: TextAlign.center),
+          SelectableText(
+            'Policier(ère)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' poh-lee-see-ay(uhr)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' Police officer',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
       ],
     );

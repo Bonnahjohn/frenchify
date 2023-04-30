@@ -22,7 +22,7 @@ class Weather extends StatelessWidget {
             children: <Widget>[
               SelectableText(
                 season,
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               SizedBox(
                 height: 30,
@@ -33,7 +33,7 @@ class Weather extends StatelessWidget {
               ),
               SelectableText(
                 'When talking about seasons, the French use the same names as in English:',
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               SizedBox(
                 height: 20,

@@ -22,7 +22,7 @@ class Time extends StatelessWidget {
             children: <Widget>[
               SelectableText(
                 dateIntro,
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
 
               //lessonclass mmmmmmmmmmmmmmmmmmmmmm
@@ -45,7 +45,7 @@ class Time extends StatelessWidget {
               ),
               SelectableText(
                 timeIntro,
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               SizedBox(
                 height: 10,
@@ -63,9 +63,7 @@ class Time extends StatelessWidget {
               ),
               SelectableText(
                 'Quelle heure est-il ? /Il est quelle heure ?(What says the time)',
-                style: TextStyle(
-                  fontSize: 16,
-                ),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               SelectableText(
                 'Responds',
@@ -86,7 +84,7 @@ class Time extends StatelessWidget {
               ),
               SelectableText(
                 timeFooter,
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               SizedBox(
                 height: 50,
@@ -124,57 +122,144 @@ class Dates extends StatelessWidget {
               textAlign: TextAlign.center)
         ]),
         TableRow(children: [
-          SelectableText('Aujourd\'hui',
-              style: TextStyle(fontSize: 16), textAlign: TextAlign.center),
-          SelectableText('oh-zhoor-dwee',
-              style: TextStyle(fontSize: 16), textAlign: TextAlign.center),
-          SelectableText('Today',
-              style: TextStyle(fontSize: 16), textAlign: TextAlign.center),
+          SelectableText(
+            'Aujourd\'hui',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'oh-zhoor-dwee',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Today',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Demain', textAlign: TextAlign.center),
-          SelectableText(' duh-mahn', textAlign: TextAlign.center),
-          SelectableText('Tomorrow', textAlign: TextAlign.center),
+          SelectableText(
+            'Demain',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' duh-mahn',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Tomorrow',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText("Hier", textAlign: TextAlign.center),
-          SelectableText('ee-air', textAlign: TextAlign.center),
-          SelectableText('Yesterday', textAlign: TextAlign.center),
+          SelectableText(
+            "Hier",
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'ee-air',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Yesterday',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Maintenant', textAlign: TextAlign.center),
-          SelectableText('mehnt-nahn', textAlign: TextAlign.center),
-          SelectableText('Now', textAlign: TextAlign.center),
+          SelectableText(
+            'Maintenant',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'mehnt-nahn',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Now',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Midi', textAlign: TextAlign.center),
-          SelectableText('mee-dee', textAlign: TextAlign.center),
-          SelectableText('Noon', textAlign: TextAlign.center),
+          SelectableText(
+            'Midi',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'mee-dee',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Noon',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Minuit', textAlign: TextAlign.center),
-          SelectableText('mee-nwee', textAlign: TextAlign.center),
-          SelectableText('Midnight', textAlign: TextAlign.center),
+          SelectableText(
+            'Minuit',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'mee-nwee',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Midnight',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Matin', textAlign: TextAlign.center),
-          SelectableText('ma-tahn', textAlign: TextAlign.center),
-          SelectableText(' Morning', textAlign: TextAlign.center),
+          SelectableText(
+            'Matin',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'ma-tahn',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' Morning',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Après-midi', textAlign: TextAlign.center),
-          SelectableText(' ap-reh-mee-dee', textAlign: TextAlign.center),
-          SelectableText('Afternoon', textAlign: TextAlign.center),
+          SelectableText(
+            'Après-midi',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' ap-reh-mee-dee',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Afternoon',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Soir', textAlign: TextAlign.center),
-          SelectableText(' swahr', textAlign: TextAlign.center),
-          SelectableText('Evening', textAlign: TextAlign.center),
+          SelectableText(
+            'Soir',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' swahr',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Evening',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Nuit	', textAlign: TextAlign.center),
-          SelectableText('nwee', textAlign: TextAlign.center),
-          SelectableText('Night', textAlign: TextAlign.center),
+          SelectableText(
+            'Nuit	',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'nwee',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Night',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
       ],
     );

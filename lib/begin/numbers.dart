@@ -22,12 +22,12 @@ class Numbers extends StatelessWidget {
             children: <Widget>[
               SelectableText(
                 myIntro,
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
 
               SelectableText(
                 'First, let\'s start with the numbers from 1 to 10:',
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               //lessonclass mmmmmmmmmmmmmmmmmmmmmm
               SizedBox(
@@ -39,14 +39,14 @@ class Numbers extends StatelessWidget {
               ),
               SelectableText(
                 next,
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               SizedBox(
                 height: 10,
               ),
               SelectableText(
                 'Here are some examples of how to count in French:',
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               SizedBox(
                 height: 10,
@@ -57,14 +57,14 @@ class Numbers extends StatelessWidget {
               ),
               SelectableText(
                 subIntro,
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               SizedBox(
                 height: 25,
               ),
               SelectableText(
                 finalNote,
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               SizedBox(
                 height: 50,
@@ -92,67 +92,155 @@ class Nums extends StatelessWidget {
           SelectableText(
             'Number',
             style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-            textAlign: TextAlign.center,
           ),
-          SelectableText('French',
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              textAlign: TextAlign.center),
-          SelectableText('Pronunciation',
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              textAlign: TextAlign.center)
+          SelectableText(
+            'French',
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          ),
+          SelectableText(
+            'Pronunciation',
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          )
         ]),
         TableRow(children: [
-          SelectableText('1',
-              style: TextStyle(fontSize: 16), textAlign: TextAlign.center),
-          SelectableText('un',
-              style: TextStyle(fontSize: 16), textAlign: TextAlign.center),
-          SelectableText('ahn',
-              style: TextStyle(fontSize: 16), textAlign: TextAlign.center),
+          SelectableText(
+            '1',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'un',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'ahn',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('2', textAlign: TextAlign.center),
-          SelectableText(' deux', textAlign: TextAlign.center),
-          SelectableText('duh', textAlign: TextAlign.center),
+          SelectableText(
+            '2',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' deux',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'duh',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText("3", textAlign: TextAlign.center),
-          SelectableText('trois', textAlign: TextAlign.center),
-          SelectableText('twah', textAlign: TextAlign.center),
+          SelectableText(
+            "3",
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'trois',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'twah',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('4', textAlign: TextAlign.center),
-          SelectableText('quatre', textAlign: TextAlign.center),
-          SelectableText('katr', textAlign: TextAlign.center),
+          SelectableText(
+            '4',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'quatre',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'katr',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('5', textAlign: TextAlign.center),
-          SelectableText('cinq', textAlign: TextAlign.center),
-          SelectableText('sank', textAlign: TextAlign.center),
+          SelectableText(
+            '5',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'cinq',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'sank',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('6', textAlign: TextAlign.center),
-          SelectableText('six', textAlign: TextAlign.center),
-          SelectableText('sees', textAlign: TextAlign.center),
+          SelectableText(
+            '6',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'six',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'sees',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('7', textAlign: TextAlign.center),
-          SelectableText('sept', textAlign: TextAlign.center),
-          SelectableText(' seht', textAlign: TextAlign.center),
+          SelectableText(
+            '7',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'sept',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' seht',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('8', textAlign: TextAlign.center),
-          SelectableText(' huit', textAlign: TextAlign.center),
-          SelectableText('wheet', textAlign: TextAlign.center),
+          SelectableText(
+            '8',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' huit',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'wheet',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('9', textAlign: TextAlign.center),
-          SelectableText('neuf', textAlign: TextAlign.center),
-          SelectableText('nuhf', textAlign: TextAlign.center),
+          SelectableText(
+            '9',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'neuf',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'nuhf',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('10', textAlign: TextAlign.center),
-          SelectableText('dix ', textAlign: TextAlign.center),
-          SelectableText('dees', textAlign: TextAlign.center),
+          SelectableText(
+            '10',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'dix ',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'dees',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
       ],
     );

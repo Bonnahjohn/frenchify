@@ -22,7 +22,7 @@ class Public extends StatelessWidget {
             children: <Widget>[
               SelectableText(
                 publicIntro,
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
 
               //lessonclass mmmmmmmmmmmmmmmmmmmmmm
@@ -35,7 +35,7 @@ class Public extends StatelessWidget {
               ),
               SelectableText(
                 'You can check the french name of the festivals you celebrate in your country by using  the translator in this app.',
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               SizedBox(
                 height: 20,
@@ -85,46 +85,116 @@ class Pub extends StatelessWidget {
               style: TextStyle(fontSize: 16), textAlign: TextAlign.center),
         ]),
         TableRow(children: [
-          SelectableText('Easter', textAlign: TextAlign.center),
-          SelectableText(' Pâques', textAlign: TextAlign.center),
-          SelectableText('pohk', textAlign: TextAlign.center),
+          SelectableText(
+            'Easter',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' Pâques',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'pohk',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText("Labor Day ", textAlign: TextAlign.center),
-          SelectableText('La fête du travail', textAlign: TextAlign.center),
-          SelectableText('ah fet doo trav-eye', textAlign: TextAlign.center),
+          SelectableText(
+            "Labor Day ",
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'La fête du travail',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'ah fet doo trav-eye',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Victory in Europe Day ', textAlign: TextAlign.center),
-          SelectableText('Le jour de la Victoire', textAlign: TextAlign.center),
-          SelectableText('luh zhoor duh lah veek-twahr',
-              textAlign: TextAlign.center),
+          SelectableText(
+            'Victory in Europe Day ',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Le jour de la Victoire',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'luh zhoor duh lah veek-twahr',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Bastille Day', textAlign: TextAlign.center),
-          SelectableText('(Le 14 juillet', textAlign: TextAlign.center),
-          SelectableText('luh kah-tohrz jwee-yay', textAlign: TextAlign.center),
+          SelectableText(
+            'Bastille Day',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            '(Le 14 juillet',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'luh kah-tohrz jwee-yay',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('All Saints\' Day ', textAlign: TextAlign.center),
-          SelectableText('(La Toussaint', textAlign: TextAlign.center),
-          SelectableText('lah too-san', textAlign: TextAlign.center),
+          SelectableText(
+            'All Saints\' Day ',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            '(La Toussaint',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'lah too-san',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Christmas ', textAlign: TextAlign.center),
-          SelectableText('Noël', textAlign: TextAlign.center),
-          SelectableText(' noh-EL', textAlign: TextAlign.center),
+          SelectableText(
+            'Christmas ',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Noël',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' noh-EL',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Valentine\'s Day', textAlign: TextAlign.center),
-          SelectableText('La saint valentin', textAlign: TextAlign.center),
-          SelectableText('lah sahn vah-lahn-tan', textAlign: TextAlign.center),
+          SelectableText(
+            'Valentine\'s Day',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'La saint valentin',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'lah sahn vah-lahn-tan',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Boxing day', textAlign: TextAlign.center),
-          SelectableText('Le lendemain de Noël ', textAlign: TextAlign.center),
-          SelectableText('luh luhnduh-mahn duh noh-EL',
-              textAlign: TextAlign.center),
+          SelectableText(
+            'Boxing day',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Le lendemain de Noël ',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'luh luhnduh-mahn duh noh-EL',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
       ],
     );

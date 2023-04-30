@@ -22,7 +22,7 @@ class Days extends StatelessWidget {
             children: <Widget>[
               SelectableText(
                 dayIntro,
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
 
               SizedBox(
@@ -34,7 +34,7 @@ class Days extends StatelessWidget {
               ),
               SelectableText(
                 monthIntro,
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               SizedBox(
                 height: 30,
@@ -50,7 +50,7 @@ class Days extends StatelessWidget {
               ),
               SelectableText(
                 noteFooter,
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               SizedBox(
                 height: 50,
@@ -90,46 +90,100 @@ class Tables extends StatelessWidget {
         TableRow(children: [
           SelectableText(
             'Monday',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
           SelectableText(
             'Lundi',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
           SelectableText(
             'Luhn-dee',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
         ]),
         TableRow(children: [
-          SelectableText('Tuesday'),
-          SelectableText('	Mardi'),
-          SelectableText('Mar-dee'),
+          SelectableText(
+            'Tuesday',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            '	Mardi',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Mar-dee',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText("Wednesday"),
-          SelectableText('Mercredi'),
-          SelectableText('Mehr-kruh-dee'),
+          SelectableText(
+            "Wednesday",
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Mercredi',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Mehr-kruh-dee',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Thursday'),
-          SelectableText('Jeudi'),
-          SelectableText('Juh-dee'),
+          SelectableText(
+            'Thursday',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Jeudi',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Juh-dee',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Friday'),
-          SelectableText('Vendredi'),
-          SelectableText('Vahn-druh-dee'),
+          SelectableText(
+            'Friday',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Vendredi',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Vahn-druh-dee',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Saturday'),
-          SelectableText('Samedi'),
-          SelectableText('Sam-dee'),
+          SelectableText(
+            'Saturday',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Samedi',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Sam-dee',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Friday'),
-          SelectableText('Dimanche'),
-          SelectableText('Dee-mahnsh'),
+          SelectableText(
+            'Friday',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Dimanche',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Dee-mahnsh',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
       ],
     );
@@ -163,73 +217,170 @@ class Year extends StatelessWidget {
         TableRow(children: [
           SelectableText(
             'January',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
           SelectableText(
             'Janvier',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
           SelectableText(
             'Zhahn-vee-yay',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
         ]),
         TableRow(children: [
-          SelectableText('February'),
-          SelectableText('Février'),
-          SelectableText('Fay-vree-yay'),
+          SelectableText(
+            'February',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Février',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Fay-vree-yay',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText("March"),
-          SelectableText('Mars'),
-          SelectableText('mahrs'),
+          SelectableText(
+            "March",
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Mars',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'mahrs',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
           SelectableText(
             'April',
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
-          SelectableText('Avril'),
-          SelectableText('Ah-vreel'),
+          SelectableText(
+            'Avril',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Ah-vreel',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('May'),
-          SelectableText('Mai'),
-          SelectableText('Mai'),
+          SelectableText(
+            'May',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Mai',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Mai',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('June'),
-          SelectableText('Juin'),
-          SelectableText('Zhwa(n)'),
+          SelectableText(
+            'June',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Juin',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Zhwa(n)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('July'),
-          SelectableText('Juillet'),
-          SelectableText('Zhwee-yay'),
+          SelectableText(
+            'July',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Juillet',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Zhwee-yay',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('August'),
-          SelectableText('Août'),
-          SelectableText('Oot'),
+          SelectableText(
+            'August',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Août',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Oot',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('September'),
-          SelectableText('Septembre'),
-          SelectableText('Set-tuhmb'),
+          SelectableText(
+            'September',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Septembre',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Set-tuhmb',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('October'),
-          SelectableText('Octobre'),
-          SelectableText('Ok-toh-br'),
+          SelectableText(
+            'October',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Octobre',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Ok-toh-br',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('November'),
-          SelectableText('Novembre'),
-          SelectableText('Noh-vahmb'),
+          SelectableText(
+            'November',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Novembre',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Noh-vahmb',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('December'),
-          SelectableText('Décembre'),
-          SelectableText('Day-sahmb'),
+          SelectableText(
+            'December',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Décembre',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Day-sahmb',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
       ],
     );

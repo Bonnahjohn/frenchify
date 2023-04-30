@@ -22,7 +22,7 @@ class Colour extends StatelessWidget {
             children: <Widget>[
               SelectableText(
                 colorIntro,
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
 
               SizedBox(
@@ -34,7 +34,7 @@ class Colour extends StatelessWidget {
               ),
               SelectableText(
                 adjectiveIntro,
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               SizedBox(
                 height: 30,
@@ -50,7 +50,7 @@ class Colour extends StatelessWidget {
               ),
               SelectableText(
                 myFooter,
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               SizedBox(
                 height: 50,
@@ -84,48 +84,114 @@ class Figure extends StatelessWidget {
           ),
         ]),
         TableRow(children: [
-          SelectableText(' Red'),
-          SelectableText(' Rouge'),
+          SelectableText(
+            ' Red',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' Rouge',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText(' Yellow'),
-          SelectableText(' Orange'),
+          SelectableText(
+            ' Yellow',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' Orange',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText("  Yellow"),
-          SelectableText(' Jaune'),
+          SelectableText(
+            "  Yellow",
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' Jaune',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('  Green'),
-          SelectableText(' Vert'),
+          SelectableText(
+            '  Green',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' Vert',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText(' Blue'),
-          SelectableText(' Bleu'),
+          SelectableText(
+            ' Blue',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' Bleu',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText(' Purple'),
-          SelectableText(' Violet'),
+          SelectableText(
+            ' Purple',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' Violet',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText(' Pink'),
-          SelectableText(' Rose'),
+          SelectableText(
+            ' Pink',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' Rose',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText(' Black'),
-          SelectableText(' Noir'),
+          SelectableText(
+            ' Black',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' Noir',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText(' White'),
-          SelectableText(' Blanc'),
+          SelectableText(
+            ' White',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' Blanc',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText(' Brown'),
-          SelectableText(' Marron'),
+          SelectableText(
+            ' Brown',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' Marron',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText(' Grey'),
-          SelectableText(' Gris'),
+          SelectableText(
+            ' Grey',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' Gris',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
       ],
     );
@@ -155,36 +221,72 @@ class Describe extends StatelessWidget {
         TableRow(children: [
           SelectableText(
             'Grand(e)',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
           SelectableText(
             'Big',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
         ]),
         TableRow(children: [
-          SelectableText('Joli(e)'),
-          SelectableText('Pretty'),
+          SelectableText(
+            'Joli(e)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Pretty',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText("Beau/Belle"),
-          SelectableText('Beautiful'),
+          SelectableText(
+            "Beau/Belle",
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Beautiful',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Mignon(ne)'),
-          SelectableText('Cute'),
+          SelectableText(
+            'Mignon(ne)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Cute',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Drôle'),
-          SelectableText('Funny'),
+          SelectableText(
+            'Drôle',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Funny',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Intéressant(e)'),
-          SelectableText('Interesting'),
+          SelectableText(
+            'Intéressant(e)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Interesting',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Bon(ne)'),
-          SelectableText('Good'),
+          SelectableText(
+            'Bon(ne)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Good',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
       ],
     );

@@ -22,12 +22,12 @@ class Family extends StatelessWidget {
             children: <Widget>[
               SelectableText(
                 famIntro,
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
 
               SelectableText(
                 '\nHere is a table that shows the French terms for family members and their relationships:',
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               //lessonclass mmmmmmmmmmmmmmmmmmmmmm
               SizedBox(
@@ -40,7 +40,7 @@ class Family extends StatelessWidget {
               ),
               SelectableText(
                 'Overall, French families are close-knit and highly valued, and their language reflects this with specific terms for different family members.',
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               SizedBox(
                 height: 10,
@@ -82,72 +82,186 @@ class Fam extends StatelessWidget {
               textAlign: TextAlign.center)
         ]),
         TableRow(children: [
-          SelectableText('Mother',
-              style: TextStyle(fontSize: 16), textAlign: TextAlign.center),
-          SelectableText('Maman',
-              style: TextStyle(fontSize: 16), textAlign: TextAlign.center),
-          SelectableText('mah-MAHN',
-              style: TextStyle(fontSize: 16), textAlign: TextAlign.center),
+          SelectableText(
+            'Mother',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Maman',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'mah-MAHN',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Father', textAlign: TextAlign.center),
-          SelectableText(' Papa', textAlign: TextAlign.center),
-          SelectableText('pah-PAH', textAlign: TextAlign.center),
+          SelectableText(
+            'Father',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' Papa',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'pah-PAH',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText("Grandmother", textAlign: TextAlign.center),
-          SelectableText('Grand-mère', textAlign: TextAlign.center),
-          SelectableText('grahn-MEHR', textAlign: TextAlign.center),
+          SelectableText(
+            "Grandmother",
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Grand-mère',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'grahn-MEHR',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Grandfather', textAlign: TextAlign.center),
-          SelectableText('Grand-père', textAlign: TextAlign.center),
-          SelectableText('grahn-PAIR', textAlign: TextAlign.center),
+          SelectableText(
+            'Grandfather',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Grand-père',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'grahn-PAIR',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Brother', textAlign: TextAlign.center),
-          SelectableText('Frère', textAlign: TextAlign.center),
-          SelectableText('FREHR', textAlign: TextAlign.center),
+          SelectableText(
+            'Brother',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Frère',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'FREHR',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Sister', textAlign: TextAlign.center),
-          SelectableText('Soeur', textAlign: TextAlign.center),
-          SelectableText('SUR', textAlign: TextAlign.center),
+          SelectableText(
+            'Sister',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Soeur',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'SUR',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Son', textAlign: TextAlign.center),
-          SelectableText('Fils', textAlign: TextAlign.center),
-          SelectableText('feess ', textAlign: TextAlign.center),
+          SelectableText(
+            'Son',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Fils',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'feess ',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Daughter', textAlign: TextAlign.center),
-          SelectableText('Fille', textAlign: TextAlign.center),
-          SelectableText('fee', textAlign: TextAlign.center),
+          SelectableText(
+            'Daughter',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Fille',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'fee',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Uncle	', textAlign: TextAlign.center),
-          SelectableText('Oncle', textAlign: TextAlign.center),
-          SelectableText('ohng-kleuh', textAlign: TextAlign.center),
+          SelectableText(
+            'Uncle	',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Oncle',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'ohng-kleuh',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Aunt	', textAlign: TextAlign.center),
-          SelectableText('Tante', textAlign: TextAlign.center),
-          SelectableText('tahnt', textAlign: TextAlign.center),
+          SelectableText(
+            'Aunt	',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Tante',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'tahnt',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Cousin', textAlign: TextAlign.center),
-          SelectableText('Cousin(e) ', textAlign: TextAlign.center),
-          SelectableText('koo-zahn', textAlign: TextAlign.center),
+          SelectableText(
+            'Cousin',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Cousin(e) ',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'koo-zahn',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Husband	', textAlign: TextAlign.center),
-          SelectableText('Mari', textAlign: TextAlign.center),
-          SelectableText('mah-ree', textAlign: TextAlign.center),
+          SelectableText(
+            'Husband	',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Mari',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'mah-ree',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Wife', textAlign: TextAlign.center),
-          SelectableText('Femme ', textAlign: TextAlign.center),
-          SelectableText('fem', textAlign: TextAlign.center),
+          SelectableText(
+            'Wife',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Femme ',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'fem',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
       ],
     );
