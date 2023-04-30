@@ -24,7 +24,7 @@ class Adverb extends StatelessWidget {
             children: <Widget>[
               SelectableText(
                 adverbIntro,
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               SizedBox(
                 height: 30,
@@ -35,7 +35,7 @@ class Adverb extends StatelessWidget {
               ),
               SelectableText(
                 adverbFooter,
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               SizedBox(
                 height: 50,
@@ -75,113 +75,113 @@ class Tables extends StatelessWidget {
         TableRow(children: [
           Text(
             'rapidement',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
           Text(
             'quickly',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
           Text(
             'rapide (fast)',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
         ]),
         TableRow(children: [
           Text(
             'lentement',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
           Text(
             'slowly',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
           Text(
             'lent (slow)',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
         ]),
         TableRow(children: [
           Text(
             'bien',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
           Text(
             'well',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
           Text(
             'bon(ne) (good)',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
         ]),
         TableRow(children: [
           Text(
             "mal",
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
           Text(
             'badly',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
           Text(
             'mauvais(e) (bad)',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
         ]),
         TableRow(children: [
           Text(
             'doucement',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
           Text(
             'gently',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
           Text(
             'doux / douce (soft)',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
         ]),
         TableRow(children: [
           Text(
             'bruyamment',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
           Text(
             'loudly',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
           Text(
             'bruyant(e) (noisy)',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
         ]),
         TableRow(children: [
           SelectableText(
             'facilement',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
           Text(
             'easily',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
           Text(
             'facile (easy)',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
         ]),
         TableRow(children: [
           Text(
             'difficilement	',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
           Text(
             'difficultly',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
           Text(
             'difficile (difficult)',
-            style: TextStyle(fontSize: 16),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
         ]),
       ],

@@ -22,7 +22,7 @@ class Future extends StatelessWidget {
             children: <Widget>[
               SelectableText(
                 futureIntro,
-                style: const TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               const SizedBox(
                 height: 20,
@@ -33,7 +33,7 @@ class Future extends StatelessWidget {
               ),
               SelectableText(
                 irregular,
-                style: const TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               const SizedBox(
                 height: 20,
@@ -41,7 +41,7 @@ class Future extends StatelessWidget {
               const Irregular(),
               SelectableText(
                 conditional,
-                style: const TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               const SizedBox(
                 height: 20,
@@ -52,7 +52,7 @@ class Future extends StatelessWidget {
               ),
               SelectableText(
                 futureFooter,
-                style: const TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               const SizedBox(
                 height: 50,
@@ -75,7 +75,7 @@ class Example extends StatelessWidget {
       border: TableBorder.all(
         color: const Color.fromRGBO(100, 149, 237, 1),
       ),
-      children: const [
+      children: [
         TableRow(children: [
           SelectableText(
             'Pronoun',
@@ -91,34 +91,88 @@ class Example extends StatelessWidget {
           ),
         ]),
         TableRow(children: [
-          SelectableText(' je', style: TextStyle(fontSize: 16)),
-          SelectableText(" parlerai", style: TextStyle(fontSize: 16)),
-          SelectableText(' -ai', style: TextStyle(fontSize: 16))
+          SelectableText(
+            ' je',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            " parlerai",
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' -ai',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText(' tu', style: TextStyle(fontSize: 16)),
-          SelectableText(' parleras', style: TextStyle(fontSize: 16)),
-          SelectableText('-as', style: TextStyle(fontSize: 16))
+          SelectableText(
+            ' tu',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' parleras',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            '-as',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText(' il/elle/on', style: TextStyle(fontSize: 16)),
-          SelectableText(' parlera', style: TextStyle(fontSize: 16)),
-          SelectableText(' -a', style: TextStyle(fontSize: 16))
+          SelectableText(
+            ' il/elle/on',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' parlera',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' -a',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText(' nous', style: TextStyle(fontSize: 16)),
-          SelectableText(' parlerons', style: TextStyle(fontSize: 16)),
-          SelectableText(' -ons', style: TextStyle(fontSize: 16))
+          SelectableText(
+            ' nous',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' parlerons',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' -ons',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText(' vous', style: TextStyle(fontSize: 16)),
-          SelectableText(' parlerez', style: TextStyle(fontSize: 16)),
-          SelectableText(' -ez', style: TextStyle(fontSize: 16))
+          SelectableText(
+            ' vous',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' parlerez',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' -ez',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText(' ils/elles', style: TextStyle(fontSize: 16)),
-          SelectableText('	parleront', style: TextStyle(fontSize: 16)),
-          SelectableText(' -ont', style: TextStyle(fontSize: 16))
+          SelectableText(
+            ' ils/elles',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            '	parleront',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' -ont',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
       ],
     );
@@ -136,7 +190,7 @@ class Irregular extends StatelessWidget {
       border: TableBorder.all(
         color: const Color.fromRGBO(100, 149, 237, 1),
       ),
-      children: const [
+      children: [
         TableRow(children: [
           SelectableText(
             'Verb',
@@ -148,41 +202,64 @@ class Irregular extends StatelessWidget {
           ),
         ]),
         TableRow(children: [
-          SelectableText(' aller (to go)', style: TextStyle(fontSize: 16)),
           SelectableText(
-              " j'irai, tu iras, il/elle/on ira, nous irons, vous irez, ils/elles iront",
-              style: TextStyle(fontSize: 16))
+            ' aller (to go)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            " j'irai, tu iras, il/elle/on ira, nous irons, vous irez, ils/elles iront",
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText(' avoir (to have)', style: TextStyle(fontSize: 16)),
           SelectableText(
-              " j'aurai, tu auras, il/elle/on aura, nous aurons, vous aurez, ils/elles auront",
-              style: TextStyle(fontSize: 16))
+            ' avoir (to have)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            " j'aurai, tu auras, il/elle/on aura, nous aurons, vous aurez, ils/elles auront",
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText('être (to be)', style: TextStyle(fontSize: 16)),
           SelectableText(
-              " je serai, tu seras, il/elle/on sera, nous serons, vous serez, ils/elles seront",
-              style: TextStyle(fontSize: 16))
+            'être (to be)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            " je serai, tu seras, il/elle/on sera, nous serons, vous serez, ils/elles seront",
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText(' faire (to do/make)', style: TextStyle(fontSize: 16)),
           SelectableText(
-              " je ferai, tu feras, il/elle/on fera, nous ferons, vous ferez, ils/elles feront",
-              style: TextStyle(fontSize: 16))
+            ' faire (to do/make)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            " je ferai, tu feras, il/elle/on fera, nous ferons, vous ferez, ils/elles feront",
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText('pouvoir (to be able to)',
-              style: TextStyle(fontSize: 16)),
           SelectableText(
-              " je pourrai, tu pourras, il/elle/on pourra, nous pourrons, vous pourrez, ils/elles pourront",
-              style: TextStyle(fontSize: 16))
+            'pouvoir (to be able to)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            " je pourrai, tu pourras, il/elle/on pourra, nous pourrons, vous pourrez, ils/elles pourront",
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText('venir (to come)', style: TextStyle(fontSize: 16)),
           SelectableText(
-              " je viendrai, tu viendras, il/elle/on viendra, nous viendrons, vous viendrez, ils/elles viendront",
-              style: TextStyle(fontSize: 16))
+            'venir (to come)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            " je viendrai, tu viendras, il/elle/on viendra, nous viendrons, vous viendrez, ils/elles viendront",
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
       ],
     );
@@ -199,7 +276,7 @@ class Condition extends StatelessWidget {
       border: TableBorder.all(
         color: const Color.fromRGBO(100, 149, 237, 1),
       ),
-      children: const [
+      children: [
         TableRow(children: [
           SelectableText(
             'Pronoun',
@@ -211,28 +288,64 @@ class Condition extends StatelessWidget {
           ),
         ]),
         TableRow(children: [
-          SelectableText(' je', style: TextStyle(fontSize: 16)),
-          SelectableText(' parlerais', style: TextStyle(fontSize: 16))
+          SelectableText(
+            ' je',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' parlerais',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText(' tu', style: TextStyle(fontSize: 16)),
-          SelectableText(' parlerais', style: TextStyle(fontSize: 16))
+          SelectableText(
+            ' tu',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' parlerais',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText(' il/elle/on', style: TextStyle(fontSize: 16)),
-          SelectableText(' parlerait', style: TextStyle(fontSize: 16))
+          SelectableText(
+            ' il/elle/on',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' parlerait',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText(' nous', style: TextStyle(fontSize: 16)),
-          SelectableText(' parlerions', style: TextStyle(fontSize: 16))
+          SelectableText(
+            ' nous',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' parlerions',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText(' vous', style: TextStyle(fontSize: 16)),
-          SelectableText(' parleriez', style: TextStyle(fontSize: 16))
+          SelectableText(
+            ' vous',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' parleriez',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText(' ils/elle', style: TextStyle(fontSize: 16)),
-          SelectableText(' parleraient', style: TextStyle(fontSize: 16))
+          SelectableText(
+            ' ils/elle',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            ' parleraient',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
       ],
     );

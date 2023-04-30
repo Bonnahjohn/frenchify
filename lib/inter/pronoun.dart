@@ -22,7 +22,7 @@ class Pronoun extends StatelessWidget {
             children: <Widget>[
               SelectableText(
                 pronIntro,
-                style: const TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               const SizedBox(
                 height: 20,
@@ -33,7 +33,7 @@ class Pronoun extends StatelessWidget {
               ),
               SelectableText(
                 proFooter,
-                style: const TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               const SizedBox(
                 height: 50,
@@ -55,7 +55,7 @@ class Pron extends StatelessWidget {
       border: TableBorder.all(
         color: const Color.fromRGBO(100, 149, 237, 1),
       ),
-      children: const [
+      children: [
         TableRow(children: [
           SelectableText(
             'Pronoun',
@@ -67,76 +67,134 @@ class Pron extends StatelessWidget {
           ),
         ]),
         TableRow(children: [
-          SelectableText('Je (I)', style: TextStyle(fontSize: 16)),
-          SelectableText('Je suis fatigué\n (I am tired)',
-              style: TextStyle(fontSize: 16)),
+          SelectableText(
+            'Je (I)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Je suis fatigué\n (I am tired)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Tu (You) \n(singular informal)',
-              style: TextStyle(fontSize: 16)),
-          SelectableText('Tu es gentil \n(You are nice)',
-              style: TextStyle(fontSize: 16)),
+          SelectableText(
+            'Tu (You) \n(singular informal)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Tu es gentil \n(You are nice)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Il (He)', style: TextStyle(fontSize: 16)),
-          SelectableText("Il est intelligent \n(He is intelligent)",
-              style: TextStyle(fontSize: 16)),
+          SelectableText(
+            'Il (He)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            "Il est intelligent \n(He is intelligent)",
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Elle (She)', style: TextStyle(fontSize: 16)),
-          SelectableText('Elle est belle\n (She is beautiful)',
-              style: TextStyle(fontSize: 16)),
+          SelectableText(
+            'Elle (She)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Elle est belle\n (She is beautiful)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Nous (We)', style: TextStyle(fontSize: 16)),
-          SelectableText('Nous sommes heureux\n (We are happy)',
-              style: TextStyle(fontSize: 16)),
+          SelectableText(
+            'Nous (We)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Nous sommes heureux\n (We are happy)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Vous (You) \n(singular formal or plural)',
-              style: TextStyle(fontSize: 16)),
-          SelectableText('Vous êtes polis\n (You are polite)',
-              style: TextStyle(fontSize: 16)),
+          SelectableText(
+            'Vous (You) \n(singular formal or plural)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Vous êtes polis\n (You are polite)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText(' Ils (They) \n(masculine or mixed gender group)',
-              style: TextStyle(fontSize: 16)),
-          SelectableText('Ils sont sportifs\n (They are athletic)',
-              style: TextStyle(fontSize: 16)),
+          SelectableText(
+            ' Ils (They) \n(masculine or mixed gender group)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Ils sont sportifs\n (They are athletic)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Elles (They) (feminine group)',
-              style: TextStyle(fontSize: 16)),
-          SelectableText("Elles sont amusantes\n (They are fun)",
-              style: TextStyle(fontSize: 16)),
+          SelectableText(
+            'Elles (They) (feminine group)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            "Elles sont amusantes\n (They are fun)",
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText(' Le (Him or it -masculine)',
-              style: TextStyle(fontSize: 16)),
-          SelectableText("Je le vois (I see him/it) ",
-              style: TextStyle(fontSize: 16)),
+          SelectableText(
+            ' Le (Him or it -masculine)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            "Je le vois (I see him/it) ",
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('La (Her or it feminine)',
-              style: TextStyle(fontSize: 16)),
-          SelectableText('Je la vois (I see her/it)',
-              style: TextStyle(fontSize: 16)),
+          SelectableText(
+            'La (Her or it feminine)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Je la vois (I see her/it)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Les (Them)', style: TextStyle(fontSize: 16)),
-          SelectableText('Je les vois (I see them)',
-              style: TextStyle(fontSize: 16)),
+          SelectableText(
+            'Les (Them)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Je les vois (I see them)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Lui (Him or to him)', style: TextStyle(fontSize: 16)),
-          SelectableText('Je lui parle\n(I talk to him)',
-              style: TextStyle(fontSize: 16)),
+          SelectableText(
+            'Lui (Him or to him)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Je lui parle\n(I talk to him)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Leur(Them or to them)',
-              style: TextStyle(fontSize: 16)),
-          SelectableText("Je leur parle (I talk to them) ",
-              style: TextStyle(fontSize: 16)),
+          SelectableText(
+            'Leur(Them or to them)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            "Je leur parle (I talk to them) ",
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ])
       ],
     );

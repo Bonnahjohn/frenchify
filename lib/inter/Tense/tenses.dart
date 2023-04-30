@@ -27,7 +27,7 @@ class Tenses extends StatelessWidget {
                 child: ListTile(
                   leading: Image.asset('assets/images/now.png'),
                   title: Text('Present tense'),
-                  subtitle: Text(''),
+                  subtitle: Text('le présent'),
                   trailing: Icon(Icons.arrow_right),
                   onTap: () {
                     Navigator.push(context,
@@ -51,7 +51,7 @@ class Tenses extends StatelessWidget {
                 child: ListTile(
                   leading: Image.asset('assets/images/future.png'),
                   title: Text('Future tense'),
-                  subtitle: Text(''),
+                  subtitle: Text('le futur'),
                   trailing: Icon(Icons.arrow_right),
                   onTap: () {
                     Navigator.push(context,

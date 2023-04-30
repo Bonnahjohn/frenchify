@@ -22,7 +22,7 @@ class Present extends StatelessWidget {
             children: <Widget>[
               SelectableText(
                 tensesIntro,
-                style: const TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               const SizedBox(
                 height: 20,
@@ -31,32 +31,38 @@ class Present extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              const SelectableText(
-                  'For example, the verb "parler" (to speak) is an -er verb. To conjugate it in the present tense:',
-                  style: TextStyle(fontSize: 16)),
+              SelectableText(
+                'For example, the verb "parler" (to speak) is an -er verb. To conjugate it in the present tense:',
+                style: Theme.of(context).textTheme.bodyMedium,
+              ),
               const SizedBox(
                 height: 20,
               ),
               const Parler(),
-              const SelectableText(
-                  '\n-ir verbs: To conjugate -ir verbs in the present tense, drop the -ir ending and add the following endings:\n',
-                  style: TextStyle(fontSize: 16)),
+              SelectableText(
+                '\n-ir verbs: To conjugate -ir verbs in the present tense, drop the -ir ending and add the following endings:\n',
+                style: Theme.of(context).textTheme.bodyMedium,
+              ),
               const Irverbs(),
-              const SelectableText(
-                  '\nFor example, the verb "finir" (to finish) is an -ir verb. To conjugate it in the present tense:\n',
-                  style: TextStyle(fontSize: 16)),
+              SelectableText(
+                '\nFor example, the verb "finir" (to finish) is an -ir verb. To conjugate it in the present tense:\n',
+                style: Theme.of(context).textTheme.bodyMedium,
+              ),
               const Example(),
-              const SelectableText(
-                  '\n-re verbs: To conjugate -re verbs in the present tense, drop the -re ending and add the following endings:\n',
-                  style: TextStyle(fontSize: 16)),
+              SelectableText(
+                '\n-re verbs: To conjugate -re verbs in the present tense, drop the -re ending and add the following endings:\n',
+                style: Theme.of(context).textTheme.bodyMedium,
+              ),
               const Reverbs(),
-              const SelectableText(
-                  '\nFor example, the verb "prendre" (to take) is an -re verb. To conjugate it in the present tense:\n',
-                  style: TextStyle(fontSize: 16)),
+              SelectableText(
+                '\nFor example, the verb "prendre" (to take) is an -re verb. To conjugate it in the present tense:\n',
+                style: Theme.of(context).textTheme.bodyMedium,
+              ),
               const Reexample(),
-              const SelectableText(
-                  '\nHere are the conjugation patterns for some of the most popular French irregular verbs in the present tense:\n',
-                  style: TextStyle(fontSize: 16)),
+              SelectableText(
+                '\nHere are the conjugation patterns for some of the most popular French irregular verbs in the present tense:\n',
+                style: Theme.of(context).textTheme.bodyMedium,
+              ),
               const Tobe(),
               const SizedBox(
                 height: 50,
@@ -78,7 +84,7 @@ class Tense extends StatelessWidget {
       border: TableBorder.all(
         color: const Color.fromRGBO(100, 149, 237, 1),
       ),
-      children: const [
+      children: [
         TableRow(children: [
           SelectableText(
             'Pronoun',
@@ -90,30 +96,62 @@ class Tense extends StatelessWidget {
           ),
         ]),
         TableRow(children: [
-          SelectableText('je(I)', style: TextStyle(fontSize: 16)),
-          SelectableText('-e', style: TextStyle(fontSize: 16))
+          SelectableText(
+            'je(I)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            '-e',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText('tu(You - infomal)', style: TextStyle(fontSize: 16)),
-          SelectableText('-es', style: TextStyle(fontSize: 16))
+          SelectableText(
+            'tu(You - infomal)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            '-es',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
           SelectableText('il/elle/on (He,She & It)',
               style: TextStyle(fontSize: 16)),
-          SelectableText('-e', style: TextStyle(fontSize: 16))
+          SelectableText(
+            '-e',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText('nous(We)', style: TextStyle(fontSize: 16)),
-          SelectableText('-ons', style: TextStyle(fontSize: 16))
+          SelectableText(
+            'nous(We)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            '-ons',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText('vous(You {singular formal or plural})',
-              style: TextStyle(fontSize: 16)),
-          SelectableText('-ez', style: TextStyle(fontSize: 16))
+          SelectableText(
+            'vous(You {singular formal or plural})',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            '-ez',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText('ils/elles(They)', style: TextStyle(fontSize: 16)),
-          SelectableText('-ent', style: TextStyle(fontSize: 16))
+          SelectableText(
+            'ils/elles(They)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            '-ent',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
       ],
     );
@@ -131,7 +169,7 @@ class Parler extends StatelessWidget {
       border: TableBorder.all(
         color: const Color.fromRGBO(100, 149, 237, 1),
       ),
-      children: const [
+      children: [
         TableRow(children: [
           SelectableText(
             'Pronoun',
@@ -143,28 +181,64 @@ class Parler extends StatelessWidget {
           ),
         ]),
         TableRow(children: [
-          SelectableText('je', style: TextStyle(fontSize: 16)),
-          SelectableText('parle', style: TextStyle(fontSize: 16))
+          SelectableText(
+            'je',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'parle',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText('tu', style: TextStyle(fontSize: 16)),
-          SelectableText('parles', style: TextStyle(fontSize: 16))
+          SelectableText(
+            'tu',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'parles',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText('il/elle/on ', style: TextStyle(fontSize: 16)),
-          SelectableText('parle', style: TextStyle(fontSize: 16))
+          SelectableText(
+            'il/elle/on ',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'parle',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText('nous', style: TextStyle(fontSize: 16)),
-          SelectableText('parlons', style: TextStyle(fontSize: 16))
+          SelectableText(
+            'nous',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'parlons',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText('vous', style: TextStyle(fontSize: 16)),
-          SelectableText('parlez', style: TextStyle(fontSize: 16))
+          SelectableText(
+            'vous',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'parlez',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText('ils/elles', style: TextStyle(fontSize: 16)),
-          SelectableText('parlent', style: TextStyle(fontSize: 16))
+          SelectableText(
+            'ils/elles',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'parlent',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
       ],
     );
@@ -180,7 +254,7 @@ class Irverbs extends StatelessWidget {
       border: TableBorder.all(
         color: const Color.fromRGBO(100, 149, 237, 1),
       ),
-      children: const [
+      children: [
         TableRow(children: [
           SelectableText(
             'Pronoun',
@@ -192,28 +266,64 @@ class Irverbs extends StatelessWidget {
           ),
         ]),
         TableRow(children: [
-          SelectableText('je', style: TextStyle(fontSize: 16)),
-          SelectableText('-is', style: TextStyle(fontSize: 16))
+          SelectableText(
+            'je',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            '-is',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText('tu', style: TextStyle(fontSize: 16)),
-          SelectableText('-is', style: TextStyle(fontSize: 16))
+          SelectableText(
+            'tu',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            '-is',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText('il/elle/on', style: TextStyle(fontSize: 16)),
-          SelectableText('-it', style: TextStyle(fontSize: 16))
+          SelectableText(
+            'il/elle/on',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            '-it',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText('nous', style: TextStyle(fontSize: 16)),
-          SelectableText('-issons', style: TextStyle(fontSize: 16))
+          SelectableText(
+            'nous',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            '-issons',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText('vous', style: TextStyle(fontSize: 16)),
-          SelectableText('-issez', style: TextStyle(fontSize: 16))
+          SelectableText(
+            'vous',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            '-issez',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText('ils/elle', style: TextStyle(fontSize: 16)),
-          SelectableText('-issent', style: TextStyle(fontSize: 16))
+          SelectableText(
+            'ils/elle',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            '-issent',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
       ],
     );

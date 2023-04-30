@@ -22,7 +22,7 @@ class Noun extends StatelessWidget {
             children: <Widget>[
               SelectableText(
                 nounIntro,
-                style: const TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               const SizedBox(
                 height: 20,
@@ -33,7 +33,7 @@ class Noun extends StatelessWidget {
               ),
               SelectableText(
                 nounFooter,
-                style: const TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               const SizedBox(
                 height: 50,
@@ -55,7 +55,7 @@ class Noted extends StatelessWidget {
       border: TableBorder.all(
         color: const Color.fromRGBO(100, 149, 237, 1),
       ),
-      children: const [
+      children: [
         TableRow(children: [
           SelectableText(
             'Noun',
@@ -75,54 +75,148 @@ class Noted extends StatelessWidget {
           )
         ]),
         TableRow(children: [
-          SelectableText('Chat (cat)', style: TextStyle(fontSize: 16)),
-          SelectableText('Masculine', style: TextStyle(fontSize: 16)),
-          SelectableText('Le', style: TextStyle(fontSize: 16)),
-          SelectableText('Les', style: TextStyle(fontSize: 16))
+          SelectableText(
+            'Chat (cat)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Masculine',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Le',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Les',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText('Table (table)', style: TextStyle(fontSize: 16)),
-          SelectableText('Gender', style: TextStyle(fontSize: 16)),
-          SelectableText('La', style: TextStyle(fontSize: 16)),
-          SelectableText('Les', style: TextStyle(fontSize: 16))
+          SelectableText(
+            'Table (table)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Gender',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'La',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Les',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText('Livre (book)', style: TextStyle(fontSize: 16)),
-          SelectableText('Masculine', style: TextStyle(fontSize: 16)),
-          SelectableText('Le', style: TextStyle(fontSize: 16)),
-          SelectableText('Les', style: TextStyle(fontSize: 16))
+          SelectableText(
+            'Livre (book)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Masculine',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Le',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Les',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText('Pomme (apple)', style: TextStyle(fontSize: 16)),
-          SelectableText('Feminine', style: TextStyle(fontSize: 16)),
-          SelectableText('La', style: TextStyle(fontSize: 16)),
-          SelectableText('Les', style: TextStyle(fontSize: 16))
+          SelectableText(
+            'Pomme (apple)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Feminine',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'La',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Les',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText('Fleur (flower)', style: TextStyle(fontSize: 16)),
-          SelectableText('Feminine', style: TextStyle(fontSize: 16)),
-          SelectableText('La', style: TextStyle(fontSize: 16)),
-          SelectableText('Les', style: TextStyle(fontSize: 16))
+          SelectableText(
+            'Fleur (flower)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Feminine',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'La',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Les',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText('Chien (dog)', style: TextStyle(fontSize: 16)),
-          SelectableText('Masculine', style: TextStyle(fontSize: 16)),
-          SelectableText('Le', style: TextStyle(fontSize: 16)),
-          SelectableText('Les', style: TextStyle(fontSize: 16))
+          SelectableText(
+            'Chien (dog)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Masculine',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Le',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Les',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText('L\'oiseau (The bird)',
-              style: TextStyle(fontSize: 16)),
-          SelectableText('Masculine', style: TextStyle(fontSize: 16)),
-          SelectableText("L' ", style: TextStyle(fontSize: 16)),
-          SelectableText('Les', style: TextStyle(fontSize: 16))
+          SelectableText(
+            'L\'oiseau (The bird)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Masculine',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            "L' ",
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Les',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText('La voiture (The car)',
-              style: TextStyle(fontSize: 16)),
-          SelectableText('Feminine', style: TextStyle(fontSize: 16)),
-          SelectableText("La ", style: TextStyle(fontSize: 16)),
-          SelectableText('Les', style: TextStyle(fontSize: 16))
+          SelectableText(
+            'La voiture (The car)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Feminine',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            "La ",
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Les',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ])
       ],
     );

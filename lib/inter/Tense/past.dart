@@ -12,7 +12,7 @@ class Past extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromRGBO(100, 149, 237, 1),
-        title: const Text('Past Tenses'),
+        title: const Text('Past Tense'),
       ),
       body: SafeArea(
           child: Padding(
@@ -22,7 +22,7 @@ class Past extends StatelessWidget {
             children: <Widget>[
               SelectableText(
                 pastIntro,
-                style: const TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               const SizedBox(
                 height: 20,
@@ -33,7 +33,7 @@ class Past extends StatelessWidget {
               ),
               SelectableText(
                 imparfait,
-                style: const TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               const SizedBox(
                 height: 20,
@@ -44,7 +44,7 @@ class Past extends StatelessWidget {
               ),
               SelectableText(
                 simple,
-                style: const TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               const Simple(),
               const SizedBox(
@@ -52,7 +52,7 @@ class Past extends StatelessWidget {
               ),
               SelectableText(
                 pastFooter,
-                style: const TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               const SizedBox(
                 height: 50,
@@ -74,7 +74,7 @@ class Example extends StatelessWidget {
       border: TableBorder.all(
         color: const Color.fromRGBO(100, 149, 237, 1),
       ),
-      children: const [
+      children: [
         TableRow(children: [
           SelectableText(
             'Subject Pronoun',
@@ -90,36 +90,88 @@ class Example extends StatelessWidget {
           ),
         ]),
         TableRow(children: [
-          SelectableText('je', style: TextStyle(fontSize: 16)),
-          SelectableText("j'ai mangé", style: TextStyle(fontSize: 16)),
-          SelectableText('je suis allé(e)', style: TextStyle(fontSize: 16))
+          SelectableText(
+            'je',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            "j'ai mangé",
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'je suis allé(e)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText('tu', style: TextStyle(fontSize: 16)),
-          SelectableText('tu as mangé', style: TextStyle(fontSize: 16)),
-          SelectableText('tu es allé(e)', style: TextStyle(fontSize: 16))
+          SelectableText(
+            'tu',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'tu as mangé',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'tu es allé(e)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText('il/elle/on', style: TextStyle(fontSize: 16)),
-          SelectableText('il/elle a mangé', style: TextStyle(fontSize: 16)),
-          SelectableText('il/elle est allé(e)', style: TextStyle(fontSize: 16))
+          SelectableText(
+            'il/elle/on',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'il/elle a mangé',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'il/elle est allé(e)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText('nous', style: TextStyle(fontSize: 16)),
-          SelectableText('nous avons mangé', style: TextStyle(fontSize: 16)),
-          SelectableText('nous sommes allé(e)s', style: TextStyle(fontSize: 16))
+          SelectableText(
+            'nous',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'nous avons mangé',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'nous sommes allé(e)s',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText('vous', style: TextStyle(fontSize: 16)),
-          SelectableText('vous avez mangé', style: TextStyle(fontSize: 16)),
-          SelectableText('vous êtes allé(e)(s)', style: TextStyle(fontSize: 16))
+          SelectableText(
+            'vous',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'vous avez mangé',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'vous êtes allé(e)(s)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText('ils/elles', style: TextStyle(fontSize: 16)),
-          SelectableText('	ils/elles ont mangé',
-              style: TextStyle(fontSize: 16)),
-          SelectableText('ils/elles sont allé(e)s',
-              style: TextStyle(fontSize: 16))
+          SelectableText(
+            'ils/elles',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            '	ils/elles ont mangé',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'ils/elles sont allé(e)s',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
       ],
     );
@@ -135,7 +187,7 @@ class Impperfect extends StatelessWidget {
       border: TableBorder.all(
         color: const Color.fromRGBO(100, 149, 237, 1),
       ),
-      children: const [
+      children: [
         TableRow(children: [
           SelectableText(
             'Subject Pronoun',
@@ -155,9 +207,18 @@ class Impperfect extends StatelessWidget {
           ),
         ]),
         TableRow(children: [
-          SelectableText('je', style: TextStyle(fontSize: 16)),
-          SelectableText("parlais", style: TextStyle(fontSize: 16)),
-          SelectableText('finissais', style: TextStyle(fontSize: 16)),
+          SelectableText(
+            'je',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            "parlais",
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'finissais',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
           SelectableText(
             'vendais',
             style: TextStyle(
@@ -166,31 +227,54 @@ class Impperfect extends StatelessWidget {
           ),
         ]),
         TableRow(children: [
-          SelectableText('tu', style: TextStyle(fontSize: 16)),
-          SelectableText('parlais', style: TextStyle(fontSize: 16)),
-          SelectableText('finissais', style: TextStyle(fontSize: 16)),
+          SelectableText(
+            'tu',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'parlais',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'finissais',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
           SelectableText(
             'vendais',
-            style: TextStyle(
-              fontSize: 17,
-            ),
+            style: Theme.of(context).textTheme.bodyMedium,
           )
         ]),
         TableRow(children: [
-          SelectableText('il/elle/on', style: TextStyle(fontSize: 16)),
-          SelectableText('parlait', style: TextStyle(fontSize: 16)),
-          SelectableText('finissait', style: TextStyle(fontSize: 16)),
+          SelectableText(
+            'il/elle/on',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'parlait',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'finissait',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
           SelectableText(
             'vendait',
-            style: TextStyle(
-              fontSize: 17,
-            ),
+            style: Theme.of(context).textTheme.bodyMedium,
           )
         ]),
         TableRow(children: [
-          SelectableText('nous', style: TextStyle(fontSize: 16)),
-          SelectableText('parlions', style: TextStyle(fontSize: 16)),
-          SelectableText('finissions', style: TextStyle(fontSize: 16)),
+          SelectableText(
+            'nous',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'parlions',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'finissions',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
           SelectableText(
             'vendions',
             style: TextStyle(
@@ -199,21 +283,39 @@ class Impperfect extends StatelessWidget {
           )
         ]),
         TableRow(children: [
-          SelectableText('vous', style: TextStyle(fontSize: 16)),
-          SelectableText('parliez', style: TextStyle(fontSize: 16)),
-          SelectableText('finissiez', style: TextStyle(fontSize: 16)),
+          SelectableText(
+            'vous',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'parliez',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'finissiez',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
           SelectableText(
             "vendiez",
-            style: TextStyle(fontSize: 17),
+            style: Theme.of(context).textTheme.bodyMedium,
           )
         ]),
         TableRow(children: [
-          SelectableText('ils/elles', style: TextStyle(fontSize: 16)),
-          SelectableText('	parlaient', style: TextStyle(fontSize: 16)),
-          SelectableText('finissaient', style: TextStyle(fontSize: 16)),
+          SelectableText(
+            'ils/elles',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            '	parlaient',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'finissaient',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
           SelectableText(
             'vendaient',
-            style: TextStyle(fontSize: 17),
+            style: Theme.of(context).textTheme.bodyMedium,
           )
         ]),
       ],
@@ -230,7 +332,7 @@ class Simple extends StatelessWidget {
       border: TableBorder.all(
         color: const Color.fromRGBO(100, 149, 237, 1),
       ),
-      children: const [
+      children: [
         TableRow(children: [
           SelectableText(
             'Subject Pronoun',
@@ -250,67 +352,111 @@ class Simple extends StatelessWidget {
           )
         ]),
         TableRow(children: [
-          SelectableText('je', style: TextStyle(fontSize: 16)),
-          SelectableText("parlai", style: TextStyle(fontSize: 16)),
-          SelectableText('finis', style: TextStyle(fontSize: 16)),
+          SelectableText(
+            'je',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            "parlai",
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'finis',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
           SelectableText(
             'vendis',
-            style: TextStyle(
-              fontSize: 17,
-            ),
+            style: Theme.of(context).textTheme.bodyMedium,
           )
         ]),
         TableRow(children: [
-          SelectableText('tu', style: TextStyle(fontSize: 16)),
-          SelectableText('parlas', style: TextStyle(fontSize: 16)),
-          SelectableText('finis', style: TextStyle(fontSize: 16)),
+          SelectableText(
+            'tu',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'parlas',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'finis',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
           SelectableText(
             'vendis',
-            style: TextStyle(
-              fontSize: 17,
-            ),
+            style: Theme.of(context).textTheme.bodyMedium,
           )
         ]),
         TableRow(children: [
-          SelectableText('il/elle/on', style: TextStyle(fontSize: 16)),
-          SelectableText('parla', style: TextStyle(fontSize: 16)),
+          SelectableText(
+            'il/elle/on',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'parla',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
           SelectableText(
             'finit',
-            style: TextStyle(
-              fontSize: 17,
-            ),
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
-          SelectableText('vendit', style: TextStyle(fontSize: 16))
-        ]),
-        TableRow(children: [
-          SelectableText('nous', style: TextStyle(fontSize: 16)),
-          SelectableText('parlâmes', style: TextStyle(fontSize: 16)),
-          SelectableText('finîmes', style: TextStyle(fontSize: 16)),
           SelectableText(
-            '',
-            style: TextStyle(
-              fontSize: 17,
-            ),
+            'vendit',
+            style: Theme.of(context).textTheme.bodyMedium,
           )
         ]),
         TableRow(children: [
-          SelectableText('vous', style: TextStyle(fontSize: 16)),
-          SelectableText('', style: TextStyle(fontSize: 16)),
-          SelectableText('', style: TextStyle(fontSize: 16)),
           SelectableText(
-            '',
-            style: TextStyle(
-              fontSize: 17,
-            ),
+            'nous',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'parlâmes',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'finîmes',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'vendîmes',
+            style: Theme.of(context).textTheme.bodyMedium,
           )
         ]),
         TableRow(children: [
-          SelectableText('ils/elles', style: TextStyle(fontSize: 16)),
-          SelectableText('	', style: TextStyle(fontSize: 16)),
-          SelectableText('', style: TextStyle(fontSize: 16)),
           SelectableText(
-            '',
-            style: TextStyle(fontSize: 17),
+            'vous',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'parlâtes',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'finîtes',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'vendîtes',
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
+        ]),
+        TableRow(children: [
+          SelectableText(
+            'ils/elles',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            '	parlèrent',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'finirent',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'vendirent ',
+            style: Theme.of(context).textTheme.bodyMedium,
           )
         ]),
       ],
