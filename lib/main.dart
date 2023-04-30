@@ -25,7 +25,7 @@ class _MyAppState extends State<MyApp> {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark);
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Light and Dark Theme',
+        title: 'French Level',
         theme: ThemeData(
           textTheme: TextTheme(
             bodyMedium: TextStyle(fontSize: _font),
@@ -41,7 +41,7 @@ class _MyAppState extends State<MyApp> {
               child: Scaffold(
                 appBar: AppBar(
                   backgroundColor: Color.fromRGBO(100, 149, 237, 1),
-                  title: Text('testing widgets'),
+                  title: Text('French Level'),
                   actions: [
                     Builder(
                         builder: (context) => PopupMenuButton(
