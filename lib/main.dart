@@ -1,22 +1,16 @@
-// ignore_for_file: unused_import, prefer_const_constructors, avoid_unnecessary_containers, unnecessary_import, avoid_web_libraries_in_flutter, import_of_legacy_library_into_null_safe, unused_element, non_constant_identifier_names, constant_identifier_names, unrelated_type_equality_checks
+// ignore_for_file: unused_field, deprecated_member_use, prefer_final_fields, prefer_const_constructors, prefer_const_literals_to_create_immutables, constant_identifier_names, non_constant_identifier_names, library_private_types_in_public_api, unused_import
 
-import 'package:frenchify/Pages/translator.dart';
-import 'package:frenchify/begin/begin.dart';
-import 'package:frenchify/inter/intermediate.dart';
-import 'package:frenchify/advan/advance.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
-import 'package:frenchify/Pages/about.dart';
-import 'package:frenchify/Pages/feedback.dart';
+import 'package:flutter/services.dart';
+import 'begin/begin.dart';
+import 'inter/intermediate.dart';
+import 'advan/advance.dart';
+import 'Pages/translator.dart';
+import 'Pages/feedback.dart';
+import 'Pages/about.dart';
 import 'Pages/splash.dart';
 
-void main() {
-  runApp(MaterialApp(
-    title: 'French Level',
-    debugShowCheckedModeBanner: false,
-    home: Screen(),
-  ));
-}
+void main() => runApp(const MyApp());
 
 class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -34,12 +28,12 @@ class _MyAppState extends State<MyApp> {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark);
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'French Level',
-        // theme: ThemeData(
-        //   textTheme: TextTheme(
-        //     bodyMedium: TextStyle(fontSize: _font),
-        //   ),
-        // ),
+        title: 'Light and Dark Theme',
+        theme: ThemeData(
+          textTheme: TextTheme(
+            bodyMedium: TextStyle(fontSize: _font),
+          ),
+        ),
         darkTheme: ThemeData.dark(),
         themeMode: _mode,
         home: AnnotatedRegion<SystemUiOverlayStyle>(
@@ -50,7 +44,7 @@ class _MyAppState extends State<MyApp> {
               child: Scaffold(
                 appBar: AppBar(
                   backgroundColor: Color.fromRGBO(100, 149, 237, 1),
-                  title: Text('French Level'),
+                  title: Text('testing widgets'),
                   actions: [
                     Builder(
                         builder: (context) => PopupMenuButton(
@@ -195,7 +189,7 @@ class _MyAppState extends State<MyApp> {
   }
 }
 //mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
-//Drawer
+//bottomnavigationbar
 // mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 
 class Down extends StatefulWidget {
@@ -213,7 +207,7 @@ class _DownState extends State<Down> {
       padding: EdgeInsets.zero,
       children: [
         Container(
-          padding: EdgeInsets.all(29.0),
+          padding: EdgeInsets.all(28.0),
           width: 100,
           height: 80,
           color: Color.fromRGBO(100, 149, 237, 1),
