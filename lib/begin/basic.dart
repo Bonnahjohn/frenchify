@@ -22,7 +22,7 @@ class Basic extends StatelessWidget {
             children: <Widget>[
               SelectableText(
                 basicPhrase,
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               SizedBox(
                 height: 30,
@@ -33,7 +33,7 @@ class Basic extends StatelessWidget {
               ),
               SelectableText(
                 basicFooter,
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               SizedBox(
                 height: 50,
@@ -71,54 +71,144 @@ class Tables extends StatelessWidget {
           ),
         ]),
         TableRow(children: [
-          Text('Bonjour'),
-          Text('bohn-zhoor'),
-          Text('Good day / Hello'),
+          Text(
+            'Bonjour',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          Text(
+            'bohn-zhoor',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          Text(
+            'Good day / Hello',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          Text('Au revoir'),
-          Text('oh ruh-vwah'),
-          Text('Goodbye'),
+          Text(
+            'Au revoir',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          Text(
+            'oh ruh-vwah',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          Text(
+            'Goodbye',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          Text('Merci'),
-          Text('mehr-see'),
-          Text('Thank you'),
+          Text(
+            'Merci',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          Text(
+            'mehr-see',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          Text(
+            'Thank you',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          Text("S'il vous plaît"),
-          Text('seel voo pleh'),
-          Text('Please'),
+          Text(
+            "S'il vous plaît",
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          Text(
+            'seel voo pleh',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          Text(
+            'Please',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          Text('Oui'),
-          Text('wee'),
-          Text('Yes'),
+          Text(
+            'Oui',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          Text(
+            'wee',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          Text(
+            'Yes',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          Text('Non'),
-          Text('nohn'),
-          Text('No'),
+          Text(
+            'Non',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          Text(
+            'nohn',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          Text(
+            'No',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          Text('Comment ça va?'),
-          Text('koh-mohn sah vah'),
-          Text('How are you?'),
+          Text(
+            'Comment ça va?',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          Text(
+            'koh-mohn sah vah',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          Text(
+            'How are you?',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          Text('Ça va bien'),
-          Text('sah vah byeh'),
-          Text('I\'m doing well'),
+          Text(
+            'Ça va bien',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          Text(
+            'sah vah byeh',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          Text(
+            'I\'m doing well',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          Text('Je m\'appelle'),
-          Text('zhuh mah-pell'),
-          Text('My name is'),
+          Text(
+            'Je m\'appelle',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          Text(
+            'zhuh mah-pell',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          Text(
+            'My name is',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('Excusez-moi'),
-          SelectableText('eks-koo-zay mwah'),
-          SelectableText('Excuse me'),
+          SelectableText(
+            'Excusez-moi',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'eks-koo-zay mwah',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            'Excuse me',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
       ],
     );
