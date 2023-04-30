@@ -21,9 +21,9 @@ class Feedbacks extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              const Text(
+              Text(
                 "'Bonjour to all Frenchify users! We are thrilled to have you learning French with our app. We hope that you are finding the exercises helpful and that you're making progress in your language journey. We value your feedback, so please don't hesitate to share any suggestions or issues you encounter with us. Our team is constantly working to improve the app and provide you with the best learning experience possible. Merci beaucoup for choosing Frenchify!'",
-                style: TextStyle(fontSize: 16, fontFamily: 'Arial'),
+                style: Theme.of(context).textTheme.bodyMedium,
                 textAlign: TextAlign.justify,
                 overflow: TextOverflow.clip,
                 strutStyle: StrutStyle(
@@ -31,11 +31,10 @@ class Feedbacks extends StatelessWidget {
               ),
               RichText(
                   text: TextSpan(children: [
-                const TextSpan(
-                  text:
-                      'Send any suggestion or issues you encouter through this email address:',
-                  style: TextStyle(color: Colors.black, fontSize: 16),
-                ),
+                TextSpan(
+                    text:
+                        'Send any suggestion or issues you encouter through this email address:',
+                    style: Theme.of(context).textTheme.bodyMedium),
                 TextSpan(
                     text: 'Frenchifyteam@gmail.com',
                     style: const TextStyle(

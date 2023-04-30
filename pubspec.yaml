@@ -37,6 +37,7 @@ dependencies:
   translator: ^0.1.7
   url_launcher: ^6.1.10
   path_provider: ^2.0.14
+  google_fonts: ^2.1.0
 
 dev_dependencies:
   flutter_test:

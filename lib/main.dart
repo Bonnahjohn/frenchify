@@ -6,6 +6,7 @@ import 'advan/advance.dart';
 import 'Pages/translator.dart';
 import 'Pages/feedback.dart';
 import 'Pages/about.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(MyApp());
 
@@ -27,10 +28,9 @@ class _MyAppState extends State<MyApp> {
         debugShowCheckedModeBanner: false,
         title: 'French Level',
         theme: ThemeData(
-          textTheme: TextTheme(
-            bodyMedium: TextStyle(fontSize: _font),
-          ),
-        ),
+            textTheme: GoogleFonts.latoTextTheme(
+          Theme.of(context).textTheme,
+        ).copyWith(bodyMedium: TextStyle(fontSize: _font))),
         darkTheme: ThemeData.dark(),
         themeMode: _mode,
         home: AnnotatedRegion<SystemUiOverlayStyle>(
