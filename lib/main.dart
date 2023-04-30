@@ -1,5 +1,3 @@
-// ignore_for_file: unused_field, deprecated_member_use, prefer_final_fields, prefer_const_constructors, prefer_const_literals_to_create_immutables, constant_identifier_names, non_constant_identifier_names, library_private_types_in_public_api, unused_import
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'begin/begin.dart';
@@ -8,9 +6,8 @@ import 'advan/advance.dart';
 import 'Pages/translator.dart';
 import 'Pages/feedback.dart';
 import 'Pages/about.dart';
-import 'Pages/splash.dart';
 
-void main() => runApp(const MyApp());
+void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -193,7 +190,7 @@ class _MyAppState extends State<MyApp> {
 // mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 
 class Down extends StatefulWidget {
-  const Down({super.key});
+  const Down({Key? key}) : super(key: key);
 
   @override
   State<Down> createState() => _DownState();
