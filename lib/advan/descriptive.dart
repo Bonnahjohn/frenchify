@@ -22,7 +22,7 @@ class Descriptive extends StatelessWidget {
             children: <Widget>[
               SelectableText(
                 desIntro,
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               SizedBox(
                 height: 30,

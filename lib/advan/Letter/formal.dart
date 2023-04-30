@@ -25,15 +25,18 @@ class Formal extends StatelessWidget {
               // Display the introduction text at index 0
               return SelectableText(
                 myText,
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               );
             } else if (index == note.length + 1) {
               // Display the note at the bottom
-              return SelectableText(onTap: () {
-                Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => Images()));
-              }, focus,
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400));
+              return SelectableText(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Images()));
+                },
+                focus,
+                style: Theme.of(context).textTheme.bodyMedium,
+              );
             } else {
               // Display each sentence as a ListTile with a number
               return ListTile(
@@ -42,7 +45,10 @@ class Formal extends StatelessWidget {
                   '${index}.',
                   style: TextStyle(color: Colors.green[400]),
                 ),
-                title: SelectableText(note[index - 1]),
+                title: SelectableText(
+                  note[index - 1],
+                  style: Theme.of(context).textTheme.bodyMedium,
+                ),
               );
             }
           },

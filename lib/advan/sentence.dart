@@ -22,7 +22,7 @@ class Sentence extends StatelessWidget {
             children: <Widget>[
               SelectableText(
                 structIntro,
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               SizedBox(
                 height: 30,
@@ -33,7 +33,7 @@ class Sentence extends StatelessWidget {
               ),
               SelectableText(
                 structFooter,
-                style: TextStyle(fontSize: 16),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               SizedBox(
                 height: 50,
@@ -57,7 +57,7 @@ class Structure extends StatelessWidget {
       border: TableBorder.all(
         color: const Color.fromRGBO(100, 149, 237, 1),
       ),
-      children: const [
+      children: [
         TableRow(children: [
           SelectableText(
             'Structure',
@@ -69,37 +69,64 @@ class Structure extends StatelessWidget {
           ),
         ]),
         TableRow(children: [
-          SelectableText('SVO', style: TextStyle(fontSize: 16)),
-          SelectableText('"Le chat mange une souris." (The cat eats a mouse.)',
-              style: TextStyle(fontSize: 16)),
-        ]),
-        TableRow(children: [
-          SelectableText('SVI	', style: TextStyle(fontSize: 16)),
-          SelectableText("\"Il pleut.\" (It's raining.)",
-              style: TextStyle(fontSize: 16))
-        ]),
-        TableRow(children: [
-          SelectableText('SVC	', style: TextStyle(fontSize: 16)),
-          SelectableText("\"Elle est fatiguée.\" (She is tired.)",
-              style: TextStyle(fontSize: 16))
-        ]),
-        TableRow(children: [
-          SelectableText(' SVOO	', style: TextStyle(fontSize: 16)),
           SelectableText(
-              "\"Le chat donne une souris à l'oiseau.\" (The cat gives a mouse to the bird.)",
-              style: TextStyle(fontSize: 16))
+            'SVO',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            '"Le chat mange une souris." (The cat eats a mouse.)',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ]),
         TableRow(children: [
-          SelectableText('SVOC	', style: TextStyle(fontSize: 16)),
           SelectableText(
-              "\"Je trouve le livre intéressant.\" (I find the book interesting.)",
-              style: TextStyle(fontSize: 16))
+            'SVI	',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            "\"Il pleut.\" (It's raining.)",
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
         TableRow(children: [
-          SelectableText(' SVOA	', style: TextStyle(fontSize: 16)),
           SelectableText(
-              " \"Le chat mange une souris dans le jardin.\" (The cat eats a mouse in the garden.)",
-              style: TextStyle(fontSize: 16))
+            'SVC	',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            "\"Elle est fatiguée.\" (She is tired.)",
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
+        ]),
+        TableRow(children: [
+          SelectableText(
+            ' SVOO	',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            "\"Le chat donne une souris à l'oiseau.\" (The cat gives a mouse to the bird.)",
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
+        ]),
+        TableRow(children: [
+          SelectableText(
+            'SVOC	',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            "\"Je trouve le livre intéressant.\" (I find the book interesting.)",
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
+        ]),
+        TableRow(children: [
+          SelectableText(
+            ' SVOA	',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          SelectableText(
+            " \"Le chat mange une souris dans le jardin.\" (The cat eats a mouse in the garden.)",
+            style: Theme.of(context).textTheme.bodyMedium,
+          )
         ]),
       ],
     );

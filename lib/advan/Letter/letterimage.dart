@@ -19,9 +19,9 @@ class Images extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              const Text(
+              Text(
                 'Here is an a sample images showing how to write formal letter.',
-                style: TextStyle(fontSize: 19, fontWeight: FontWeight.bold),
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               SizedBox(
                 height: 30,
