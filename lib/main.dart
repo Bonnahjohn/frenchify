@@ -36,7 +36,7 @@ class _MyAppState extends State<MyApp> {
   _initBannerAd() {
     _bannerAd = BannerAd(
         size: AdSize.banner,
-        adUnitId: 'ca-app-pub-9379469464236253/6090532870',
+        adUnitId: 'ca-app-pub-9379469464236253/2342859552',
         listener: BannerAdListener(
           onAdLoaded: (ad) {
             setState(() {
