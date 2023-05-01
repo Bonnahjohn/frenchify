@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:frenchify/inter/configuration.dart';
 import 'package:frenchify/main.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class Present extends StatelessWidget {
   const Present({super.key});
@@ -71,6 +72,7 @@ class Present extends StatelessWidget {
           ),
         ),
       )),
+      bottomNavigationBar: ADDS(),
     );
   }
 }
@@ -522,6 +524,57 @@ class Tobe extends StatelessWidget {
           SelectableText('Sont', style: TextStyle(fontSize: 16))
         ]),
       ],
+    );
+  }
+}
+
+class ADDS extends StatefulWidget {
+  const ADDS({super.key});
+
+  @override
+  State<ADDS> createState() => _ADDSState();
+}
+
+class _ADDSState extends State<ADDS> {
+  late BannerAd _bannerAd;
+  bool _isAdLoaded = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _initBannerAd();
+  }
+
+  _initBannerAd() {
+    _bannerAd = BannerAd(
+        size: AdSize.banner,
+        adUnitId: 'ca-app-pub-9379469464236253/2342859552',
+        listener: BannerAdListener(
+          onAdLoaded: (ad) {
+            setState(() {
+              _isAdLoaded = true;
+            });
+          },
+          onAdFailedToLoad: (ad, error) {},
+        ),
+        request: AdRequest());
+    _bannerAd.load();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 100,
+      height: 50,
+      child: _isAdLoaded
+          ? Container(
+              height: _bannerAd.size.height.toDouble(),
+              width: _bannerAd.size.width.toDouble(),
+              child: AdWidget(ad: _bannerAd),
+            )
+          : SizedBox(
+              height: 50,
+            ),
     );
   }
 }
