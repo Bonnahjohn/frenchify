@@ -1,3 +1,5 @@
+// ignore_for_file: must_call_super, unnecessary_statements
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'begin/begin.dart';
@@ -6,8 +8,13 @@ import 'advan/advance.dart';
 import 'Pages/translator.dart';
 import 'Pages/feedback.dart';
 import 'Pages/about.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  MobileAds.instance.initialize();
+  runApp(MyApp());
+}
 
 class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -17,6 +24,31 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  late BannerAd _bannerAd;
+  bool _isAdLoaded = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _initBannerAd();
+  }
+
+  _initBannerAd() {
+    _bannerAd = BannerAd(
+        size: AdSize.banner,
+        adUnitId: 'ca-app-pub-9379469464236253/6090532870',
+        listener: BannerAdListener(
+          onAdLoaded: (ad) {
+            setState(() {
+              _isAdLoaded = true;
+            });
+          },
+          onAdFailedToLoad: (ad, error) {},
+        ),
+        request: AdRequest());
+    _bannerAd.load();
+  }
+
   ThemeMode _mode = ThemeMode.light;
   bool _isSwitch = false;
   double _font = 16;
@@ -184,6 +216,15 @@ class _MyAppState extends State<MyApp> {
                 body: TabBarView(
                     children: [Beginner(), Intermediate(), AdvanIntro()]),
                 drawer: Down(),
+                bottomNavigationBar: _isAdLoaded
+                    ? Container(
+                        height: _bannerAd.size.height.toDouble(),
+                        width: _bannerAd.size.width.toDouble(),
+                        child: AdWidget(ad: _bannerAd),
+                      )
+                    : SizedBox(
+                        height: 50,
+                      ),
               ),
             )));
   }
