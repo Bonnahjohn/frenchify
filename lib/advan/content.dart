@@ -6,6 +6,7 @@ import 'package:frenchify/advan/content.dart';
 import 'package:frenchify/advan/Letter/informal.dart';
 import 'package:frenchify/advan/Letter/formal.dart';
 import 'package:frenchify/advan/Letter/letterimage.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class Letter extends StatelessWidget {
   const Letter({super.key});
@@ -54,6 +55,58 @@ class Letter extends StatelessWidget {
           ),
         ),
       )),
+      bottomNavigationBar: ADDS(),
+    );
+  }
+}
+
+class ADDS extends StatefulWidget {
+  const ADDS({super.key});
+
+  @override
+  State<ADDS> createState() => _ADDSState();
+}
+
+class _ADDSState extends State<ADDS> {
+  late BannerAd _bannerAd;
+  bool _isAdLoaded = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _initBannerAd();
+  }
+
+  _initBannerAd() {
+    _bannerAd = BannerAd(
+        size: AdSize.banner,
+        adUnitId: 'ca-app-pub-9379469464236253/2342859552',
+        listener: BannerAdListener(
+          onAdLoaded: (ad) {
+            setState(() {
+              _isAdLoaded = true;
+            });
+          },
+          onAdFailedToLoad: (ad, error) {},
+        ),
+        request: AdRequest());
+    _bannerAd.load();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 100,
+      height: 50,
+      child: _isAdLoaded
+          ? Container(
+              height: _bannerAd.size.height.toDouble(),
+              width: _bannerAd.size.width.toDouble(),
+              child: AdWidget(ad: _bannerAd),
+            )
+          : SizedBox(
+              height: 50,
+            ),
     );
   }
 }
