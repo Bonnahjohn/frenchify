@@ -38,7 +38,7 @@ class Images extends StatelessWidget {
                   maxScale: 3,
                   minScale: 0.5,
                   child: Image.asset(
-                    'assets/images/formal.png',
+                    'assets/images/F1.png',
                   )),
               SizedBox(
                 height: 40,
@@ -51,7 +51,7 @@ class Images extends StatelessWidget {
                   maxScale: 3,
                   minScale: 0.5,
                   child: Image.asset(
-                    'assets/images/sam.jpeg',
+                    'assets/images/F2.png',
                   )),
               SizedBox(
                 height: 40,

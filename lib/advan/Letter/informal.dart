@@ -283,6 +283,40 @@ class Informal extends StatelessWidget {
                 ),
               ),
               SizedBox(
+                height: 30,
+              ),
+              InteractiveViewer(
+                boundaryMargin:
+                    EdgeInsets.symmetric(horizontal: 20.0, vertical: 20),
+                panEnabled: true,
+                scaleEnabled: true,
+                maxScale: 3,
+                minScale: 0.5,
+                child: Image.asset(
+                  'assets/images/I4.png',
+                  width: 600,
+                  height: 500,
+                  fit: BoxFit.fill,
+                ),
+              ),
+              SizedBox(
+                height: 30,
+              ),
+              InteractiveViewer(
+                boundaryMargin:
+                    EdgeInsets.symmetric(horizontal: 20.0, vertical: 20),
+                panEnabled: true,
+                scaleEnabled: true,
+                maxScale: 3,
+                minScale: 0.5,
+                child: Image.asset(
+                  'assets/images/I2.png',
+                  width: 600,
+                  height: 500,
+                  fit: BoxFit.fill,
+                ),
+              ),
+              SizedBox(
                 height: 40,
               ),
             ],

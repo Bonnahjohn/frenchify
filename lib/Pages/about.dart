@@ -13,7 +13,7 @@ class About extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromRGBO(100, 149, 237, 1),
+        backgroundColor: Color.fromRGBO(117, 218, 255, 1),
         title: const Text('About Us'),
       ),
       body: SafeArea(
