@@ -6,7 +6,8 @@ String focus =
 List<String> note = [
   'Date: The letter usually begins with the date, written in the format "Le [day] [month] [year]".',
   "Address: The writer's address is usually written at the top right of the page, followed by the recipient's address on the left.",
-  "Salutation: The letter usually begins with [Monsieur] (Sir) or [Madame] (Madam), followed by the recipient's last name.",
+  "In a French formal letter, the subject line (la ligne d'objet) typically comes after the recipient's address and before the salutation. The subject line should be concise and clearly state the purpose of the letter. For example, \"Demande de renseignements sur les programmes d'études\" (Request for information about study programs)."
+      "Salutation: The letter usually begins with [Monsieur] (Sir) or [Madame] (Madam), followed by the recipient's last name.",
   "Introduction: The writer usually begins by expressing their purpose for writing the letter and may provide some background information if necessary.",
   "Main body: This is where the writer provides more details about the purpose of the letter, such as making a request, providing information, or expressing an opinion. The language used in the main body is usually formal and polite, with a focus on clarity and professionalism.",
   "Closing: The letter usually ends with a closing phrase, such as 'Veuillez agréer, Monsieur/Madame, l'expression de mes salutations distinguées' (Please accept, Sir/Madam, the expression of my distinguished regards).",

@@ -30,7 +30,7 @@ class Descriptive extends StatelessWidget {
               ),
               InteractiveViewer(
                 child: Image.asset(
-                  'assets/images/two.jpeg',
+                  'assets/images/S2.png',
                 ),
               ),
               SizedBox(
@@ -38,7 +38,7 @@ class Descriptive extends StatelessWidget {
               ),
               InteractiveViewer(
                 child: Image.asset(
-                  'assets/images/three.jpeg',
+                  'assets/images/S1.png',
                 ),
               ),
               SizedBox(
@@ -46,7 +46,7 @@ class Descriptive extends StatelessWidget {
               ),
               InteractiveViewer(
                 child: Image.asset(
-                  'assets/images/four.jpeg',
+                  'assets/images/S3.png',
                 ),
               ),
               SizedBox(
