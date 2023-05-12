@@ -13,7 +13,7 @@ class About extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromRGBO(117, 218, 255, 1),
+        backgroundColor: Color.fromRGBO(100, 149, 237, 1),
         title: const Text('About Us'),
       ),
       body: SafeArea(
@@ -58,7 +58,7 @@ class _ADDSState extends State<ADDS> {
   _initBannerAd() {
     _bannerAd = BannerAd(
         size: AdSize.banner,
-        adUnitId: 'ca-app-pub-9379469464236253/2342859552',
+        adUnitId: 'ca-app-pub-9379469464236253/6780189202',
         listener: BannerAdListener(
           onAdLoaded: (ad) {
             setState(() {
