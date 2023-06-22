@@ -1,7 +1,8 @@
-// ignore_for_file: must_call_super, unnecessary_statements
+// ignore_for_file: must_call_super, unnecessary_statements, deprecated_member_use
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'begin/begin.dart';
 import 'inter/intermediate.dart';
 import 'advan/advance.dart';
@@ -301,6 +302,20 @@ class _DownState extends State<Down> {
           onTap: () {
             Navigator.push(
                 context, MaterialPageRoute(builder: (context) => About()));
+          },
+        ),
+        ListTile(
+          leading: Icon(
+            Icons.privacy_tip_outlined,
+            size: 30,
+          ),
+          title: const Text(
+            'Privacy Policy',
+            style: TextStyle(fontSize: 16),
+          ),
+          onTap: () {
+            launch(
+                'https://sites.google.com/view/frenchify-privacy-policy/home');
           },
         )
       ],
