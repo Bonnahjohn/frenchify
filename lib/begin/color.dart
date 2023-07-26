@@ -97,7 +97,7 @@ class Figure extends StatelessWidget {
         ]),
         TableRow(children: [
           SelectableText(
-            ' Yellow',
+            ' Orange',
             style: Theme.of(context).textTheme.bodyMedium,
           ),
           SelectableText(

@@ -103,7 +103,7 @@ class _MyAppState extends State<MyApp> {
                                                   ),
                                                   Center(
                                                     child: Transform.scale(
-                                                      scale: 2,
+                                                      scale: 1,
                                                       child: Switch(
                                                           activeColor:
                                                               Colors.black,
@@ -254,7 +254,7 @@ class _DownState extends State<Down> {
           height: 80,
           color: Color.fromRGBO(100, 149, 237, 1),
           child: Text(
-            'Frenchify French App',
+            '',
             style: TextStyle(fontSize: 20, color: Colors.white),
             textAlign: TextAlign.center,
           ),
