@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'Pages/controller.dart';
+import 'Pages/splash.dart';
 import 'begin/begin.dart';
 import 'inter/intermediate.dart';
 import 'advan/advance.dart';
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Obx(() {
-      return MaterialApp(
+      return GetMaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'French Level',
         theme: ThemeData(
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
         themeMode: settingsController.themeMode.value,
-        home: MainScreen(),
+        home: SplashScreen(),
       );
     });
   }
