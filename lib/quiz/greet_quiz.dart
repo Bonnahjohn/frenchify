@@ -1,140 +1,135 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
-import 'package:frenchify/alert/basic_alert.dart';
+import 'package:frenchify/quiz/greet_model.dart';
 import 'package:get/get.dart';
-import 'quiz_controller.dart';
 
 class QuizScreen extends StatelessWidget {
-  final QuizController controller = Get.put(QuizController());
+  final QuestionController greet = Get.put(QuestionController());
+
+  Future<bool> _onWillPop() async {
+    greet.pauseTimer();
+    return (await Get.dialog(
+          AlertDialog(
+            title: Text('Quit Game'),
+            content: Text('Do you want to resume, replay, or exit?'),
+            actions: [
+              TextButton(
+                onPressed: () {
+                  greet.resumeTimer();
+                  Get.back();
+                },
+                child: Text('Resume'),
+              ),
+              TextButton(
+                onPressed: () {
+                  greet.stopTimer();
+                  greet.resetQuiz();
+                  Get.back();
+                },
+                child: Text('Replay'),
+              ),
+              TextButton(
+                onPressed: () {
+                  greet.stopTimer();
+                  Get.back();
+                  Get.back();
+                },
+                child: Text('Exit'),
+              ),
+            ],
+          ),
+        )) ??
+        false;
+  }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('FlashCard Quiz'),
-      ),
-      body: Obx(() {
-        if (controller.state.isQuizCompleted.value) {
-          return Center(
+    return WillPopScope(
+      onWillPop: _onWillPop,
+      child: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Color.fromRGBO(100, 149, 237, 1),
+          title: Text('FlashCard Quiz'),
+        ),
+        body: Obx(() {
+          if (greet.question.isEmpty) {
+            return Center(
+              child: Text(
+                'No flashcards available. Please add some flashcards.',
+                style: TextStyle(fontSize: 20),
+                textAlign: TextAlign.center,
+              ),
+            );
+          }
+          return Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Text('Quiz Completed!', style: TextStyle(fontSize: 24)),
-                Text('You Scored: ${controller.state.score.value}',
-                    style: TextStyle(fontSize: 24)),
-                SizedBox(height: 18),
-                AlertForBasic(),
-                TextButton(
-                  onPressed: () {
-                    controller.resetQuiz();
-                  },
-                  child: Text('Replay', style: TextStyle(color: Colors.green)),
+                Text(
+                    'Question: ${greet.currentIndex.value + 1} / ${greet.question.length}'),
+                SizedBox(
+                  height: 18,
                 ),
-                TextButton(
-                  onPressed: () {
-                    Get.back();
-                  },
-                  child: Text('Exit Quiz', style: TextStyle(color: Colors.red)),
+                LinearProgressIndicator(
+                  color: Colors.red,
+                  backgroundColor: Colors.grey[300],
+                  minHeight: 10,
+                  borderRadius: BorderRadius.circular(20),
+                  value: (greet.currentIndex.value + 1) / greet.question.length,
                 ),
+                SizedBox(height: 20),
+                Text(
+                  greet.question[greet.currentIndex.value].question,
+                  style: TextStyle(fontSize: 24),
+                  textAlign: TextAlign.center,
+                ),
+                SizedBox(height: 20),
+                Text('Time left: ${greet.timer.value}',
+                    style: TextStyle(fontSize: 20)),
+                SizedBox(height: 20),
+                Expanded(
+                  flex: 4,
+                  child: GridView.count(
+                    crossAxisSpacing: 8,
+                    crossAxisCount: 2,
+                    children: greet.question[greet.currentIndex.value].options
+                        .map((option) {
+                      return GestureDetector(
+                        onTap: () => greet.selectAnswer(option),
+                        child: Card(
+                          color: option == greet.selectedAnswer.value
+                              ? (option ==
+                                      greet.question[greet.currentIndex.value]
+                                          .answer
+                                  ? Colors.green
+                                  : Colors.red)
+                              : Colors.pink.shade50,
+                          child: Center(
+                            child: Text(
+                              option,
+                              style: TextStyle(
+                                fontSize: 22,
+                                color: option == greet.selectedAnswer.value
+                                    ? Colors.white
+                                    : null,
+                              ),
+                            ),
+                          ),
+                        ),
+                      );
+                    }).toList(),
+                  ),
+                ),
+                SizedBox(height: 20),
+                Text('Score: ${greet.score.value}',
+                    style: TextStyle(fontSize: 20)),
               ],
             ),
           );
-        }
-
-        return Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 30),
-          child: SafeArea(
-            child: Column(
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    _buildStatCard(
-                        'Question',
-                        '${controller.state.currentQuestionIndex.value + 1}/${controller.state.questions.length}',
-                        Colors.red),
-                    _buildStatCard('Time Left',
-                        '${controller.state.secondsLeft.value}', Colors.red),
-                    _buildStatCard(
-                        'Score', '${controller.state.score.value}', Colors.red),
-                  ],
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text(
-                    controller
-                        .state
-                        .questions[controller.state.currentQuestionIndex.value]
-                        .question,
-                    style: TextStyle(fontSize: 20),
-                  ),
-                ),
-                ...controller
-                    .state
-                    .questions[controller.state.currentQuestionIndex.value]
-                    .options
-                    .asMap()
-                    .entries
-                    .map((entry) {
-                  int idx = entry.key;
-                  String option = entry.value;
-                  Color btnColor;
-
-                  if (controller.state.showAnswerResult.value) {
-                    if (idx == controller.state.selectedAnswerIndex!.value) {
-                      btnColor = idx ==
-                              controller
-                                  .state
-                                  .questions[controller
-                                      .state.currentQuestionIndex.value]
-                                  .answerIndex
-                          ? Colors.green
-                          : Colors.red;
-                    } else if (idx ==
-                        controller
-                            .state
-                            .questions[
-                                controller.state.currentQuestionIndex.value]
-                            .answerIndex) {
-                      btnColor = Colors.green;
-                    } else {
-                      btnColor = Colors.grey.shade400;
-                    }
-                  } else {
-                    btnColor = Colors.cyan;
-                  }
-
-                  return ElevatedButton(
-                    style: ElevatedButton.styleFrom(backgroundColor: btnColor),
-                    onPressed: () {
-                      if (!controller.state.showAnswerResult.value) {
-                        controller.answerQuestion(idx);
-                      }
-                    },
-                    child: Text(option, style: TextStyle(color: Colors.white)),
-                  );
-                }).toList(),
-              ],
-            ),
-          ),
-        );
-      }),
-    );
-  }
-
-  Widget _buildStatCard(String title, String value, Color textColor) {
-    return Card(
-      child: Container(
-        width: 100,
-        height: 80,
-        color: Colors.grey.shade200,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(title, style: TextStyle(color: Colors.grey)),
-            SizedBox(height: 20),
-            Text(value, style: TextStyle(fontSize: 25, color: textColor)),
-          ],
-        ),
+        }),
       ),
     );
   }
