@@ -31,6 +31,10 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'French Level',
         theme: ThemeData(
+          scaffoldBackgroundColor: Colors.white,
+          popupMenuTheme: PopupMenuThemeData(
+              color: Colors.amber, position: PopupMenuPosition.over),
+          cardTheme: CardTheme(color: Colors.grey.shade200),
           textTheme: TextTheme(
             bodyMedium: TextStyle(fontSize: settingsController.fontSize.value),
           ),
@@ -251,8 +255,8 @@ class _DownState extends State<Down> {
             leading: Icon(Icons.home_outlined, size: 30),
             title: Text('Home'),
             onTap: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: ((context) => MyApp())));
+              Navigator.push(context,
+                  MaterialPageRoute(builder: ((context) => MainScreen())));
             },
           ),
           ListTile(
