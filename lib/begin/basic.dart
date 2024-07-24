@@ -3,6 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:frenchify/begin/configuration.dart';
 import 'package:frenchify/main.dart';
+import 'package:frenchify/quiz/basic_quiz.dart';
+import 'package:get/get.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class Basic extends StatelessWidget {
@@ -36,6 +38,14 @@ class Basic extends StatelessWidget {
                 basicFooter,
                 style: Theme.of(context).textTheme.bodyMedium,
               ),
+              TextButton(
+                  onPressed: () {
+                    Get.to(() => BasicsScreen());
+                  },
+                  child: Text(
+                    'Examine yourself with the quiz game',
+                    style: TextStyle(fontSize: 18, color: Colors.green),
+                  )),
               SizedBox(
                 height: 50,
               ),

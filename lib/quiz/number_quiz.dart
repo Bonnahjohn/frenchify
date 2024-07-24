@@ -1,14 +1,16 @@
 // ignore_for_file: deprecated_member_use
 
 import 'package:flutter/material.dart';
-import 'package:frenchify/quiz/greet_model.dart';
+
+import 'package:frenchify/quiz/number_controller.dart';
+
 import 'package:get/get.dart';
 
-class QuizScreen extends StatelessWidget {
-  final QuestionController greet = Get.put(QuestionController());
+class NumberScreen extends StatelessWidget {
+  final NumberController numbering = Get.put(NumberController());
 
   Future<bool> _onWillPop() async {
-    greet.pauseTimer();
+    numbering.pauseTimer();
     return (await Get.dialog(
           AlertDialog(
             title: Text('Quit Game'),
@@ -16,7 +18,7 @@ class QuizScreen extends StatelessWidget {
             actions: [
               TextButton(
                 onPressed: () {
-                  greet.resumeTimer();
+                  numbering.resumeTimer();
                   Get.back();
                 },
                 child: Text(
@@ -26,8 +28,8 @@ class QuizScreen extends StatelessWidget {
               ),
               TextButton(
                 onPressed: () {
-                  greet.stopTimer();
-                  greet.resetQuiz();
+                  numbering.stopTimer();
+                  numbering.resetQuiz();
                   Get.back();
                 },
                 child: Text(
@@ -37,7 +39,7 @@ class QuizScreen extends StatelessWidget {
               ),
               TextButton(
                 onPressed: () {
-                  greet.stopTimer();
+                  numbering.stopTimer();
                   Get.back();
                   Get.back();
                 },
@@ -62,7 +64,7 @@ class QuizScreen extends StatelessWidget {
           title: Text('FlashCard Quiz'),
         ),
         body: Obx(() {
-          if (greet.question.isEmpty) {
+          if (numbering.numbers.isEmpty) {
             return Center(
               child: Text(
                 'No flashcards available. Please add some flashcards.',
@@ -78,7 +80,7 @@ class QuizScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
-                    'Question: ${greet.currentIndex.value + 1} / ${greet.question.length}'),
+                    'Question: ${numbering.currentIndex.value + 1} / ${numbering.numbers.length}'),
                 SizedBox(
                   height: 18,
                 ),
@@ -87,16 +89,17 @@ class QuizScreen extends StatelessWidget {
                   backgroundColor: Colors.grey[300],
                   minHeight: 10,
                   borderRadius: BorderRadius.circular(20),
-                  value: (greet.currentIndex.value + 1) / greet.question.length,
+                  value: (numbering.currentIndex.value + 1) /
+                      numbering.numbers.length,
                 ),
                 SizedBox(height: 20),
                 Text(
-                  greet.question[greet.currentIndex.value].question,
+                  numbering.numbers[numbering.currentIndex.value].question,
                   style: TextStyle(fontSize: 24),
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(height: 20),
-                Text('Time left: ${greet.timer.value}',
+                Text('Time left: ${numbering.timer.value}',
                     style: TextStyle(fontSize: 20)),
                 SizedBox(height: 20),
                 Expanded(
@@ -104,24 +107,26 @@ class QuizScreen extends StatelessWidget {
                   child: GridView.count(
                     crossAxisSpacing: 8,
                     crossAxisCount: 2,
-                    children: greet.question[greet.currentIndex.value].options
+                    children: numbering
+                        .numbers[numbering.currentIndex.value].options
                         .map((option) {
                       return GestureDetector(
-                        onTap: () => greet.selectAnswer(option),
+                        onTap: () => numbering.selectAnswer(option),
                         child: Card(
-                          color: option == greet.selectedAnswer.value
+                          color: option == numbering.selectedAnswer.value
                               ? (option ==
-                                      greet.question[greet.currentIndex.value]
+                                      numbering
+                                          .numbers[numbering.currentIndex.value]
                                           .answer
                                   ? Colors.green
                                   : Colors.red)
-                              : Colors.amber,
+                              : Colors.cyan,
                           child: Center(
                             child: Text(
                               option,
                               style: TextStyle(
                                 fontSize: 22,
-                                color: option == greet.selectedAnswer.value
+                                color: option == numbering.selectedAnswer.value
                                     ? Colors.white
                                     : null,
                               ),
@@ -133,7 +138,7 @@ class QuizScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 20),
-                Text('Score: ${greet.score.value}',
+                Text('Score: ${numbering.score.value}',
                     style: TextStyle(fontSize: 20)),
               ],
             ),
