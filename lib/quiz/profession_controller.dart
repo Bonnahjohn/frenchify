@@ -1,19 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get_storage/get_storage.dart';
 import 'dart:async';
 import 'dart:math';
 
-class Question {
+class Ask {
   String question;
   String answer;
   List<String> options;
 
-  Question(
-      {required this.question, required this.answer, required this.options});
+  Ask({required this.question, required this.answer, required this.options});
 
-  factory Question.fromJson(Map<String, dynamic> json) {
-    return Question(
+  factory Ask.fromJson(Map<String, dynamic> json) {
+    return Ask(
       question: json['question'],
       answer: json['answer'],
       options: List<String>.from(json['options']),
@@ -34,16 +32,14 @@ class Question {
 }
 
 class ProfsController extends GetxController {
-  var allFlashCards = <Question>[].obs;
-  var profs = <Question>[].obs;
+  var all = <Ask>[].obs;
+  var profs = <Ask>[].obs;
   var currentIndex = 0.obs;
   var score = 0.obs;
   var timer = 15.obs;
   Timer? _timer;
   var selectedAnswer = ''.obs;
   var isPaused = false.obs;
-
-  final profession = GetStorage();
 
   @override
   void onInit() {
@@ -53,325 +49,267 @@ class ProfsController extends GetxController {
   }
 
   void loadFlashCards() {
-    var savedFlashCards = profession.read<List>('flashCards') ?? [];
-    print('Saved FlashCards: $savedFlashCards');
-    if (savedFlashCards.isNotEmpty) {
-      allFlashCards
-          .assignAll(savedFlashCards.map((e) => Question.fromJson(e)).toList());
-    } else {
-      // Add sample flashcards
-      allFlashCards.assignAll([
-        Question(
-          question: 'What is "Doctor" in French?',
-          answer: 'Médecin',
-          options: ['Médecin', 'Infirmier', 'Pharmacien', 'Chirurgien'],
-        ),
-        Question(
-          question: 'What is "Nurse" in French?',
-          answer: 'Infirmier/Infirmière',
-          options: [
-            'Infirmier/Infirmière',
-            'Médecin',
-            'Pharmacien',
-            'Chirurgien'
-          ],
-        ),
-        Question(
-          question: 'What is "Pharmacist" in French?',
-          answer: 'Pharmacien/Pharmacienne',
-          options: [
-            'Pharmacien/Pharmacienne',
-            'Médecin',
-            'Infirmier',
-            'Chirurgien'
-          ],
-        ),
-        Question(
-          question: 'What is "Surgeon" in French?',
-          answer: 'Chirurgien/Chirurgienne',
-          options: [
-            'Chirurgien/Chirurgienne',
-            'Médecin',
-            'Infirmier',
-            'Pharmacien'
-          ],
-        ),
-        Question(
-          question: 'What is "Teacher" in French?',
-          answer: 'Enseignant/Enseignante',
-          options: [
-            'Enseignant/Enseignante',
-            'Professeur',
-            'Élève',
-            'Directeur'
-          ],
-        ),
-        Question(
-          question: 'What is "Professor" in French?',
-          answer: 'Professeur',
-          options: [
-            'Professeur',
-            'Enseignant/Enseignante',
-            'Élève',
-            'Directeur'
-          ],
-        ),
-        Question(
-          question: 'What is "Student" in French?',
-          answer: 'Élève',
-          options: [
-            'Élève',
-            'Professeur',
-            'Enseignant/Enseignante',
-            'Directeur'
-          ],
-        ),
-        Question(
-          question: 'What is "Principal" in French?',
-          answer: 'Directeur/Directrice',
-          options: [
-            'Directeur/Directrice',
-            'Professeur',
-            'Élève',
-            'Enseignant/Enseignante'
-          ],
-        ),
-        Question(
-          question: 'What is "Lawyer" in French?',
-          answer: 'Avocat/Avocate',
-          options: ['Avocat/Avocate', 'Juge', 'Notaire', 'Député'],
-        ),
-        Question(
-          question: 'What is "Judge" in French?',
-          answer: 'Juge',
-          options: ['Juge', 'Avocat/Avocate', 'Notaire', 'Député'],
-        ),
-        Question(
-          question: 'What is "Notary" in French?',
-          answer: 'Notaire',
-          options: ['Notaire', 'Avocat/Avocate', 'Juge', 'Député'],
-        ),
-        Question(
-          question: 'What is "Deputy" in French?',
-          answer: 'Député',
-          options: ['Député', 'Avocat/Avocate', 'Juge', 'Notaire'],
-        ),
-        Question(
-          question: 'What is "Engineer" in French?',
-          answer: 'Ingénieur',
-          options: ['Ingénieur', 'Architecte', 'Technicien', 'Scientifique'],
-        ),
-        Question(
-          question: 'What is "Architect" in French?',
-          answer: 'Architecte',
-          options: ['Architecte', 'Ingénieur', 'Technicien', 'Scientifique'],
-        ),
-        Question(
-          question: 'What is "Technician" in French?',
-          answer: 'Technicien/Technicienne',
-          options: [
-            'Technicien/Technicienne',
-            'Ingénieur',
-            'Architecte',
-            'Scientifique'
-          ],
-        ),
-        Question(
-          question: 'What is "Scientist" in French?',
-          answer: 'Scientifique',
-          options: ['Scientifique', 'Ingénieur', 'Architecte', 'Technicien'],
-        ),
-        Question(
-          question: 'What is "Artist" in French?',
-          answer: 'Artiste',
-          options: ['Artiste', 'Peintre', 'Sculpteur', 'Dessinateur'],
-        ),
-        Question(
-          question: 'What is "Painter" in French?',
-          answer: 'Peintre',
-          options: ['Peintre', 'Artiste', 'Sculpteur', 'Dessinateur'],
-        ),
-        Question(
-          question: 'What is "Sculptor" in French?',
-          answer: 'Sculpteur/Sculptrice',
-          options: [
-            'Sculpteur/Sculptrice',
-            'Peintre',
-            'Artiste',
-            'Dessinateur'
-          ],
-        ),
-        Question(
-          question: 'What is "Drawer" in French?',
-          answer: 'Dessinateur/Dessinatrice',
-          options: [
-            'Dessinateur/Dessinatrice',
-            'Peintre',
-            'Sculpteur',
-            'Artiste'
-          ],
-        ),
-        Question(
-          question: 'What is "Chef" in French?',
-          answer: 'Chef',
-          options: [
-            'Chef',
-            'Cuisinier/Cuisinière',
-            'Serveur/Serveuse',
-            'Barman'
-          ],
-        ),
-        Question(
-          question: 'What is "Cook" in French?',
-          answer: 'Cuisinier/Cuisinière',
-          options: [
-            'Cuisinier/Cuisinière',
-            'Chef',
-            'Serveur/Serveuse',
-            'Barman'
-          ],
-        ),
-        Question(
-          question: 'What is "Waiter" in French?',
-          answer: 'Serveur/Serveuse',
-          options: [
-            'Serveur/Serveuse',
-            'Chef',
-            'Cuisinier/Cuisinière',
-            'Barman'
-          ],
-        ),
-        Question(
-          question: 'What is "Bartender" in French?',
-          answer: 'Barman',
-          options: [
-            'Barman',
-            'Serveur/Serveuse',
-            'Chef',
-            'Cuisinier/Cuisinière'
-          ],
-        ),
-        Question(
-          question: 'What is "Driver" in French?',
-          answer: 'Chauffeur',
-          options: ['Chauffeur', 'Conducteur', 'Pilote', 'Passager'],
-        ),
-        Question(
-          question: 'What is "Pilot" in French?',
-          answer: 'Pilote',
-          options: ['Pilote', 'Chauffeur', 'Conducteur', 'Passager'],
-        ),
-        Question(
-          question: 'What is "Passenger" in French?',
-          answer: 'Passager/Passagère',
-          options: ['Passager/Passagère', 'Chauffeur', 'Conducteur', 'Pilote'],
-        ),
-        Question(
-          question: 'What is "Cleaner" in French?',
-          answer: 'Nettoyeur/Nettoyeuse',
-          options: [
-            'Nettoyeur/Nettoyeuse',
-            'Chauffeur',
-            'Conducteur',
-            'Pilote'
-          ],
-        ),
-        Question(
-          question: 'What is "Mechanic" in French?',
-          answer: 'Mécanicien/Mécanicienne',
-          options: [
-            'Mécanicien/Mécanicienne',
-            'Technicien',
-            'Ingénieur',
-            'Architecte'
-          ],
-        ),
-        Question(
-          question: 'What is "Electrician" in French?',
-          answer: 'Électricien/Électricienne',
-          options: [
-            'Électricien/Électricienne',
-            'Technicien',
-            'Mécanicien',
-            'Ingénieur'
-          ],
-        ),
-        Question(
-          question: 'What is "Plumber" in French?',
-          answer: 'Plombier',
-          options: ['Plombier', 'Électricien', 'Mécanicien', 'Technicien'],
-        ),
-        Question(
-          question: 'What is "Farmer" in French?',
-          answer: 'Agriculteur/Agricultrice',
-          options: [
-            'Agriculteur/Agricultrice',
-            'Jardinier/Jardinière',
-            'Bouvier',
-            'Vigneron/Vigneronne'
-          ],
-        ),
-        Question(
-          question: 'What is "Gardener" in French?',
-          answer: 'Jardinier/Jardinière',
-          options: [
-            'Jardinier/Jardinière',
-            'Agriculteur/Agricultrice',
-            'Bouvier',
-            'Vigneron/Vigneronne'
-          ],
-        ),
-        Question(
-          question: 'What is "Herder" in French?',
-          answer: 'Bouvier',
-          options: [
-            'Bouvier',
-            'Agriculteur/Agricultrice',
-            'Jardinier/Jardinière',
-            'Vigneron/Vigneronne'
-          ],
-        ),
-        Question(
-          question: 'What is "Winemaker" in French?',
-          answer: 'Vigneron/Vigneronne',
-          options: [
-            'Vigneron/Vigneronne',
-            'Agriculteur/Agricultrice',
-            'Jardinier/Jardinière',
-            'Bouvier'
-          ],
-        ),
-        Question(
-          question: 'What is "Hairdresser" in French?',
-          answer: 'Coiffeur/Coiffeuse',
-          options: [
-            'Coiffeur/Coiffeuse',
-            'Styliste',
-            'Maquilleur/Maquilleuse',
-            'Esthéticien/Esthéticienne'
-          ],
-        ),
-      ]);
-      ;
-      saveFlashCards();
-    }
-    for (var question in allFlashCards) {
+    // Add sample flashcards
+    all.assignAll([
+      Ask(
+        question: 'What is "Doctor" in French?',
+        answer: 'Médecin',
+        options: ['Médecin', 'Infirmier', 'Pharmacien', 'Chirurgien'],
+      ),
+      Ask(
+        question: 'What is "Nurse" in French?',
+        answer: 'Infirmier/Infirmière',
+        options: [
+          'Infirmier/Infirmière',
+          'Médecin',
+          'Pharmacien',
+          'Chirurgien'
+        ],
+      ),
+      Ask(
+        question: 'What is "Pharmacist" in French?',
+        answer: 'Pharmacien/Pharmacienne',
+        options: [
+          'Pharmacien/Pharmacienne',
+          'Médecin',
+          'Infirmier',
+          'Chirurgien'
+        ],
+      ),
+      Ask(
+        question: 'What is "Surgeon" in French?',
+        answer: 'Chirurgien/Chirurgienne',
+        options: [
+          'Chirurgien/Chirurgienne',
+          'Médecin',
+          'Infirmier',
+          'Pharmacien'
+        ],
+      ),
+      Ask(
+        question: 'What is "Teacher" in French?',
+        answer: 'Enseignant/Enseignante',
+        options: ['Enseignant/Enseignante', 'Professeur', 'Élève', 'Directeur'],
+      ),
+      Ask(
+        question: 'What is "Professor" in French?',
+        answer: 'Professeur',
+        options: ['Professeur', 'Enseignant/Enseignante', 'Élève', 'Directeur'],
+      ),
+      Ask(
+        question: 'What is "Student" in French?',
+        answer: 'Élève',
+        options: ['Élève', 'Professeur', 'Enseignant/Enseignante', 'Directeur'],
+      ),
+      Ask(
+        question: 'What is "Principal" in French?',
+        answer: 'Directeur/Directrice',
+        options: [
+          'Directeur/Directrice',
+          'Professeur',
+          'Élève',
+          'Enseignant/Enseignante'
+        ],
+      ),
+      Ask(
+        question: 'What is "Lawyer" in French?',
+        answer: 'Avocat/Avocate',
+        options: ['Avocat/Avocate', 'Juge', 'Notaire', 'Député'],
+      ),
+      Ask(
+        question: 'What is "Judge" in French?',
+        answer: 'Juge',
+        options: ['Juge', 'Avocat/Avocate', 'Notaire', 'Député'],
+      ),
+      Ask(
+        question: 'What is "Notary" in French?',
+        answer: 'Notaire',
+        options: ['Notaire', 'Avocat/Avocate', 'Juge', 'Député'],
+      ),
+      Ask(
+        question: 'What is "Deputy" in French?',
+        answer: 'Député',
+        options: ['Député', 'Avocat/Avocate', 'Juge', 'Notaire'],
+      ),
+      Ask(
+        question: 'What is "Engineer" in French?',
+        answer: 'Ingénieur',
+        options: ['Ingénieur', 'Architecte', 'Technicien', 'Scientifique'],
+      ),
+      Ask(
+        question: 'What is "Architect" in French?',
+        answer: 'Architecte',
+        options: ['Architecte', 'Ingénieur', 'Technicien', 'Scientifique'],
+      ),
+      Ask(
+        question: 'What is "Technician" in French?',
+        answer: 'Technicien/Technicienne',
+        options: [
+          'Technicien/Technicienne',
+          'Ingénieur',
+          'Architecte',
+          'Scientifique'
+        ],
+      ),
+      Ask(
+        question: 'What is "Scientist" in French?',
+        answer: 'Scientifique',
+        options: ['Scientifique', 'Ingénieur', 'Architecte', 'Technicien'],
+      ),
+      Ask(
+        question: 'What is "Artist" in French?',
+        answer: 'Artiste',
+        options: ['Artiste', 'Peintre', 'Sculpteur', 'Dessinateur'],
+      ),
+      Ask(
+        question: 'What is "Painter" in French?',
+        answer: 'Peintre',
+        options: ['Peintre', 'Artiste', 'Sculpteur', 'Dessinateur'],
+      ),
+      Ask(
+        question: 'What is "Sculptor" in French?',
+        answer: 'Sculpteur/Sculptrice',
+        options: ['Sculpteur/Sculptrice', 'Peintre', 'Artiste', 'Dessinateur'],
+      ),
+      Ask(
+        question: 'What is "Drawer" in French?',
+        answer: 'Dessinateur/Dessinatrice',
+        options: [
+          'Dessinateur/Dessinatrice',
+          'Peintre',
+          'Sculpteur',
+          'Artiste'
+        ],
+      ),
+      Ask(
+        question: 'What is "Chef" in French?',
+        answer: 'Chef',
+        options: ['Chef', 'Cuisinier/Cuisinière', 'Serveur/Serveuse', 'Barman'],
+      ),
+      Ask(
+        question: 'What is "Cook" in French?',
+        answer: 'Cuisinier/Cuisinière',
+        options: ['Cuisinier/Cuisinière', 'Chef', 'Serveur/Serveuse', 'Barman'],
+      ),
+      Ask(
+        question: 'What is "Waiter" in French?',
+        answer: 'Serveur/Serveuse',
+        options: ['Serveur/Serveuse', 'Chef', 'Cuisinier/Cuisinière', 'Barman'],
+      ),
+      Ask(
+        question: 'What is "Bartender" in French?',
+        answer: 'Barman',
+        options: ['Barman', 'Serveur/Serveuse', 'Chef', 'Cuisinier/Cuisinière'],
+      ),
+      Ask(
+        question: 'What is "Driver" in French?',
+        answer: 'Chauffeur',
+        options: ['Chauffeur', 'Conducteur', 'Pilote', 'Passager'],
+      ),
+      Ask(
+        question: 'What is "Pilot" in French?',
+        answer: 'Pilote',
+        options: ['Pilote', 'Chauffeur', 'Conducteur', 'Passager'],
+      ),
+      Ask(
+        question: 'What is "Passenger" in French?',
+        answer: 'Passager/Passagère',
+        options: ['Passager/Passagère', 'Chauffeur', 'Conducteur', 'Pilote'],
+      ),
+      Ask(
+        question: 'What is "Cleaner" in French?',
+        answer: 'Nettoyeur/Nettoyeuse',
+        options: ['Nettoyeur/Nettoyeuse', 'Chauffeur', 'Conducteur', 'Pilote'],
+      ),
+      Ask(
+        question: 'What is "Mechanic" in French?',
+        answer: 'Mécanicien/Mécanicienne',
+        options: [
+          'Mécanicien/Mécanicienne',
+          'Technicien',
+          'Ingénieur',
+          'Architecte'
+        ],
+      ),
+      Ask(
+        question: 'What is "Electrician" in French?',
+        answer: 'Électricien/Électricienne',
+        options: [
+          'Électricien/Électricienne',
+          'Technicien',
+          'Mécanicien',
+          'Ingénieur'
+        ],
+      ),
+      Ask(
+        question: 'What is "Plumber" in French?',
+        answer: 'Plombier',
+        options: ['Plombier', 'Électricien', 'Mécanicien', 'Technicien'],
+      ),
+      Ask(
+        question: 'What is "Farmer" in French?',
+        answer: 'Agriculteur/Agricultrice',
+        options: [
+          'Agriculteur/Agricultrice',
+          'Jardinier/Jardinière',
+          'Bouvier',
+          'Vigneron/Vigneronne'
+        ],
+      ),
+      Ask(
+        question: 'What is "Gardener" in French?',
+        answer: 'Jardinier/Jardinière',
+        options: [
+          'Jardinier/Jardinière',
+          'Agriculteur/Agricultrice',
+          'Bouvier',
+          'Vigneron/Vigneronne'
+        ],
+      ),
+      Ask(
+        question: 'What is "Herder" in French?',
+        answer: 'Bouvier',
+        options: [
+          'Bouvier',
+          'Agriculteur/Agricultrice',
+          'Jardinier/Jardinière',
+          'Vigneron/Vigneronne'
+        ],
+      ),
+      Ask(
+        question: 'What is "Winemaker" in French?',
+        answer: 'Vigneron/Vigneronne',
+        options: [
+          'Vigneron/Vigneronne',
+          'Agriculteur/Agricultrice',
+          'Jardinier/Jardinière',
+          'Bouvier'
+        ],
+      ),
+      Ask(
+        question: 'What is "Hairdresser" in French?',
+        answer: 'Coiffeur/Coiffeuse',
+        options: [
+          'Coiffeur/Coiffeuse',
+          'Styliste',
+          'Maquilleur/Maquilleuse',
+          'Esthéticien/Esthéticienne'
+        ],
+      ),
+    ]);
+    ;
+
+    for (var question in all) {
       question.shuffleOptions();
     }
     selectRandomFlashCards();
   }
 
-  void saveFlashCards() {
-    profession.write(
-        'flashCards', allFlashCards.map((e) => e.toJson()).toList());
-  }
-
   void selectRandomFlashCards() {
     var random = Random();
 
-    var shuffledFlashCards = allFlashCards.toList()..shuffle(random);
+    var shuffledFlashCards = all.toList()..shuffle(random);
     profs.assignAll(shuffledFlashCards.take(10).toList());
-    print('Selected FlashCards: ${profs.length}');
   }
 
   void startTimer() {

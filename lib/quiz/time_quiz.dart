@@ -1,14 +1,16 @@
 // ignore_for_file: deprecated_member_use
 
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:frenchify/quiz/number_controller.dart';
 
-class NumberScreen extends StatelessWidget {
-  final NumberController numbering = Get.put(NumberController());
+import 'package:frenchify/quiz/time_controller.dart';
+
+import 'package:get/get.dart';
+
+class TimesScreen extends StatelessWidget {
+  final TimeController timing = Get.put(TimeController());
 
   Future<bool> _onWillPop() async {
-    numbering.pauseTimer();
+    timing.pauseTimer();
     return (await Get.dialog(
           AlertDialog(
             title: Text('Quit Game'),
@@ -16,7 +18,7 @@ class NumberScreen extends StatelessWidget {
             actions: [
               TextButton(
                 onPressed: () {
-                  numbering.resumeTimer();
+                  timing.resumeTimer();
                   Get.back();
                 },
                 child: Text(
@@ -26,8 +28,8 @@ class NumberScreen extends StatelessWidget {
               ),
               TextButton(
                 onPressed: () {
-                  numbering.stopTimer();
-                  numbering.resetQuiz();
+                  timing.stopTimer();
+                  timing.resetQuiz();
                   Get.back();
                 },
                 child: Text(
@@ -37,7 +39,7 @@ class NumberScreen extends StatelessWidget {
               ),
               TextButton(
                 onPressed: () {
-                  numbering.stopTimer();
+                  timing.stopTimer();
                   Get.back();
                   Get.back();
                 },
@@ -62,7 +64,7 @@ class NumberScreen extends StatelessWidget {
           title: Text('FlashCard Quiz'),
         ),
         body: Obx(() {
-          if (numbering.numbers.isEmpty) {
+          if (timing.times.isEmpty) {
             return Center(
               child: Text(
                 'No flashcards available. Please add some flashcards.',
@@ -78,7 +80,7 @@ class NumberScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
-                  'Question: ${numbering.currentIndex.value + 1} / ${numbering.numbers.length}',
+                  'Question: ${timing.currentIndex.value + 1} / ${timing.times.length}',
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
                 ),
                 SizedBox(height: 16),
@@ -87,18 +89,17 @@ class NumberScreen extends StatelessWidget {
                   backgroundColor: Colors.grey[300],
                   minHeight: 12,
                   borderRadius: BorderRadius.circular(8),
-                  value: (numbering.currentIndex.value + 1) /
-                      numbering.numbers.length,
+                  value: (timing.currentIndex.value + 1) / timing.times.length,
                 ),
                 SizedBox(height: 24),
                 Text(
-                  numbering.numbers[numbering.currentIndex.value].question,
+                  timing.times[timing.currentIndex.value].question,
                   style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(height: 16),
                 Text(
-                  'Time left: ${numbering.timer.value}',
+                  'Time left: ${timing.timer.value}',
                   style: TextStyle(fontSize: 22, color: Colors.blueAccent),
                 ),
                 SizedBox(height: 24),
@@ -110,22 +111,21 @@ class NumberScreen extends StatelessWidget {
                       crossAxisSpacing: 10,
                       mainAxisSpacing: 10,
                     ),
-                    itemCount: numbering
-                        .numbers[numbering.currentIndex.value].options.length,
+                    itemCount:
+                        timing.times[timing.currentIndex.value].options.length,
                     itemBuilder: (context, index) {
-                      var option = numbering
-                          .numbers[numbering.currentIndex.value].options[index];
+                      var option = timing
+                          .times[timing.currentIndex.value].options[index];
                       return GestureDetector(
-                        onTap: () => numbering.selectAnswer(option),
+                        onTap: () => timing.selectAnswer(option),
                         child: Card(
-                          color: option == numbering.selectedAnswer.value
+                          color: option == timing.selectedAnswer.value
                               ? (option ==
-                                      numbering
-                                          .numbers[numbering.currentIndex.value]
+                                      timing.times[timing.currentIndex.value]
                                           .answer
                                   ? Colors.green
                                   : Colors.red)
-                              : Colors.cyan,
+                              : Colors.teal,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12),
                           ),
@@ -135,7 +135,7 @@ class NumberScreen extends StatelessWidget {
                               option,
                               style: TextStyle(
                                 fontSize: 22,
-                                color: option == numbering.selectedAnswer.value
+                                color: option == timing.selectedAnswer.value
                                     ? Colors.white
                                     : Colors.black87,
                               ),
@@ -148,7 +148,7 @@ class NumberScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 20),
                 Text(
-                  'Score: ${numbering.score.value}',
+                  'Score: ${timing.score.value}',
                   style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                 ),
               ],

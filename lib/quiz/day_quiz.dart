@@ -20,7 +20,10 @@ class FlashCardQuizScreen extends StatelessWidget {
                   controller.resumeTimer();
                   Get.back();
                 },
-                child: Text('Resume'),
+                child: Text(
+                  'Resume',
+                  style: TextStyle(color: Colors.amber),
+                ),
               ),
               TextButton(
                 onPressed: () {
@@ -28,7 +31,10 @@ class FlashCardQuizScreen extends StatelessWidget {
                   controller.resetQuiz();
                   Get.back();
                 },
-                child: Text('Replay'),
+                child: Text(
+                  'Replay',
+                  style: TextStyle(color: Colors.green),
+                ),
               ),
               TextButton(
                 onPressed: () {
@@ -36,7 +42,10 @@ class FlashCardQuizScreen extends StatelessWidget {
                   Get.back();
                   Get.back();
                 },
-                child: Text('Exit'),
+                child: Text(
+                  'Exit',
+                  style: TextStyle(color: Colors.red),
+                ),
               ),
             ],
           ),
