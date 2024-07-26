@@ -27,6 +27,10 @@ class Question {
       'options': options,
     };
   }
+
+  void shuffleOptions() {
+    options.shuffle();
+  }
 }
 
 class ColorController extends GetxController {
@@ -318,9 +322,12 @@ class ColorController extends GetxController {
           ],
         ),
       ]);
+
       saveFlashCards();
     }
-
+    for (var question in allFlashCards) {
+      question.shuffleOptions();
+    }
     selectRandomFlashCards();
   }
 
