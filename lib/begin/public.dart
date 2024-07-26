@@ -3,6 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:frenchify/begin/configuration.dart';
 import 'package:frenchify/main.dart';
+import 'package:frenchify/quiz/holiday_quiz.dart';
+import 'package:get/get.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class Public extends StatelessWidget {
@@ -41,7 +43,14 @@ class Public extends StatelessWidget {
               SizedBox(
                 height: 20,
               ),
-
+              TextButton(
+                  onPressed: () {
+                    Get.to(() => HolidaysScreen());
+                  },
+                  child: Text(
+                    'Examine yourself with the quiz game',
+                    style: TextStyle(fontSize: 18, color: Colors.green),
+                  )),
               SizedBox(
                 height: 50,
               ),
