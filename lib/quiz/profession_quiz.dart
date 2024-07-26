@@ -1,15 +1,16 @@
 // ignore_for_file: deprecated_member_use
 
 import 'package:flutter/material.dart';
-import 'package:frenchify/quiz/holiday_controller.dart';
+
+import 'package:frenchify/quiz/profession_controller.dart';
 
 import 'package:get/get.dart';
 
-class HolidaysScreen extends StatelessWidget {
-  final HolidayController holidaying = Get.put(HolidayController());
+class ProfsScreen extends StatelessWidget {
+  final ProfsController profsing = Get.put(ProfsController());
 
   Future<bool> _onWillPop() async {
-    holidaying.pauseTimer();
+    profsing.pauseTimer();
     return (await Get.dialog(
           AlertDialog(
             title: Text('Quit Game'),
@@ -17,7 +18,7 @@ class HolidaysScreen extends StatelessWidget {
             actions: [
               TextButton(
                 onPressed: () {
-                  holidaying.resumeTimer();
+                  profsing.resumeTimer();
                   Get.back();
                 },
                 child: Text(
@@ -27,8 +28,8 @@ class HolidaysScreen extends StatelessWidget {
               ),
               TextButton(
                 onPressed: () {
-                  holidaying.stopTimer();
-                  holidaying.resetQuiz();
+                  profsing.stopTimer();
+                  profsing.resetQuiz();
                   Get.back();
                 },
                 child: Text(
@@ -38,7 +39,7 @@ class HolidaysScreen extends StatelessWidget {
               ),
               TextButton(
                 onPressed: () {
-                  holidaying.stopTimer();
+                  profsing.stopTimer();
                   Get.back();
                   Get.back();
                 },
@@ -63,7 +64,7 @@ class HolidaysScreen extends StatelessWidget {
           title: Text('FlashCard Quiz'),
         ),
         body: Obx(() {
-          if (holidaying.holidays.isEmpty) {
+          if (profsing.profs.isEmpty) {
             return Center(
               child: Text(
                 'No flashcards available. Please add some flashcards.',
@@ -79,7 +80,7 @@ class HolidaysScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
-                  'Question: ${holidaying.currentIndex.value + 1} / ${holidaying.holidays.length}',
+                  'Question: ${profsing.currentIndex.value + 1} / ${profsing.profs.length}',
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
                 ),
                 SizedBox(height: 16),
@@ -88,18 +89,18 @@ class HolidaysScreen extends StatelessWidget {
                   backgroundColor: Colors.grey[300],
                   minHeight: 12,
                   borderRadius: BorderRadius.circular(8),
-                  value: (holidaying.currentIndex.value + 1) /
-                      holidaying.holidays.length,
+                  value:
+                      (profsing.currentIndex.value + 1) / profsing.profs.length,
                 ),
                 SizedBox(height: 24),
                 Text(
-                  holidaying.holidays[holidaying.currentIndex.value].question,
+                  profsing.profs[profsing.currentIndex.value].question,
                   style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(height: 16),
                 Text(
-                  'Time left: ${holidaying.timer.value}',
+                  'Time left: ${profsing.timer.value}',
                   style: TextStyle(fontSize: 22, color: Colors.blueAccent),
                 ),
                 SizedBox(height: 24),
@@ -111,20 +112,18 @@ class HolidaysScreen extends StatelessWidget {
                       crossAxisSpacing: 10,
                       mainAxisSpacing: 10,
                     ),
-                    itemCount: holidaying
-                        .holidays[holidaying.currentIndex.value].options.length,
+                    itemCount: profsing
+                        .profs[profsing.currentIndex.value].options.length,
                     itemBuilder: (context, index) {
-                      var option = holidaying
-                          .holidays[holidaying.currentIndex.value]
-                          .options[index];
+                      var option = profsing
+                          .profs[profsing.currentIndex.value].options[index];
                       return GestureDetector(
-                        onTap: () => holidaying.selectAnswer(option),
+                        onTap: () => profsing.selectAnswer(option),
                         child: Card(
-                          color: option == holidaying.selectedAnswer.value
+                          color: option == profsing.selectedAnswer.value
                               ? (option ==
-                                      holidaying
-                                          .holidays[
-                                              holidaying.currentIndex.value]
+                                      profsing
+                                          .profs[profsing.currentIndex.value]
                                           .answer
                                   ? Colors.green
                                   : Colors.red)
@@ -138,7 +137,7 @@ class HolidaysScreen extends StatelessWidget {
                               option,
                               style: TextStyle(
                                 fontSize: 22,
-                                color: option == holidaying.selectedAnswer.value
+                                color: option == profsing.selectedAnswer.value
                                     ? Colors.white
                                     : Colors.black87,
                               ),
@@ -151,7 +150,7 @@ class HolidaysScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 20),
                 Text(
-                  'Score: ${holidaying.score.value}',
+                  'Score: ${profsing.score.value}',
                   style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                 ),
               ],
